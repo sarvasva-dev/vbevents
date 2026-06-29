@@ -146,3 +146,29 @@ body {
     border-color: #D4AF37;
     outline: none;
 }
+/* High-End Enhancements */
+.glass-nav {
+    background: rgba(19, 19, 19, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.gold-gradient-text {
+    background: linear-gradient(135deg, #f2ca50 0%, #d4af37 50%, #e9c349 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.gold-gradient-bg {
+    background: linear-gradient(135deg, #d4af37 0%, #705E21 100%);
+}
+
+.hero-overlay {
+    background: linear-gradient(to bottom, rgba(19,19,19,0.3) 0%, rgba(19,19,19,0.8) 70%, rgba(19,19,19,1) 100%);
+}
+
+@keyframes subtleZoom {
+    0% { transform: scale(1.05); }
+    100% { transform: scale(1.1); }
+}

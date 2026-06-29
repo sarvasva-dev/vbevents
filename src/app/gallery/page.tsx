@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { Metadata } from 'next';
+import Image from 'next/image';
 import VideoPlayer from './VideoPlayer';
 
 export const metadata: Metadata = {
@@ -30,12 +31,12 @@ export default function GalleryPage() {
   return (
     <>
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-primary/10">
-        <div className="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto">
+        <div className="flex justify-between items-center px-6 md:px-20 py-6 w-full max-w-[1440px] mx-auto">
           <a className="flex items-center gap-4 group" href="/">
-            <img alt="Vision Beyond Events Logo" className="w-12 h-12 object-contain rounded-lg opacity-90 group-hover:opacity-100 transition-opacity drop-shadow-2xl" src="/images/vb_logo.png" />
+            <Image width={48} height={48} priority alt="Vision Beyond Events Logo" className="w-12 h-12 object-contain rounded-lg opacity-90 group-hover:opacity-100 transition-opacity drop-shadow-2xl" src="/images/vb_logo.png" />
             <span className="hidden md:block font-headline-md text-headline-md text-primary tracking-tighter">Vision Beyond Events</span>
           </a>
-          <div className="hidden md:flex items-center gap-gutter">
+          <div className="hidden md:flex items-center gap-8">
             <a className="font-body-md text-label-lg uppercase tracking-widest text-on-background/70 hover:text-primary transition-colors duration-300" href="/#services">Services</a>
             <a className="font-body-md text-label-lg uppercase tracking-widest text-on-background/70 hover:text-primary transition-colors duration-300" href="/gallery">Gallery</a>
             <a className="font-body-md text-label-lg uppercase tracking-widest text-on-background/70 hover:text-primary transition-colors duration-300" href="/#contact">Contact</a>
@@ -46,7 +47,7 @@ export default function GalleryPage() {
         </div>
       </nav>
 
-      <section className="pt-[140px] pb-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto min-h-screen">
+      <section className="pt-[140px] pb-20 px-6 md:px-20 w-full max-w-[1440px] mx-auto min-h-screen">
         <div className="text-center mb-16">
           <h1 className="font-headline-lg text-headline-lg text-primary mb-4 tracking-tighter">Event Gallery</h1>
           <div className="w-24 h-px bg-primary/30 mx-auto mb-8"></div>
@@ -99,7 +100,7 @@ export default function GalleryPage() {
       </section>
 
       <footer className="w-full py-20 bg-surface-dim border-t border-primary/10">
-        <div className="flex flex-col lg:flex-row justify-between items-center px-margin-mobile md:px-margin-desktop gap-gutter max-w-container-max mx-auto">
+        <div className="flex flex-col lg:flex-row justify-between items-center px-6 md:px-20 gap-8 w-full max-w-[1440px] mx-auto">
           <div className="flex flex-col gap-2 text-center lg:text-left">
             <div className="font-headline-md text-headline-md text-primary tracking-tighter">Vision Beyond Events</div>
             <div className="font-body-md text-on-surface-variant flex flex-col sm:flex-row items-center gap-2 sm:gap-4">

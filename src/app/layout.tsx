@@ -13,6 +13,7 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://visionbeyondevents.com'),
   title: "Vision Beyond Events | Premium Event Management",
   description: "Crafting Experiences. Creating Memories. Vision Beyond Events specializes in luxury marriages, haldi ceremonies, birthday parties, and corporate events across India.",
   keywords: ["Event Planner", "Indian Weddings", "Luxury Events", "Birthday Organizers", "Event Management", "Haldi Ceremony", "Dandiya Nights"],
@@ -55,6 +56,9 @@ export default function RootLayout({
       lang="en"
       className={`${montserrat.variable} ${playfairDisplay.variable} h-full antialiased`}
     >
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

@@ -18,7 +18,7 @@ export async function POST(req: Request) {
 
     const mailOptions = {
       from: '"Vision Beyond Events" <noreply@visionbeyondevents.com>',
-      to: 'contact@visionbeyondevents.com', // Where you want to receive these emails
+      to: process.env.CONTACT_RECEIVER_EMAIL || 'contact@visionbeyondevents.com', // Where you want to receive these emails
       subject: type === 'newsletter' ? `New Newsletter Signup: ${email}` : `New Inquiry from ${name}`,
       text: type === 'newsletter' 
         ? `New subscriber: ${email}`
