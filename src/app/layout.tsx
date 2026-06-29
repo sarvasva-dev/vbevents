@@ -13,7 +13,7 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://visionbeyondevents.com'),
+  metadataBase: new URL('https://vbevents.vercel.app'),
   title: "Vision Beyond Events | Premium Event Management",
   description: "Crafting Experiences. Creating Memories. Vision Beyond Events specializes in luxury marriages, haldi ceremonies, birthday parties, and corporate events across India.",
   keywords: ["Event Planner", "Indian Weddings", "Luxury Events", "Birthday Organizers", "Event Management", "Haldi Ceremony", "Dandiya Nights"],
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Vision Beyond Events | Premium Event Management",
     description: "Crafting Experiences. Creating Memories. Book us for your next luxury event.",
-    url: "https://visionbeyondevents.com",
+    url: "https://vbevents.vercel.app",
     siteName: "Vision Beyond Events",
     images: [
       {
