@@ -9,7 +9,7 @@ export default function Website4() {
 {/**/}
 <header className="bg-surface/60 backdrop-blur-xl text-primary font-headline-sm text-headline-sm-mobile fixed top-0 w-full z-50 border-b border-white/10 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] flex justify-between items-center px-margin-mobile h-16">
 <button className="text-primary hover:text-primary transition-colors active:scale-95 duration-200">
-<span className="material-symbols-outlined" style={{"fontVariationSettings":"'FILL' 1"}}>menu</span>
+<div className="relative w-full aspect-video mb-4 overflow-hidden rounded-md"><Image src="/gallery/birthday_IMG_20250710_182149.jpg.jpeg" alt="Birthdays" fill className="object-cover" /></div>
 </button>
 <span className="font-display-lg-mobile text-headline-sm-mobile tracking-widest text-primary">VISION BEYOND</span>
 <button className="text-primary hover:text-primary transition-colors active:scale-95 duration-200 w-8 h-8 rounded-full overflow-hidden border border-white/20">
@@ -34,7 +34,7 @@ export default function Website4() {
 {/**/}
 <div className="glass-card rounded-xl p-6 transition-all duration-300">
 <div className="flex items-center mb-4">
-<span className="material-symbols-outlined text-3xl text-primary mr-4" style={{"fontVariationSettings":"'FILL' 1"}}>cake</span>
+<div className="relative w-full aspect-video mb-4 overflow-hidden rounded-md"><Image src="/images/ai_marriages.png" alt="Marriages" fill className="object-cover" /></div>
 <h3 className="font-headline-sm text-headline-sm-mobile text-on-surface">Birthdays</h3>
 </div>
 <p className="font-body-md text-body-md text-on-surface-variant">Bespoke celebrations tailored to individual milestones, executed with flawless precision.</p>
@@ -119,19 +119,19 @@ export default function Website4() {
 </main>
 {/**/}
 <nav className="bg-surface-container-lowest/80 backdrop-blur-2xl text-primary font-label-caps text-label-caps font-headline-sm text-primary fixed bottom-0 w-full z-50 rounded-t-full border-t border-white/5 shadow-[0_-10px_30px_rgba(0,0,0,0.5)] transition-all cubic-bezier(0.4,0,0.2,1) flex justify-around items-center h-20 pb-2">
-<a className="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-1" href="#">
+<a className="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-1" href="/">
 <span className="material-symbols-outlined mb-1 text-[24px]">home</span>
 <span>Home</span>
 </a>
-<a className="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#">
+<a className="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="/">
 <span className="material-symbols-outlined mb-1 text-[24px]">event_note</span>
 <span>Events</span>
 </a>
-<a className="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#">
+<a className="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="/">
 <span className="material-symbols-outlined mb-1 text-[24px]">auto_awesome_motion</span>
 <span>Gallery</span>
 </a>
-<a className="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#">
+<a className="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="/">
 <span className="material-symbols-outlined mb-1 text-[24px]">mail</span>
 <span>Contact</span>
 </a>
@@ -139,9 +139,9 @@ export default function Website4() {
 {/**/}
 <footer className="bg-surface-dim text-tertiary font-body-md text-label-caps font-headline-md text-on-surface w-full border-t border-outline-variant/20 transition-opacity duration-300 flex flex-col items-center py-12 px-margin-mobile space-y-6 pb-32">
 <div className="flex space-x-6 text-secondary">
-<a className="hover:text-primary-fixed transition-colors" href="#">Privacy</a>
-<a className="hover:text-primary-fixed transition-colors" href="#">Terms</a>
-<a className="hover:text-primary-fixed transition-colors" href="#">Membership</a>
+<a className="hover:text-primary-fixed transition-colors" href="/">Privacy</a>
+<a className="hover:text-primary-fixed transition-colors" href="/">Terms</a>
+<a className="hover:text-primary-fixed transition-colors" href="/">Membership</a>
 </div>
 <p className="text-secondary text-center text-[10px] tracking-widest uppercase">© 2024 VISION BEYOND EVENTS. ALL RIGHTS RESERVED.</p>
 </footer>

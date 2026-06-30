@@ -8,14 +8,12 @@ export default function Website2() {
       
 {/**/}
 <nav className="bg-surface/80 dark:bg-on-background/80 backdrop-blur-md fixed top-0 w-full z-50 bg-transparent flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<div className="font-headline-sm text-headline-sm text-primary dark:text-primary-fixed">
-            Vision Beyond Events
-        </div>
+<div className="flex items-center gap-2"><Image src="/images/vb_logo.png" alt="Vision Beyond Events Logo" width={48} height={48} className="h-12 w-auto object-contain rounded-full" /></div>
 <div className="hidden md:flex gap-gutter">
-<a className="font-label-md text-label-md uppercase tracking-widest text-primary dark:text-primary-fixed border-b border-secondary cursor-pointer transition-all hover:text-secondary transition-colors duration-300" href="#">Home</a>
-<a className="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant dark:text-on-primary-fixed-variant cursor-pointer transition-all hover:text-secondary transition-colors duration-300" href="#">Services</a>
-<a className="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant dark:text-on-primary-fixed-variant cursor-pointer transition-all hover:text-secondary transition-colors duration-300" href="#">Gallery</a>
-<a className="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant dark:text-on-primary-fixed-variant cursor-pointer transition-all hover:text-secondary transition-colors duration-300" href="#">Contact</a>
+<a className="font-label-md text-label-md uppercase tracking-widest text-primary dark:text-primary-fixed border-b border-secondary cursor-pointer transition-all hover:text-secondary transition-colors duration-300" href="/">Home</a>
+<a className="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant dark:text-on-primary-fixed-variant cursor-pointer transition-all hover:text-secondary transition-colors duration-300" href="/">Services</a>
+<a className="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant dark:text-on-primary-fixed-variant cursor-pointer transition-all hover:text-secondary transition-colors duration-300" href="/">Gallery</a>
+<a className="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant dark:text-on-primary-fixed-variant cursor-pointer transition-all hover:text-secondary transition-colors duration-300" href="/">Contact</a>
 </div>
 <div>
 <button className="bg-primary text-on-primary font-button text-button uppercase px-6 py-3 rounded-DEFAULT hover:opacity-90 transition-opacity">
@@ -56,19 +54,19 @@ export default function Website2() {
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
 {/**/}
 <div className="bg-surface-container-lowest p-8 shadow-ambient border border-surface-variant transition-transform hover:-translate-y-1 duration-300">
-<span className="material-symbols-outlined text-4xl text-secondary mb-6 block" style={{"fontVariationSettings":"'FILL' 0"}}>cake</span>
+<div className="relative w-full aspect-video mb-4 overflow-hidden rounded-md"><Image src="/gallery/birthday_IMG_20250710_182149.jpg.jpeg" alt="Birthdays" fill className="object-cover" /></div>
 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Birthdays</h3>
 <p className="font-body-md text-body-md text-on-surface-variant">Milestone celebrations designed with meticulous attention to detail and personalized themes.</p>
 </div>
 {/**/}
 <div className="bg-surface-container-lowest p-8 shadow-ambient border border-surface-variant transition-transform hover:-translate-y-1 duration-300">
-<span className="material-symbols-outlined text-4xl text-secondary mb-6 block" style={{"fontVariationSettings":"'FILL' 0"}}>favorite</span>
+<div className="relative w-full aspect-video mb-4 overflow-hidden rounded-md"><Image src="/images/ai_marriages.png" alt="Marriages" fill className="object-cover" /></div>
 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Marriages</h3>
 <p className="font-body-md text-body-md text-on-surface-variant">Elegant weddings that reflect your unique love story, planned seamlessly from start to finish.</p>
 </div>
 {/**/}
 <div className="bg-surface-container-lowest p-8 shadow-ambient border border-surface-variant transition-transform hover:-translate-y-1 duration-300">
-<span className="material-symbols-outlined text-4xl text-secondary mb-6 block" style={{"fontVariationSettings":"'FILL' 0"}}>celebration</span>
+<div className="relative w-full aspect-video mb-4 overflow-hidden rounded-md"><Image src="/images/corporate_event.png" alt="Corporate Events" fill className="object-cover" /></div>
 <h3 className="font-headline-sm text-headline-sm text-primary mb-3">Haldi &amp; Mehndi</h3>
 <p className="font-body-md text-body-md text-on-surface-variant">Vibrant pre-wedding ceremonies filled with color, joy, and traditional elegance.</p>
 </div>
@@ -147,9 +145,9 @@ export default function Website2() {
                 Vision Beyond Events
             </div>
 <div className="flex gap-6">
-<a className="font-body-md text-body-md text-on-surface-variant transition-opacity hover:opacity-80 hover:text-secondary" href="#">Privacy Policy</a>
-<a className="font-body-md text-body-md text-on-surface-variant transition-opacity hover:opacity-80 hover:text-secondary" href="#">Terms of Service</a>
-<a className="font-body-md text-body-md text-on-surface-variant transition-opacity hover:opacity-80 hover:text-secondary" href="#">Press Kit</a>
+<a className="font-body-md text-body-md text-on-surface-variant transition-opacity hover:opacity-80 hover:text-secondary" href="/">Privacy Policy</a>
+<a className="font-body-md text-body-md text-on-surface-variant transition-opacity hover:opacity-80 hover:text-secondary" href="/">Terms of Service</a>
+<a className="font-body-md text-body-md text-on-surface-variant transition-opacity hover:opacity-80 hover:text-secondary" href="/">Press Kit</a>
 </div>
 </div>
 <div className="text-center mt-8 pt-8 border-t border-outline-variant/30">

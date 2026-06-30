@@ -10,9 +10,9 @@ export default function Website3() {
 <header className="hidden md:flex justify-between items-center w-full px-margin-desktop py-4 max-w-[1440px] mx-auto bg-primary dark:bg-primary text-tertiary-fixed dark:text-tertiary-fixed-dim font-headline-md text-headline-md docked full-width top-0 border-b-2 border-tertiary-container shadow-md">
 <div className="font-headline-md text-headline-md font-bold text-tertiary-fixed">Vision Beyond Events</div>
 <nav className="flex gap-4">
-<a className="text-tertiary-fixed border-b-2 border-tertiary-fixed pb-1 font-label-md text-label-md" href="#">Services</a>
-<a className="text-on-primary-container font-label-md hover:text-tertiary-fixed-dim transition-colors duration-300" href="#">Gallery</a>
-<a className="text-on-primary-container font-label-md hover:text-tertiary-fixed-dim transition-colors duration-300" href="#">Contact</a>
+<a className="text-tertiary-fixed border-b-2 border-tertiary-fixed pb-1 font-label-md text-label-md" href="/">Services</a>
+<a className="text-on-primary-container font-label-md hover:text-tertiary-fixed-dim transition-colors duration-300" href="/">Gallery</a>
+<a className="text-on-primary-container font-label-md hover:text-tertiary-fixed-dim transition-colors duration-300" href="/">Contact</a>
 </nav>
 <button className="bg-tertiary text-on-tertiary px-4 py-2 rounded-lg font-label-md text-label-md hover:opacity-90">Inquire Now</button>
 </header>
@@ -34,7 +34,7 @@ export default function Website3() {
 </section>
 {/**/}
 <div className="w-full flex justify-center py-lg bg-background">
-<span className="material-symbols-outlined text-tertiary-fixed text-4xl" data-icon="auto_awesome" data-weight="fill" style={{"fontVariationSettings":"'FILL' 1"}}>auto_awesome</span>
+<div className="relative w-full aspect-video mb-4 overflow-hidden rounded-md"><Image src="/gallery/birthday_IMG_20250710_182149.jpg.jpeg" alt="Birthdays" fill className="object-cover" /></div>
 </div>
 {/**/}
 <section className="px-margin-mobile py-lg max-w-7xl mx-auto">
@@ -46,7 +46,7 @@ export default function Website3() {
 {/**/}
 <div className="bg-surface rounded-xl p-6 gold-border shadow-md flex flex-col items-center text-center relative overflow-hidden group">
 <div className="w-16 h-16 rounded-full bg-primary-container text-tertiary-fixed flex items-center justify-center mb-4 z-10 group-hover:scale-110 transition-transform duration-300">
-<span className="material-symbols-outlined text-3xl" data-icon="cake">cake</span>
+<div className="relative w-full aspect-video mb-4 overflow-hidden rounded-md"><Image src="/images/ai_marriages.png" alt="Marriages" fill className="object-cover" /></div>
 </div>
 <h3 className="font-headline-md text-headline-md text-on-surface z-10">Birthdays</h3>
 <p className="font-body-md text-body-md text-on-surface-variant mt-2 z-10">Joyous milestones celebrated with grandeur.</p>
@@ -56,7 +56,7 @@ export default function Website3() {
 {/**/}
 <div className="bg-surface rounded-xl p-6 gold-border shadow-md flex flex-col items-center text-center relative overflow-hidden group">
 <div className="w-16 h-16 rounded-full bg-primary-container text-tertiary-fixed flex items-center justify-center mb-4 z-10 group-hover:scale-110 transition-transform duration-300">
-<span className="material-symbols-outlined text-3xl" data-icon="favorite">favorite</span>
+<div className="relative w-full aspect-video mb-4 overflow-hidden rounded-md"><Image src="/gallery/haldi_ChatGPT Image Jun 22, 2026, 07_38_25 PM.png" alt="Haldi" fill className="object-cover" /></div>
 </div>
 <h3 className="font-headline-md text-headline-md text-on-surface z-10">Marriages</h3>
 <p className="font-body-md text-body-md text-on-surface-variant mt-2 z-10">Royal unions crafted with meticulous heritage.</p>
@@ -65,7 +65,7 @@ export default function Website3() {
 {/**/}
 <div className="bg-surface rounded-xl p-6 gold-border shadow-md flex flex-col items-center text-center relative overflow-hidden group">
 <div className="w-16 h-16 rounded-full bg-primary-container text-tertiary-fixed flex items-center justify-center mb-4 z-10 group-hover:scale-110 transition-transform duration-300">
-<span className="material-symbols-outlined text-3xl" data-icon="spa">spa</span>
+<div className="relative w-full aspect-video mb-4 overflow-hidden rounded-md"><Image src="/images/ai_dandiya.png" alt="Dandiya" fill className="object-cover" /></div>
 </div>
 <h3 className="font-headline-md text-headline-md text-on-surface z-10">Haldi</h3>
 <p className="font-body-md text-body-md text-on-surface-variant mt-2 z-10">Vibrant pre-wedding rituals filled with color.</p>
@@ -73,7 +73,7 @@ export default function Website3() {
 {/**/}
 <div className="bg-surface rounded-xl p-6 gold-border shadow-md flex flex-col items-center text-center relative overflow-hidden group">
 <div className="w-16 h-16 rounded-full bg-primary-container text-tertiary-fixed flex items-center justify-center mb-4 z-10 group-hover:scale-110 transition-transform duration-300">
-<span className="material-symbols-outlined text-3xl" data-icon="celebration">celebration</span>
+<div className="relative w-full aspect-video mb-4 overflow-hidden rounded-md"><Image src="/images/corporate_event.png" alt="Corporate Events" fill className="object-cover" /></div>
 </div>
 <h3 className="font-headline-md text-headline-md text-on-surface z-10">Dandiya</h3>
 <p className="font-body-md text-body-md text-on-surface-variant mt-2 z-10">Energetic festive nights of dance and devotion.</p>
@@ -81,7 +81,7 @@ export default function Website3() {
 {/**/}
 <div className="bg-surface rounded-xl p-6 gold-border shadow-md flex flex-col items-center text-center relative overflow-hidden group">
 <div className="w-16 h-16 rounded-full bg-primary-container text-tertiary-fixed flex items-center justify-center mb-4 z-10 group-hover:scale-110 transition-transform duration-300">
-<span className="material-symbols-outlined text-3xl" data-icon="business_center">business_center</span>
+<div className="relative w-full aspect-video mb-4 overflow-hidden rounded-md"><Image src="/images/festival_devotional.png" alt="Devotional Events" fill className="object-cover" /></div>
 </div>
 <h3 className="font-headline-md text-headline-md text-on-surface z-10">Corporate Events</h3>
 <p className="font-body-md text-body-md text-on-surface-variant mt-2 z-10">Professional gatherings with a touch of elegance.</p>
@@ -143,10 +143,10 @@ export default function Website3() {
             Vision Beyond Events
         </div>
 <nav className="flex flex-wrap justify-center gap-4 md:gap-8 mb-4 md:mb-0 font-label-md text-label-md text-on-primary-container">
-<a className="hover:text-tertiary-fixed transition-colors" href="#">Privacy Policy</a>
-<a className="hover:text-tertiary-fixed transition-colors" href="#">Terms of Service</a>
-<a className="hover:text-tertiary-fixed transition-colors" href="#">Newsletter</a>
-<a className="hover:text-tertiary-fixed transition-colors" href="#">Social Links</a>
+<a className="hover:text-tertiary-fixed transition-colors" href="/">Privacy Policy</a>
+<a className="hover:text-tertiary-fixed transition-colors" href="/">Terms of Service</a>
+<a className="hover:text-tertiary-fixed transition-colors" href="/">Newsletter</a>
+<a className="hover:text-tertiary-fixed transition-colors" href="/">Social Links</a>
 </nav>
 <div className="font-body-md text-body-md text-on-primary-container text-center md:text-right">
             © 2024 Vision Beyond Events. Crafted with Tradition.
