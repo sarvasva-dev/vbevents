@@ -25,7 +25,8 @@ export default function GalleryPage() {
     'Birthdays': mediaFiles.filter(f => f.startsWith('birthday_')),
     'House Warming (Griha Pravesh)': mediaFiles.filter(f => f.startsWith('house_warming_') && !f.startsWith('baby_ceremony_house_warming_')),
     'Baby Ceremonies': mediaFiles.filter(f => f.startsWith('baby_ceremony_house_warming_')),
-    'Dandiya Nights': mediaFiles.filter(f => f.startsWith('dandiya_'))
+    'Dandiya Nights': mediaFiles.filter(f => f.startsWith('dandiya_')),
+    'Corporate Events': mediaFiles.filter(f => f.startsWith('corporate_'))
   };
 
   return (

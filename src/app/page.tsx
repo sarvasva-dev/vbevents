@@ -179,6 +179,15 @@ export default function Home() {
 <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">House Warming</h3>
 </div>
 </div>
+{/* Corporate Events */}
+<div className="group relative bg-[#121212] ghost-border overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2">
+<div className="aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/3] h-full w-full overflow-hidden relative">
+<Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Corporate Events" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/corporate_event.png"/>
+</div>
+<div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
+<h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Corporate Events</h3>
+</div>
+</div>
 </div>
 </section>
 {/*  */}
