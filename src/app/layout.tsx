@@ -16,14 +16,14 @@ const playfairDisplay = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://visionbeyondevents.com'),
-  title: "Vision Beyond Events | Premium Event Management",
-  description: "Crafting Experiences. Creating Memories. Vision Beyond Events specializes in luxury marriages, haldi ceremonies, birthday parties, and corporate events across India.",
-  keywords: ["Event Planner", "Indian Weddings", "Luxury Events", "Birthday Organizers", "Event Management", "Haldi Ceremony", "Dandiya Nights"],
+  title: "Vision Beyond Events | Luxury Wedding Planners & Corporate Event Management India",
+  description: "Vision Beyond Events operates at the intersection of design, logistics, and discretion. The premier luxury destination wedding planner and corporate offsite organizers in India.",
+  keywords: ["Luxury Wedding Planner India", "Corporate Event Organizers", "Destination Wedding Udaipur", "Premium Event Management", "Experiential Marketing Agency", "Event Production India"],
   authors: [{ name: "Vision Beyond Events" }],
   creator: "Vision Beyond Events",
   openGraph: {
-    title: "Vision Beyond Events | Premium Event Management",
-    description: "Crafting Experiences. Creating Memories. Book us for your next luxury event.",
+    title: "Vision Beyond Events | Luxury Wedding Planners India",
+    description: "Private Celebrations. Global Experiences. Executed Beyond Expectation.",
     url: "https://visionbeyondevents.com",
     siteName: "Vision Beyond Events",
     images: [
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vision Beyond Events | Premium Event Management",
-    description: "Crafting Experiences. Creating Memories. Book us for your next luxury event.",
+    title: "Vision Beyond Events | Luxury Wedding Planners India",
+    description: "Private Celebrations. Global Experiences. Executed Beyond Expectation.",
     images: ["/images/vb_logo.png"],
   },
   robots: {
@@ -55,17 +55,31 @@ export default function RootLayout({
 }>) {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "EventOrganization",
+    "@type": "ProfessionalService",
     "name": "Vision Beyond Events",
     "url": "https://visionbeyondevents.com",
     "logo": "https://visionbeyondevents.com/images/vb_logo.png",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+91-80818-08902",
-      "contactType": "customer service",
-      "areaServed": "IN",
-      "availableLanguage": "English"
-    },
+    "description": "Luxury destination wedding planner and corporate event management agency in India.",
+    "areaServed": [
+      {
+        "@type": "Country",
+        "name": "India"
+      },
+      {
+        "@type": "City",
+        "name": "Udaipur"
+      },
+      {
+        "@type": "City",
+        "name": "Mumbai"
+      },
+      {
+        "@type": "City",
+        "name": "Delhi"
+      }
+    ],
+    "telephone": "+91-80818-08902",
+    "priceRange": "$$$$",
     "sameAs": [
       "https://instagram.com/visionbeyondevents"
     ]

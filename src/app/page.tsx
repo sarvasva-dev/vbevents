@@ -8,6 +8,7 @@ import Testimonials from '@/components/Testimonials';
 import AnimatedBackground from '@/components/AnimatedBackground';
 import TextReveal from '@/components/TextReveal';
 import InfiniteMarquee from '@/components/InfiniteMarquee';
+import AuthoritySection from '@/components/AuthoritySection';
 
 export default function Home() {
   return (
@@ -20,16 +21,16 @@ export default function Home() {
         <FadeIn className="relative z-10 flex flex-col items-center justify-center text-center px-6 w-full max-w-container-max mx-auto pt-20">
           <div className="w-12 h-[1px] bg-[#f2ca50]/60 mb-8"></div>
           <TextReveal 
-            text="Vision Beyond Events" 
+            text="Private Celebrations. Global Experiences." 
             className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface mb-6 drop-shadow-2xl max-w-4xl leading-tight"
             el="h1"
           />
           <p className="font-body-lg text-body-lg text-on-surface-variant/90 mb-12 max-w-lg mx-auto tracking-widest opacity-80 uppercase">
-            Crafting Experiences. Creating Memories.
+            Executed Beyond Expectation.
           </p>
           <Link className="gold-gradient-bg text-[#121212] font-body-md text-label-lg uppercase tracking-widest px-10 py-5 rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.3)] hover:shadow-[0_8px_30px_rgba(212,175,55,0.5)] transform hover:-translate-y-1 transition-all duration-300 border border-primary/50 relative overflow-hidden group" href="/#contact">
             <span className="relative z-10 flex items-center gap-2">
-              Inquire Now
+              Request Private Consultation
               <span className="material-symbols-outlined text-[18px]">arrow_right_alt</span>
             </span>
             <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out rounded-full"></div>
@@ -41,15 +42,18 @@ export default function Home() {
         </div>
       </main>
 
-      <InfiniteMarquee text="Luxury Weddings • Corporate Galas • Bespoke Design • Masterful Execution" />
+      <InfiniteMarquee text="Luxury Destination Weddings • Executive Retreats • Brand Activations • Private Commissions" />
 
       {/* About Section */}
       <AboutSection />
 
+      {/* Trust & Authority Section */}
+      <AuthoritySection />
+
       {/* Services Section */}
       <section className="py-[120px] md:py-[160px] px-6 md:px-20 w-full max-w-[1440px] mx-auto" id="services">
         <FadeIn className="text-center mb-20">
-          <h2 className="font-headline-lg text-headline-lg text-primary mb-4 tracking-tighter">Exquisite Services</h2>
+          <h2 className="font-headline-lg text-headline-lg text-primary mb-4 tracking-tighter">Capabilities & Curation</h2>
           <div className="w-24 h-px bg-primary/30 mx-auto"></div>
         </FadeIn>
         
@@ -59,7 +63,7 @@ export default function Home() {
               <Image fill sizes="(max-width: 768px) 100vw, 66vw" alt="Luxury Birthday Party Planning by Vision Beyond Events" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/gallery/birthday_IMG_20250710_182149.jpg.jpeg"/>
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
-              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Birthdays</h3>
+              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Private Commissions</h3>
             </div>
           </div>
           
@@ -68,7 +72,7 @@ export default function Home() {
               <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Luxury Indian Wedding and Marriage Planning" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/ai_marriages.png"/>
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
-              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Marriages</h3>
+              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Destination Weddings</h3>
             </div>
           </div>
           
@@ -77,7 +81,7 @@ export default function Home() {
               <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Vibrant Haldi Ceremony Setup" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/gallery/haldi_ChatGPT Image Jun 22, 2026, 07_38_25 PM.png"/>
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
-              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Haldi</h3>
+              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Pre-Wedding Experiences</h3>
             </div>
           </div>
           
@@ -86,7 +90,7 @@ export default function Home() {
               <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Dandiya Nights Event Organizer" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/ai_dandiya.png"/>
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
-              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Dandiya</h3>
+              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Cultural Milestones</h3>
             </div>
           </div>
           
@@ -95,7 +99,7 @@ export default function Home() {
               <Image fill sizes="(max-width: 768px) 100vw, 66vw" alt="House Warming and Griha Pravesh Event Decor" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%] object-center" src="/images/housewarming.jpeg"/>
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
-              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">House Warming</h3>
+              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Spatial Curation</h3>
             </div>
           </div>
           
@@ -104,7 +108,7 @@ export default function Home() {
               <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Corporate and School Event Organizer" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/corporate_event.png"/>
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
-              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Corporate & School Events</h3>
+              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Corporate Retreats</h3>
             </div>
           </div>
           
@@ -113,7 +117,7 @@ export default function Home() {
               <Image fill sizes="100vw" alt="Festival and Devotional Event Planning" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/festival_devotional.png"/>
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
-              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Festival & Devotional Events</h3>
+              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Brand Activations</h3>
             </div>
           </div>
         </FadeIn>
