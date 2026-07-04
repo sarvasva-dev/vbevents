@@ -1,6 +1,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Website3() {
   return (
@@ -10,9 +11,9 @@ export default function Website3() {
 <header className="hidden md:flex justify-between items-center w-full px-margin-desktop py-4 max-w-[1440px] mx-auto bg-primary dark:bg-primary text-tertiary-fixed dark:text-tertiary-fixed-dim font-headline-md text-headline-md docked full-width top-0 border-b-2 border-tertiary-container shadow-md">
 <div className="font-headline-md text-headline-md font-bold text-tertiary-fixed">Vision Beyond Events</div>
 <nav className="flex gap-4">
-<a className="text-tertiary-fixed border-b-2 border-tertiary-fixed pb-1 font-label-md text-label-md" href="/">Services</a>
-<a className="text-on-primary-container font-label-md hover:text-tertiary-fixed-dim transition-colors duration-300" href="/">Gallery</a>
-<a className="text-on-primary-container font-label-md hover:text-tertiary-fixed-dim transition-colors duration-300" href="/">Contact</a>
+<Link className="text-tertiary-fixed border-b-2 border-tertiary-fixed pb-1 font-label-md text-label-md" href="/">Services</Link>
+<Link className="text-on-primary-container font-label-md hover:text-tertiary-fixed-dim transition-colors duration-300" href="/">Gallery</Link>
+<Link className="text-on-primary-container font-label-md hover:text-tertiary-fixed-dim transition-colors duration-300" href="/">Contact</Link>
 </nav>
 <button className="bg-tertiary text-on-tertiary px-4 py-2 rounded-lg font-label-md text-label-md hover:opacity-90">Inquire Now</button>
 </header>
@@ -143,10 +144,10 @@ export default function Website3() {
             Vision Beyond Events
         </div>
 <nav className="flex flex-wrap justify-center gap-4 md:gap-8 mb-4 md:mb-0 font-label-md text-label-md text-on-primary-container">
-<a className="hover:text-tertiary-fixed transition-colors" href="/">Privacy Policy</a>
-<a className="hover:text-tertiary-fixed transition-colors" href="/">Terms of Service</a>
-<a className="hover:text-tertiary-fixed transition-colors" href="/">Newsletter</a>
-<a className="hover:text-tertiary-fixed transition-colors" href="/">Social Links</a>
+<Link className="hover:text-tertiary-fixed transition-colors" href="/">Privacy Policy</Link>
+<Link className="hover:text-tertiary-fixed transition-colors" href="/">Terms of Service</Link>
+<Link className="hover:text-tertiary-fixed transition-colors" href="/">Newsletter</Link>
+<Link className="hover:text-tertiary-fixed transition-colors" href="/">Social Links</Link>
 </nav>
 <div className="font-body-md text-body-md text-on-primary-container text-center md:text-right">
             © 2024 Vision Beyond Events. Crafted with Tradition.

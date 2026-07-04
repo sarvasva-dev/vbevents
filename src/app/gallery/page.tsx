@@ -2,7 +2,10 @@ import fs from 'fs';
 import path from 'path';
 import { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import VideoPlayer from './VideoPlayer';
+
+export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
   title: "Event Gallery | Vision Beyond Events",
@@ -16,7 +19,7 @@ export default function GalleryPage() {
   
   if (fs.existsSync(galleryDir)) {
     mediaFiles = fs.readdirSync(galleryDir)
-      .filter(file => !file.startsWith('.') && file !== 'page.tsx' && !file.endsWith('.mp4.jpg')); // just in case
+      .filter(file => !file.startsWith('.') && file !== 'page.tsx' && !file.endsWith('.mp4.jpg')); 
   }
 
   const categories = {
@@ -34,18 +37,18 @@ export default function GalleryPage() {
     <>
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-primary/10">
         <div className="flex justify-between items-center px-6 md:px-20 py-6 w-full max-w-[1440px] mx-auto">
-          <a className="flex items-center gap-4 group" href="/">
+          <Link className="flex items-center gap-4 group" href="/">
             <Image width={48} height={48} priority alt="Vision Beyond Events Logo" className="w-12 h-12 object-contain rounded-lg opacity-90 group-hover:opacity-100 transition-opacity drop-shadow-2xl" src="/images/vb_logo.png" />
             <span className="hidden md:block font-headline-md text-headline-md text-primary tracking-tighter">Vision Beyond Events</span>
-          </a>
+          </Link>
           <div className="hidden md:flex items-center gap-8">
-            <a className="font-body-md text-label-lg uppercase tracking-widest text-on-background/70 hover:text-primary transition-colors duration-300" href="/#services">Services</a>
-            <a className="font-body-md text-label-lg uppercase tracking-widest text-on-background/70 hover:text-primary transition-colors duration-300" href="/gallery">Gallery</a>
-            <a className="font-body-md text-label-lg uppercase tracking-widest text-on-background/70 hover:text-primary transition-colors duration-300" href="/#contact">Contact</a>
+            <Link className="font-body-md text-label-lg uppercase tracking-widest text-on-background/70 hover:text-primary transition-colors duration-300" href="/#services">Services</Link>
+            <Link className="font-body-md text-label-lg uppercase tracking-widest text-on-background/70 hover:text-primary transition-colors duration-300" href="/gallery">Gallery</Link>
+            <Link className="font-body-md text-label-lg uppercase tracking-widest text-on-background/70 hover:text-primary transition-colors duration-300" href="/#contact">Contact</Link>
           </div>
-          <a className="gold-gradient-bg text-on-primary font-body-md text-label-lg uppercase tracking-widest px-8 py-4 rounded-none hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(0,0,0,0.5)]" href="/#contact">
+          <Link className="gold-gradient-bg text-on-primary font-body-md text-label-lg uppercase tracking-widest px-8 py-4 rounded-none hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(0,0,0,0.5)]" href="/#contact">
               Book Now
-          </a>
+          </Link>
         </div>
       </nav>
 
@@ -78,13 +81,15 @@ export default function GalleryPage() {
                       {isVideo ? (
                         <VideoPlayer file={file} />
                       ) : (
-                        <img 
-                          src={`/gallery/${file}`} 
-                          alt={`${categoryName} Photo ${i}`} 
-                          loading="lazy"
-                          decoding="async"
-                          className="w-full h-auto grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 object-cover"
-                        />
+                        <div className="relative w-full aspect-[3/4]">
+                          <Image 
+                            src={`/gallery/${file}`} 
+                            alt={`${categoryName} Photo ${i}`} 
+                            fill
+                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                            className="object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                          />
+                        </div>
                       )}
                     </div>
                   );
@@ -108,15 +113,15 @@ export default function GalleryPage() {
             <div className="font-body-md text-on-surface-variant flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
               <span>📞 +91 80818 08902</span>
               <span className="hidden sm:inline">|</span>
-              <a href="#" className="hover:text-primary transition-colors">Instagram (Coming Soon)</a>
+              <Link href="/" className="hover:text-primary transition-colors">Instagram (Coming Soon)</Link>
             </div>
           </div>
           <div className="flex gap-8">
-            <a className="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
-            <a className="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+            <Link className="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="/">Privacy Policy</Link>
+            <Link className="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="/">Terms of Service</Link>
           </div>
           <div className="font-body-md text-body-md text-on-surface-variant text-center lg:text-right">
-              © 2026 Vision Beyond Events.<br/>Crafting Memories Since 2024.
+              © {new Date().getFullYear()} Vision Beyond Events.<br/>Crafting Memories Since 2024.
           </div>
         </div>
       </footer>

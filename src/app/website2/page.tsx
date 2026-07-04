@@ -1,6 +1,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Website2() {
   return (
@@ -10,10 +11,10 @@ export default function Website2() {
 <nav className="bg-surface/80 dark:bg-on-background/80 backdrop-blur-md fixed top-0 w-full z-50 bg-transparent flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
 <div className="flex items-center gap-2"><Image src="/images/vb_logo.png" alt="Vision Beyond Events Logo" width={48} height={48} className="h-12 w-auto object-contain rounded-full" /></div>
 <div className="hidden md:flex gap-gutter">
-<a className="font-label-md text-label-md uppercase tracking-widest text-primary dark:text-primary-fixed border-b border-secondary cursor-pointer transition-all hover:text-secondary transition-colors duration-300" href="/">Home</a>
-<a className="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant dark:text-on-primary-fixed-variant cursor-pointer transition-all hover:text-secondary transition-colors duration-300" href="/">Services</a>
-<a className="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant dark:text-on-primary-fixed-variant cursor-pointer transition-all hover:text-secondary transition-colors duration-300" href="/">Gallery</a>
-<a className="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant dark:text-on-primary-fixed-variant cursor-pointer transition-all hover:text-secondary transition-colors duration-300" href="/">Contact</a>
+<Link className="font-label-md text-label-md uppercase tracking-widest text-primary dark:text-primary-fixed border-b border-secondary cursor-pointer transition-all hover:text-secondary transition-colors duration-300" href="/">Home</Link>
+<Link className="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant dark:text-on-primary-fixed-variant cursor-pointer transition-all hover:text-secondary transition-colors duration-300" href="/">Services</Link>
+<Link className="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant dark:text-on-primary-fixed-variant cursor-pointer transition-all hover:text-secondary transition-colors duration-300" href="/">Gallery</Link>
+<Link className="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant dark:text-on-primary-fixed-variant cursor-pointer transition-all hover:text-secondary transition-colors duration-300" href="/">Contact</Link>
 </div>
 <div>
 <button className="bg-primary text-on-primary font-button text-button uppercase px-6 py-3 rounded-DEFAULT hover:opacity-90 transition-opacity">
@@ -145,9 +146,9 @@ export default function Website2() {
                 Vision Beyond Events
             </div>
 <div className="flex gap-6">
-<a className="font-body-md text-body-md text-on-surface-variant transition-opacity hover:opacity-80 hover:text-secondary" href="/">Privacy Policy</a>
-<a className="font-body-md text-body-md text-on-surface-variant transition-opacity hover:opacity-80 hover:text-secondary" href="/">Terms of Service</a>
-<a className="font-body-md text-body-md text-on-surface-variant transition-opacity hover:opacity-80 hover:text-secondary" href="/">Press Kit</a>
+<Link className="font-body-md text-body-md text-on-surface-variant transition-opacity hover:opacity-80 hover:text-secondary" href="/">Privacy Policy</Link>
+<Link className="font-body-md text-body-md text-on-surface-variant transition-opacity hover:opacity-80 hover:text-secondary" href="/">Terms of Service</Link>
+<Link className="font-body-md text-body-md text-on-surface-variant transition-opacity hover:opacity-80 hover:text-secondary" href="/">Press Kit</Link>
 </div>
 </div>
 <div className="text-center mt-8 pt-8 border-t border-outline-variant/30">

@@ -13,7 +13,7 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://vbevents.vercel.app'),
+  metadataBase: new URL('https://visionbeyondevents.com'),
   title: "Vision Beyond Events | Premium Event Management",
   description: "Crafting Experiences. Creating Memories. Vision Beyond Events specializes in luxury marriages, haldi ceremonies, birthday parties, and corporate events across India.",
   keywords: ["Event Planner", "Indian Weddings", "Luxury Events", "Birthday Organizers", "Event Management", "Haldi Ceremony", "Dandiya Nights"],
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Vision Beyond Events | Premium Event Management",
     description: "Crafting Experiences. Creating Memories. Book us for your next luxury event.",
-    url: "https://vbevents.vercel.app",
+    url: "https://visionbeyondevents.com",
     siteName: "Vision Beyond Events",
     images: [
       {
@@ -51,6 +51,24 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "EventOrganization",
+    "name": "Vision Beyond Events",
+    "url": "https://visionbeyondevents.com",
+    "logo": "https://visionbeyondevents.com/images/vb_logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-80818-08902",
+      "contactType": "customer service",
+      "areaServed": "IN",
+      "availableLanguage": "English"
+    },
+    "sameAs": [
+      "https://instagram.com/visionbeyondevents"
+    ]
+  };
+
   return (
     <html
       lang="en"
@@ -58,6 +76,10 @@ export default function RootLayout({
     >
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

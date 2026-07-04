@@ -1,6 +1,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Website4() {
   return (
@@ -119,29 +120,29 @@ export default function Website4() {
 </main>
 {/**/}
 <nav className="bg-surface-container-lowest/80 backdrop-blur-2xl text-primary font-label-caps text-label-caps font-headline-sm text-primary fixed bottom-0 w-full z-50 rounded-t-full border-t border-white/5 shadow-[0_-10px_30px_rgba(0,0,0,0.5)] transition-all cubic-bezier(0.4,0,0.2,1) flex justify-around items-center h-20 pb-2">
-<a className="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-1" href="/">
+<Link className="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-1" href="/">
 <span className="material-symbols-outlined mb-1 text-[24px]">home</span>
 <span>Home</span>
-</a>
-<a className="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="/">
+</Link>
+<Link className="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="/">
 <span className="material-symbols-outlined mb-1 text-[24px]">event_note</span>
 <span>Events</span>
-</a>
-<a className="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="/">
+</Link>
+<Link className="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="/">
 <span className="material-symbols-outlined mb-1 text-[24px]">auto_awesome_motion</span>
 <span>Gallery</span>
-</a>
-<a className="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="/">
+</Link>
+<Link className="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="/">
 <span className="material-symbols-outlined mb-1 text-[24px]">mail</span>
 <span>Contact</span>
-</a>
+</Link>
 </nav>
 {/**/}
 <footer className="bg-surface-dim text-tertiary font-body-md text-label-caps font-headline-md text-on-surface w-full border-t border-outline-variant/20 transition-opacity duration-300 flex flex-col items-center py-12 px-margin-mobile space-y-6 pb-32">
 <div className="flex space-x-6 text-secondary">
-<a className="hover:text-primary-fixed transition-colors" href="/">Privacy</a>
-<a className="hover:text-primary-fixed transition-colors" href="/">Terms</a>
-<a className="hover:text-primary-fixed transition-colors" href="/">Membership</a>
+<Link className="hover:text-primary-fixed transition-colors" href="/">Privacy</Link>
+<Link className="hover:text-primary-fixed transition-colors" href="/">Terms</Link>
+<Link className="hover:text-primary-fixed transition-colors" href="/">Membership</Link>
 </div>
 <p className="text-secondary text-center text-[10px] tracking-widest uppercase">© 2024 VISION BEYOND EVENTS. ALL RIGHTS RESERVED.</p>
 </footer>
