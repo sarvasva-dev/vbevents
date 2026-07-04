@@ -1,4 +1,6 @@
 import { FadeIn } from "./FadeIn";
+import ParallaxImage from "@/components/ParallaxImage";
+import TextReveal from "@/components/TextReveal";
 import Image from "next/image";
 
 export default function AboutSection() {
@@ -8,22 +10,18 @@ export default function AboutSection() {
         
         {/* Images Column */}
         <div className="relative h-[600px] w-full hidden md:block">
-          <FadeIn className="absolute top-0 left-0 w-3/4 h-[80%] z-10">
-            <div className="relative w-full h-full ghost-border overflow-hidden">
-              <Image 
-                src="/images/corporate_event.png" 
-                alt="Corporate Event Setup" 
-                fill 
-                className="object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700" 
-              />
-            </div>
+          <FadeIn className="absolute top-0 left-0 w-3/4 h-[80%] z-10 rounded-tl-[100px] rounded-br-[100px] overflow-hidden">
+            <ParallaxImage 
+              src="/images/corporate_event.png" 
+              alt="Corporate Event Setup" 
+              className="object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700" 
+            />
           </FadeIn>
-          <FadeIn className="absolute bottom-0 right-0 w-2/3 h-[60%] z-20" /* delay can be added via CSS or motion props */>
+          <FadeIn className="absolute bottom-0 right-0 w-2/3 h-[60%] z-20">
             <div className="relative w-full h-full border-4 border-background shadow-2xl overflow-hidden">
-              <Image 
+              <ParallaxImage 
                 src="/gallery/haldi_ChatGPT Image Jun 22, 2026, 07_38_25 PM.png" 
                 alt="Haldi Setup" 
-                fill 
                 className="object-cover hover:scale-105 transition-transform duration-700" 
               />
             </div>
@@ -46,10 +44,11 @@ export default function AboutSection() {
         <div className="flex flex-col justify-center">
           <FadeIn>
             <h4 className="font-label-lg text-primary uppercase tracking-[0.3em] mb-4">Our Story</h4>
-            <h2 className="font-headline-lg text-headline-lg text-on-surface mb-8 tracking-tighter">
-              We Don't Just Plan Events.<br/>
-              <span className="text-on-surface-variant italic font-serif">We Curate Legacies.</span>
-            </h2>
+            <TextReveal 
+              text="We Don't Just Plan Events. We Curate Legacies."
+              className="font-headline-lg text-headline-lg text-on-surface mb-8 tracking-tighter"
+              el="h2"
+            />
             <div className="w-16 h-px bg-primary/50 mb-8"></div>
           </FadeIn>
           

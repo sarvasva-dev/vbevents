@@ -1,11 +1,24 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 export default function Navbar() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious() || 0;
+    // Hide navbar if scrolling down and past 150px. Show if scrolling up.
+    if (latest > previous && latest > 150) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  });
 
   return (
     <>
@@ -44,7 +57,15 @@ export default function Navbar() {
       </aside>
 
       {/* TopAppBar */}
-      <header className="fixed top-0 w-full z-50 glass-nav border-b border-primary/10 flex justify-between items-center px-6 md:px-20 py-4 transition-all duration-300 h-20">
+      <motion.header 
+        variants={{
+          visible: { y: 0 },
+          hidden: { y: "-100%" },
+        }}
+        animate={hidden ? "hidden" : "visible"}
+        transition={{ duration: 0.35, ease: "easeInOut" }}
+        className="fixed top-0 w-full z-50 glass-nav border-b border-primary/10 flex justify-between items-center px-6 md:px-20 py-4 h-20"
+      >
         <Link className="flex items-center gap-4 group" href="/">
           <Image width={48} height={48} priority alt="Vision Beyond Events Logo" className="h-12 w-auto object-contain drop-shadow-md rounded-full border border-primary/20 opacity-90 group-hover:opacity-100 transition-opacity" src="/images/vb_logo.png" />
           <span className="hidden md:block font-headline-md text-headline-md text-primary tracking-tighter">Vision Beyond Events</span>
@@ -62,7 +83,7 @@ export default function Navbar() {
             <line x1="3" y1="18" x2="21" y2="18"></line>
           </svg>
         </button>
-      </header>
+      </motion.header>
     </>
   );
 }

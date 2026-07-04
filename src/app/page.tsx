@@ -6,6 +6,8 @@ import { FadeIn } from '@/components/FadeIn';
 import AboutSection from '@/components/AboutSection';
 import Testimonials from '@/components/Testimonials';
 import AnimatedBackground from '@/components/AnimatedBackground';
+import TextReveal from '@/components/TextReveal';
+import InfiniteMarquee from '@/components/InfiniteMarquee';
 
 export default function Home() {
   return (
@@ -17,10 +19,11 @@ export default function Home() {
         <AnimatedBackground />
         <FadeIn className="relative z-10 flex flex-col items-center justify-center text-center px-6 w-full max-w-container-max mx-auto pt-20">
           <div className="w-12 h-[1px] bg-[#f2ca50]/60 mb-8"></div>
-          <h1 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface mb-6 drop-shadow-2xl max-w-4xl leading-tight">
-            Vision Beyond <br/>
-            <span className="gold-gradient-text italic font-serif">Events</span>
-          </h1>
+          <TextReveal 
+            text="Vision Beyond Events" 
+            className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface mb-6 drop-shadow-2xl max-w-4xl leading-tight"
+            el="h1"
+          />
           <p className="font-body-lg text-body-lg text-on-surface-variant/90 mb-12 max-w-lg mx-auto tracking-widest opacity-80 uppercase">
             Crafting Experiences. Creating Memories.
           </p>
@@ -37,6 +40,8 @@ export default function Home() {
           <div className="w-[1px] h-12 bg-gradient-to-b from-[#f2ca50] to-transparent"></div>
         </div>
       </main>
+
+      <InfiniteMarquee text="Luxury Weddings • Corporate Galas • Bespoke Design • Masterful Execution" />
 
       {/* About Section */}
       <AboutSection />
