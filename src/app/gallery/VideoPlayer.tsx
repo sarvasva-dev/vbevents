@@ -35,6 +35,8 @@ export default function VideoPlayer({ file }: { file: string }) {
       className="w-full h-auto cursor-pointer"
       onClick={togglePlay}
       onPlay={handlePlay}
-    ></video>
+    >
+      <track kind="captions" srcLang="en" label="English captions" />
+    </video>
   );
 }

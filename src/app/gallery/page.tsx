@@ -52,7 +52,7 @@ export default function GalleryPage() {
         </div>
       </nav>
 
-      <section className="pt-[140px] pb-20 px-6 md:px-20 w-full max-w-[1440px] mx-auto min-h-screen">
+      <main className="pt-[140px] pb-20 px-6 md:px-20 w-full max-w-[1440px] mx-auto min-h-screen">
         <div className="text-center mb-16">
           <h1 className="font-headline-lg text-headline-lg text-primary mb-4 tracking-tighter">Event Gallery</h1>
           <div className="w-24 h-px bg-primary/30 mx-auto mb-8"></div>
@@ -86,6 +86,7 @@ export default function GalleryPage() {
                             src={`/gallery/${file}`} 
                             alt={`${categoryName} Photo ${i}`} 
                             fill
+                            priority={i < 2}
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             className="object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                           />
@@ -104,7 +105,7 @@ export default function GalleryPage() {
             Gallery is currently updating... Please check back in a few minutes!
           </div>
         )}
-      </section>
+      </main>
 
       <footer className="w-full py-20 bg-surface-dim border-t border-primary/10">
         <div className="flex flex-col lg:flex-row justify-between items-center px-6 md:px-20 gap-8 w-full max-w-[1440px] mx-auto">
