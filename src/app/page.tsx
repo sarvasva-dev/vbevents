@@ -5,6 +5,7 @@ import { ContactSection } from '@/components/ContactSection';
 import { FadeIn } from '@/components/FadeIn';
 import AboutSection from '@/components/AboutSection';
 import Testimonials from '@/components/Testimonials';
+import AnimatedBackground from '@/components/AnimatedBackground';
 
 export default function Home() {
   return (
@@ -13,13 +14,7 @@ export default function Home() {
 
       {/* Main Hero Section */}
       <main className="relative h-[100dvh] w-full min-h-[600px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 w-full h-full z-0 bg-black">
-          <div className="absolute inset-0 scale-105 animate-[subtleZoom_20s_ease-in-out_infinite_alternate]">
-            <Image src="/images/sparkle_bg_ai.png" alt="Luxury Event" fill priority sizes="100vw" quality={90} className="object-cover object-center" />
-          </div>
-          <div className="absolute inset-0 hero-overlay"></div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] max-w-[600px] max-h-[600px] bg-[#d4af37]/10 rounded-full blur-[80px] pointer-events-none"></div>
-        </div>
+        <AnimatedBackground />
         <FadeIn className="relative z-10 flex flex-col items-center justify-center text-center px-6 w-full max-w-container-max mx-auto pt-20">
           <div className="w-12 h-[1px] bg-[#f2ca50]/60 mb-8"></div>
           <h1 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface mb-6 drop-shadow-2xl max-w-4xl leading-tight">

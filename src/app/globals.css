@@ -172,3 +172,26 @@ body {
     0% { transform: scale(1.05); }
     100% { transform: scale(1.1); }
 }
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    }
+    10% {
+        opacity: var(--tw-bg-opacity, 1);
+    }
+    90% {
+        opacity: var(--tw-bg-opacity, 1);
+    }
+    100% {
+        transform: translateY(-120vh) scale(1.5);
+        opacity: 0;
+    }
+}
+
+.bokeh-orb {
+    animation-name: floatUp;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
