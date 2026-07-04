@@ -23,10 +23,10 @@ export default function AuthoritySection() {
           <FadeIn>
             <h4 className="font-label-lg text-primary uppercase tracking-[0.3em] mb-6">Operational Shielding</h4>
             <h2 className="font-headline-lg text-headline-lg text-on-surface mb-8 tracking-tight">
-              From intimate destination weddings to grand corporate galas, we curate bespoke experiences across India.
+              From intimate traditional weddings to grand corporate galas, we curate bespoke experiences of every type and scale across India.
             </h2>
             <p className="font-body-md text-on-surface-variant max-w-2xl mx-auto text-lg leading-relaxed">
-              Whether it is a deeply private cultural ceremony or a large-scale brand event, navigating logistics requires precision. We provide end-to-end operational shielding anywhere in India, allowing you to focus entirely on the celebration.
+              Whether it is a deeply private cultural ceremony, a vibrant traditional function, or a large-scale brand event, navigating logistics requires precision. We provide end-to-end operational shielding anywhere in India, allowing you to focus entirely on the celebration.
             </p>
           </FadeIn>
         </div>
