@@ -24,14 +24,14 @@ export default function GalleryPage() {
   }
 
   const categories = {
-    'Destination Weddings': mediaFiles.filter(f => f.startsWith('marriages_')),
-    'Pre-Wedding Experiences': mediaFiles.filter(f => f.startsWith('haldi_')),
-    'Private Commissions': mediaFiles.filter(f => f.startsWith('birthday_')),
-    'Spatial Curation': mediaFiles.filter(f => f.startsWith('house_warming_') && !f.startsWith('baby_ceremony_house_warming_')),
+    'Marriages': mediaFiles.filter(f => f.startsWith('marriages_')),
+    'Haldi Ceremonies': mediaFiles.filter(f => f.startsWith('haldi_')),
+    'Birthdays': mediaFiles.filter(f => f.startsWith('birthday_')),
+    'House Warming (Griha Pravesh)': mediaFiles.filter(f => f.startsWith('house_warming_') && !f.startsWith('baby_ceremony_house_warming_')),
     'Baby Ceremonies': mediaFiles.filter(f => f.startsWith('baby_ceremony_house_warming_')),
-    'Cultural Milestones': mediaFiles.filter(f => f.startsWith('dandiya_')),
-    'Corporate Retreats': mediaFiles.filter(f => f.startsWith('corporate_')),
-    'Brand Activations': mediaFiles.filter(f => f.startsWith('festival_'))
+    'Dandiya Nights': mediaFiles.filter(f => f.startsWith('dandiya_')),
+    'Corporate & School Events': mediaFiles.filter(f => f.startsWith('corporate_')),
+    'Festival & Devotional Events': mediaFiles.filter(f => f.startsWith('festival_'))
   };
 
   return (

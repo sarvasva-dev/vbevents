@@ -63,7 +63,7 @@ export default function Home() {
               <Image fill sizes="(max-width: 768px) 100vw, 66vw" alt="Luxury Birthday Party Planning by Vision Beyond Events" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/gallery/birthday_IMG_20250710_182149.jpg.jpeg"/>
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
-              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Private Commissions</h3>
+              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Birthdays</h3>
             </div>
           </div>
           
@@ -72,7 +72,7 @@ export default function Home() {
               <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Luxury Indian Wedding and Marriage Planning" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/ai_marriages.png"/>
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
-              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Destination Weddings</h3>
+              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Marriages</h3>
             </div>
           </div>
           
@@ -81,7 +81,7 @@ export default function Home() {
               <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Vibrant Haldi Ceremony Setup" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/gallery/haldi_ChatGPT Image Jun 22, 2026, 07_38_25 PM.png"/>
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
-              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Pre-Wedding Experiences</h3>
+              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Haldi</h3>
             </div>
           </div>
           
@@ -90,7 +90,7 @@ export default function Home() {
               <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Dandiya Nights Event Organizer" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/ai_dandiya.png"/>
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
-              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Cultural Milestones</h3>
+              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Dandiya</h3>
             </div>
           </div>
           
@@ -99,7 +99,7 @@ export default function Home() {
               <Image fill sizes="(max-width: 768px) 100vw, 66vw" alt="House Warming and Griha Pravesh Event Decor" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%] object-center" src="/images/housewarming.jpeg"/>
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
-              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Spatial Curation</h3>
+              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">House Warming</h3>
             </div>
           </div>
           
@@ -108,7 +108,7 @@ export default function Home() {
               <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Corporate and School Event Organizer" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/corporate_event.png"/>
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
-              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Corporate Retreats</h3>
+              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Corporate & School Events</h3>
             </div>
           </div>
           
@@ -117,7 +117,7 @@ export default function Home() {
               <Image fill sizes="100vw" alt="Festival and Devotional Event Planning" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/festival_devotional.png"/>
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
-              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Brand Activations</h3>
+              <h3 className="font-headline-md text-headline-md text-primary group-hover:text-primary-fixed transition-colors">Festival & Devotional Events</h3>
             </div>
           </div>
         </FadeIn>
