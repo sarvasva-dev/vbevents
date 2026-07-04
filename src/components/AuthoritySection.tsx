@@ -23,10 +23,10 @@ export default function AuthoritySection() {
           <FadeIn>
             <h4 className="font-label-lg text-primary uppercase tracking-[0.3em] mb-6">Operational Shielding</h4>
             <h2 className="font-headline-lg text-headline-lg text-on-surface mb-8 tracking-tight">
-              We do not plan events. We architect experiences at a scale most cannot execute.
+              From intimate destination weddings to grand corporate galas, we curate bespoke experiences across India.
             </h2>
             <p className="font-body-md text-on-surface-variant max-w-2xl mx-auto text-lg leading-relaxed">
-              Navigating multi-jurisdiction permits, heritage venue regulations, and high-profile security protocols requires precision. We provide absolute operational shielding, allowing distinguished families and corporate leaders to focus entirely on the celebration.
+              Whether it is a deeply private cultural ceremony or a large-scale brand event, navigating logistics requires precision. We provide end-to-end operational shielding anywhere in India, allowing you to focus entirely on the celebration.
             </p>
           </FadeIn>
         </div>
