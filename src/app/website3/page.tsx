@@ -1,7 +1,14 @@
 
 import React from 'react';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+
+
+export const metadata: Metadata = {
+  title: "Vision Beyond Events | Concept: Vibrant Traditional",
+  description: "Preview of Concept: Vibrant Traditional design for Vision Beyond Events.",
+};
 
 export default function Website3() {
   return (

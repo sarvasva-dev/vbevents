@@ -1,7 +1,14 @@
 
 import React from 'react';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+
+
+export const metadata: Metadata = {
+  title: "Vision Beyond Events | Concept: Ultra-Modern Minimal",
+  description: "Preview of Concept: Ultra-Modern Minimal design for Vision Beyond Events.",
+};
 
 export default function Website4() {
   return (
