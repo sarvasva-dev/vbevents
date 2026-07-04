@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import { ContactSection } from '@/components/ContactSection';
 import { FadeIn } from '@/components/FadeIn';
+import AboutSection from '@/components/AboutSection';
+import Testimonials from '@/components/Testimonials';
 
 export default function Home() {
   return (
@@ -40,6 +42,9 @@ export default function Home() {
           <div className="w-[1px] h-12 bg-gradient-to-b from-[#f2ca50] to-transparent"></div>
         </div>
       </main>
+
+      {/* About Section */}
+      <AboutSection />
 
       {/* Services Section */}
       <section className="py-[120px] md:py-[160px] px-6 md:px-20 w-full max-w-[1440px] mx-auto" id="services">
@@ -113,6 +118,9 @@ export default function Home() {
           </div>
         </FadeIn>
       </section>
+
+      {/* Testimonials */}
+      <Testimonials />
 
       {/* Contact Section */}
       <section className="py-[120px] md:py-[160px] px-6 md:px-20 w-full max-w-[1440px] mx-auto" id="contact">
