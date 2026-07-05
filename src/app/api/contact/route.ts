@@ -3,11 +3,16 @@ import nodemailer from 'nodemailer';
 import { z } from 'zod';
 
 // Define the validation schemas
-const contactSchema = z.object({
-  type: z.literal('contact'),
+const consultationSchema = z.object({
+  type: z.literal('consultation'),
   name: z.string().min(2, 'Name must be at least 2 characters'),
   email: z.string().email('Invalid email address'),
-  message: z.string().min(10, 'Message must be at least 10 characters'),
+  phone: z.string().min(8, 'Valid phone number is required'),
+  eventType: z.string().min(2, 'Event type is required'),
+  destination: z.string().optional(),
+  guestCount: z.string().optional(),
+  date: z.string().optional(),
+  message: z.string().optional(),
 });
 
 const newsletterSchema = z.object({
@@ -17,7 +22,7 @@ const newsletterSchema = z.object({
 
 // A union of the two possible payload structures
 const payloadSchema = z.discriminatedUnion('type', [
-  contactSchema,
+  consultationSchema,
   newsletterSchema,
 ]);
 
@@ -47,16 +52,36 @@ export async function POST(req: Request) {
       },
     });
 
+    let emailSubject = '';
+    let emailText = '';
+    let emailHtml = '';
+
+    if (data.type === 'newsletter') {
+      emailSubject = `New Newsletter Signup: ${data.email}`;
+      emailText = `New subscriber: ${data.email}`;
+      emailHtml = `<p><strong>New subscriber:</strong> ${data.email}</p>`;
+    } else {
+      emailSubject = `Consultation Request: ${data.eventType} for ${data.name}`;
+      emailText = `Name: ${data.name}\nPhone: ${data.phone}\nEmail: ${data.email}\nEvent Type: ${data.eventType}\nDestination: ${data.destination || 'N/A'}\nGuests: ${data.guestCount || 'N/A'}\nDate: ${data.date || 'N/A'}\nDetails: ${data.message || 'N/A'}`;
+      emailHtml = `
+        <h3>New Private Consultation Request</h3>
+        <p><strong>Name:</strong> ${data.name}</p>
+        <p><strong>Phone:</strong> ${data.phone}</p>
+        <p><strong>Email:</strong> ${data.email}</p>
+        <p><strong>Event Type:</strong> ${data.eventType}</p>
+        <p><strong>Destination:</strong> ${data.destination || 'N/A'}</p>
+        <p><strong>Guest Count:</strong> ${data.guestCount || 'N/A'}</p>
+        <p><strong>Preferred Date:</strong> ${data.date || 'N/A'}</p>
+        <p><strong>Additional Details:</strong><br/>${data.message || 'N/A'}</p>
+      `;
+    }
+
     const mailOptions = {
       from: '"Vision Beyond Events" <noreply@visionbeyondevents.com>',
       to: process.env.CONTACT_RECEIVER_EMAIL || 'contact@visionbeyondevents.com',
-      subject: data.type === 'newsletter' ? `New Newsletter Signup: ${data.email}` : `New Inquiry from ${data.name}`,
-      text: data.type === 'newsletter' 
-        ? `New subscriber: ${data.email}`
-        : `Name: ${data.name}\nEmail: ${data.email}\nMessage: ${data.message}`,
-      html: data.type === 'newsletter'
-        ? `<p><strong>New subscriber:</strong> ${data.email}</p>`
-        : `<p><strong>Name:</strong> ${data.name}</p><p><strong>Email:</strong> ${data.email}</p><p><strong>Message:</strong> ${data.message}</p>`,
+      subject: emailSubject,
+      text: emailText,
+      html: emailHtml,
     };
 
     const info = await transporter.sendMail(mailOptions);

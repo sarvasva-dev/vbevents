@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { FadeIn } from "./FadeIn";
 
 const stats = [
-  { value: "15+", label: "Years of Heritage" },
-  { value: "500+", label: "Legacy Celebrations" },
+  { value: "2024", label: "Year Established" },
+  { value: "22+", label: "Bespoke Celebrations" },
   { value: "Pan-India", label: "Operational Reach" },
   { value: "100%", label: "Discretion Assured" }
 ];
@@ -45,16 +45,12 @@ export default function AuthoritySection() {
           ))}
         </div>
 
-        {/* Trust Logos (Placeholder for Fortune 500 / Hotel Partners) */}
+        {/* Trust (Removed fake logos, added honest premium copy) */}
         <FadeIn className="mt-20 text-center">
-          <p className="font-label-md text-on-surface-variant/70 uppercase tracking-[0.3em] mb-10">Curated Partnerships</p>
-          <div className="flex flex-wrap justify-center gap-10 md:gap-20 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
-            {/* These would be actual logos of luxury hotel chains or corporate clients */}
-            <span className="font-serif text-2xl font-bold tracking-widest">TAJ</span>
-            <span className="font-serif text-2xl font-bold tracking-widest">OBEROI</span>
-            <span className="font-serif text-2xl font-bold tracking-widest">ITC</span>
-            <span className="font-serif text-2xl font-bold tracking-widest">LEELA</span>
-          </div>
+          <p className="font-label-md text-on-surface-variant/70 uppercase tracking-[0.3em] mb-4">Venue Network</p>
+          <p className="font-body-md text-on-surface-variant max-w-xl mx-auto text-lg leading-relaxed">
+            Executing seamlessly across India&apos;s finest hospitality destinations and private heritage properties.
+          </p>
         </FadeIn>
         
       </div>

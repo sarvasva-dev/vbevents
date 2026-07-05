@@ -72,7 +72,7 @@ export default function Navbar() {
         </Link>
         <div className="hidden lg:flex items-center gap-gutter">
           <Link className="font-body-md text-label-lg uppercase tracking-widest text-on-background/70 hover:text-primary transition-colors duration-300" href="/#services">Capabilities</Link>
-          <Link className="font-body-md text-label-lg uppercase tracking-widest text-on-background/70 hover:text-primary transition-colors duration-300" href="/gallery">Selected Works</Link>
+          <Link className="font-body-md text-label-lg uppercase tracking-widest text-on-background/70 hover:text-primary transition-colors duration-300" href="/gallery">Vision Boards</Link>
           <Link className="font-body-md text-label-lg uppercase tracking-widest text-on-background/70 hover:text-primary transition-colors duration-300" href="/#contact">Inquire</Link>
           <Link className="gold-gradient-bg text-[#121212] font-body-md text-label-lg uppercase tracking-widest px-8 py-3 rounded-full hover:opacity-90 transition-opacity shadow-lg" href="/#contact">Private Consultation</Link>
         </div>

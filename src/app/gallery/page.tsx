@@ -9,9 +9,9 @@ import VideoPlayer from './VideoPlayer';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: "Selected Works | Vision Beyond Events",
-  description: "Explore our portfolio of bespoke celebrations, destination weddings, and corporate galas. See how Vision Beyond Events architects extraordinary experiences.",
-  keywords: ["Event Portfolio", "Luxury Wedding Case Studies", "Corporate Event Production", "Premium Event Design", "Event Management Showcase"],
+  title: "Vision Boards | Vision Beyond Events",
+  description: "Explore our vision boards for bespoke celebrations, destination weddings, and corporate galas.",
+  keywords: ["Event Inspiration", "Luxury Wedding Vision Boards", "Corporate Event Concepts", "Premium Event Design"],
 };
 
 export default function GalleryPage() {
@@ -40,10 +40,10 @@ export default function GalleryPage() {
 
       <main className="pt-[140px] pb-20 px-6 md:px-20 w-full max-w-[1440px] mx-auto min-h-screen">
         <div className="text-center mb-16">
-          <h1 className="font-headline-lg text-headline-lg text-primary mb-4 tracking-tighter">Selected Works</h1>
+          <h1 className="font-headline-lg text-headline-lg text-primary mb-4 tracking-tighter">Inspiration & Vision Boards</h1>
           <div className="w-24 h-px bg-primary/30 mx-auto mb-8"></div>
           <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
-            Explore how we architect different visions into flawless executions, categorized by celebration type.
+            Explore curated design concepts and inspirations for your upcoming celebration.
           </p>
         </div>
 
