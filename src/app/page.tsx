@@ -38,7 +38,7 @@ export default function Home() {
             <Link className="inline-block gold-gradient-bg text-[#121212] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]" href="/contact">
               Request a Private Consultation
             </Link>
-            <Link className="inline-block border border-[#d4af37] text-[#d4af37] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:bg-[#d4af37] hover:text-[#121212] transition-colors duration-300 backdrop-blur-sm" href="/gallery">
+            <Link className="inline-block border border-[#d4af37] text-[#d4af37] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:bg-[#d4af37] hover:text-[#121212] transition-colors duration-300 backdrop-blur-sm" href="/gallery?v=1">
               View Vision Boards
             </Link>
           </div>
@@ -102,7 +102,7 @@ export default function Home() {
         </FadeIn>
         
         <FadeIn className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <Link href="/gallery#birthdays" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-2 hover:border-[#d4af37]/40">
+          <Link href="/gallery?v=1#birthdays" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-2 hover:border-[#d4af37]/40">
             <div className="aspect-[16/9] w-full overflow-hidden relative">
               <Image fill sizes="(max-width: 768px) 100vw, 66vw" alt="Luxury Birthday Party Planning by Vision Beyond Events" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/gallery/birthday_IMG_20250710_182149.jpg.jpeg"/>
             </div>
@@ -111,7 +111,7 @@ export default function Home() {
             </div>
           </Link>
           
-          <Link href="/gallery#marriages" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:row-span-2 hover:border-[#d4af37]/40">
+          <Link href="/gallery?v=1#marriages" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:row-span-2 hover:border-[#d4af37]/40">
             <div className="aspect-[3/4] h-full w-full overflow-hidden relative">
               <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Luxury Indian Wedding and Marriage Planning" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/ai_marriages.png"/>
             </div>
@@ -120,7 +120,7 @@ export default function Home() {
             </div>
           </Link>
           
-          <Link href="/gallery#haldi-ceremonies" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40">
+          <Link href="/gallery?v=1#haldi-ceremonies" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40">
             <div className="aspect-square w-full overflow-hidden relative">
               <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Vibrant Haldi Ceremony Setup" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/gallery/haldi_ChatGPT Image Jun 22, 2026, 07_38_25 PM.png"/>
             </div>
@@ -129,7 +129,7 @@ export default function Home() {
             </div>
           </Link>
           
-          <Link href="/gallery#dandiya-nights" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40">
+          <Link href="/gallery?v=1#dandiya-nights" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40">
             <div className="aspect-square w-full overflow-hidden relative">
               <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Dandiya Nights Event Organizer" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/ai_dandiya.png"/>
             </div>
@@ -138,7 +138,7 @@ export default function Home() {
             </div>
           </Link>
           
-          <Link href="/gallery#house-warming-griha-pravesh" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-2 hover:border-[#d4af37]/40">
+          <Link href="/gallery?v=1#house-warming-griha-pravesh" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-2 hover:border-[#d4af37]/40">
             <div className="aspect-[21/9] w-full overflow-hidden relative">
               <Image fill sizes="(max-width: 768px) 100vw, 66vw" alt="House Warming and Griha Pravesh Event Decor" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%] object-center" src="/images/housewarming.jpeg"/>
             </div>
@@ -147,7 +147,7 @@ export default function Home() {
             </div>
           </Link>
           
-          <Link href="/gallery#corporate-school-events" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40">
+          <Link href="/gallery?v=1#corporate-school-events" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40">
             <div className="aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/3] h-full w-full overflow-hidden relative">
               <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Corporate and School Event Organizer" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/corporate_event.png"/>
             </div>
@@ -156,7 +156,7 @@ export default function Home() {
             </div>
           </Link>
           
-          <Link href="/gallery#festival-devotional-events" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-3 hover:border-[#d4af37]/40">
+          <Link href="/gallery?v=1#festival-devotional-events" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-3 hover:border-[#d4af37]/40">
             <div className="aspect-[16/9] lg:aspect-[21/9] h-full w-full overflow-hidden relative">
               <Image fill sizes="100vw" alt="Festival and Devotional Event Planning" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/festival_devotional.png"/>
             </div>
