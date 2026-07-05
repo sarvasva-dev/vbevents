@@ -46,6 +46,7 @@ export async function POST(req: Request) {
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST || 'smtp.ethereal.email',
       port: Number(process.env.SMTP_PORT) || 587,
+      secure: Number(process.env.SMTP_PORT) === 465, // Use true for 465, false for all other ports
       auth: {
         user: process.env.SMTP_USER || 'ethereal.user@ethereal.email',
         pass: process.env.SMTP_PASS || 'ethereal_password',
