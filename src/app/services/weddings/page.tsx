@@ -1,0 +1,98 @@
+import type { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
+import Navbar from '@/components/Navbar';
+
+export const metadata: Metadata = {
+  title: "Ultra-Luxury Wedding Planner | Vision Beyond Events",
+  description: "Architecting bespoke, high-security marriages and luxury destination weddings across India and the globe.",
+};
+
+export default function WeddingsPage() {
+  return (
+    <main className="min-h-screen bg-[#0a0a0a]">
+      <Navbar />
+
+      {/* Hero */}
+      <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden border-b border-[#d4af37]/20">
+        <div className="absolute inset-0 z-0">
+          <Image src="/images/ai_marriages.png" alt="Luxury Wedding Setup" fill className="object-cover grayscale-[40%] opacity-40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent"></div>
+        </div>
+        
+        <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-20">
+          <p className="font-body-md text-label-lg uppercase tracking-[0.3em] text-[#d4af37] mb-6">Capabilities</p>
+          <h1 className="font-headline-lg text-6xl md:text-8xl text-white mb-8 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
+            Legacy Marriages
+          </h1>
+          <p className="font-body-md text-on-surface-variant text-xl leading-relaxed max-w-3xl mx-auto mb-10">
+            We do not just plan weddings. We architect multi-day, immersive experiences for the world's most discerning families, operating with absolute discretion and military-grade logistics.
+          </p>
+          <Link className="inline-block border border-[#d4af37] text-[#d4af37] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:bg-[#d4af37] hover:text-[#121212] transition-colors duration-300 backdrop-blur-sm" href="/contact">
+            Request a Consultation
+          </Link>
+        </div>
+      </section>
+
+      {/* Philosophy */}
+      <section className="py-24 px-6 md:px-20 bg-[#121212]">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 className="font-headline-md text-4xl md:text-5xl text-[#d4af37] mb-8" style={{ fontFamily: 'Playfair Display, serif' }}>The Atelier Approach</h2>
+            <div className="space-y-6 font-body-md text-on-surface-variant leading-relaxed text-lg">
+              <p>
+                A multi-day destination wedding requires coordinating hundreds of high-profile guests, cross-border logistics, bespoke culinary curation, and structural design across multiple heritage venues. 
+              </p>
+              <p>
+                Our Atelier approach treats your celebration as a blank canvas. We source the finest artisanal talent globally—from Michelin-starred chefs to immersive theatrical directors—and bind them together with our proprietary operational shielding infrastructure.
+              </p>
+              <p>
+                The result is a flawlessly executed celebration where the host family is completely insulated from the logistical friction of the event.
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <div className="aspect-[3/4] relative">
+              <Image src="/gallery/haldi_ChatGPT Image Jun 22, 2026, 07_38_25 PM.png" alt="Haldi" fill className="object-cover border border-[#d4af37]/20" />
+            </div>
+            <div className="aspect-[3/4] relative translate-y-8">
+              <Image src="/images/ai_dandiya.png" alt="Sangeet" fill className="object-cover border border-[#d4af37]/20" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process */}
+      <section className="py-24 px-6 md:px-20 bg-[#0a0a0a] border-t border-[#d4af37]/10">
+        <div className="max-w-5xl mx-auto text-center mb-16">
+          <h2 className="font-headline-md text-4xl md:text-5xl text-[#d4af37]" style={{ fontFamily: 'Playfair Display, serif' }}>Architecting the Experience</h2>
+        </div>
+        
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="p-8 border border-[#d4af37]/20 bg-[#121212] hover:border-[#d4af37]/60 transition-colors">
+            <span className="font-headline-lg text-4xl text-[#d4af37]/30 block mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>01</span>
+            <h3 className="font-headline-sm text-2xl text-white mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Venue Procurement</h3>
+            <p className="font-body-md text-on-surface-variant text-sm leading-relaxed">
+              Securing exclusive buyouts of royal palaces, private islands, and heritage properties, often accessing venues not publicly available for events.
+            </p>
+          </div>
+          <div className="p-8 border border-[#d4af37]/20 bg-[#121212] hover:border-[#d4af37]/60 transition-colors">
+            <span className="font-headline-lg text-4xl text-[#d4af37]/30 block mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>02</span>
+            <h3 className="font-headline-sm text-2xl text-white mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Guest Logistics</h3>
+            <p className="font-body-md text-on-surface-variant text-sm leading-relaxed">
+              White-glove concierge services managing private aviation, visa assistance, and hyper-personalized hospitality for every attendee.
+            </p>
+          </div>
+          <div className="p-8 border border-[#d4af37]/20 bg-[#121212] hover:border-[#d4af37]/60 transition-colors">
+            <span className="font-headline-lg text-4xl text-[#d4af37]/30 block mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>03</span>
+            <h3 className="font-headline-sm text-2xl text-white mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Execution</h3>
+            <p className="font-body-md text-on-surface-variant text-sm leading-relaxed">
+              Shadow-planning, medical standby, power redundancy, and strict NDA enforcement to ensure zero disruptions to the celebration.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  );
+}
