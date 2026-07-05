@@ -31,12 +31,17 @@ export default function Home() {
           <div className="w-12 h-[1px] bg-[#d4af37]/60 mb-8"></div>
           <TextReveal 
             text="Experience Architecture for India's Most Consequential Celebrations." 
-            className="font-headline-lg text-4xl md:text-6xl lg:text-7xl text-on-primary mb-12 drop-shadow-2xl max-w-4xl leading-tight"
+            className="font-headline-lg text-4xl md:text-6xl lg:text-7xl text-white mb-12 drop-shadow-2xl max-w-4xl leading-tight"
             el="h1"
           />
-          <Link className="inline-block border border-[#d4af37] text-[#d4af37] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:bg-[#d4af37] hover:text-[#121212] transition-colors duration-300 backdrop-blur-sm" href="/contact">
-            Request a Private Consultation
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Link className="inline-block gold-gradient-bg text-[#121212] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]" href="/contact">
+              Request a Private Consultation
+            </Link>
+            <Link className="inline-block border border-[#d4af37] text-[#d4af37] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:bg-[#d4af37] hover:text-[#121212] transition-colors duration-300 backdrop-blur-sm" href="/gallery">
+              View Vision Boards
+            </Link>
+          </div>
         </FadeIn>
       </main>
 
@@ -88,66 +93,78 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Case Studies Teaser */}
-      <section className="py-24 px-6 md:px-20 bg-[#0a0a0a]">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16">
-            <div>
-              <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-on-surface-variant mb-4">Case Studies</p>
-              <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37]" style={{ fontFamily: 'Playfair Display, serif' }}>Precision at Scale</h2>
+      {/* Services Section */}
+      <section className="py-[120px] md:py-[160px] px-6 md:px-20 w-full max-w-[1440px] mx-auto bg-[#0a0a0a]" id="services">
+        <FadeIn className="text-center mb-20">
+          <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-on-surface-variant mb-4">Our Expertise</p>
+          <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] mb-4 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>Capabilities & Curation</h2>
+          <div className="w-24 h-px bg-[#d4af37]/30 mx-auto"></div>
+        </FadeIn>
+        
+        <FadeIn className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-2 hover:border-[#d4af37]/40">
+            <div className="aspect-[16/9] w-full overflow-hidden relative">
+              <Image fill sizes="(max-width: 768px) 100vw, 66vw" alt="Luxury Birthday Party Planning by Vision Beyond Events" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/gallery/birthday_IMG_20250710_182149.jpg.jpeg"/>
             </div>
-            <Link className="hidden md:inline-flex items-center gap-2 font-body-md text-label-lg uppercase tracking-widest text-on-surface hover:text-[#d4af37] transition-colors" href="/case-studies">
-              View All <span className="material-symbols-outlined text-[18px]">arrow_right_alt</span>
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Case Study 1 */}
-            <Link href="/case-studies/dubai-royal-engagement" className="group block border border-[#d4af37]/10 bg-[#121212] overflow-hidden hover:border-[#d4af37]/40 transition-colors">
-              <div className="aspect-[4/3] bg-[#222] relative overflow-hidden">
-                <div className="absolute inset-0 bg-[#0a0a0a]/50 group-hover:bg-transparent transition-colors z-10"></div>
-                <Image src="/gallery/haldi_ChatGPT Image Jun 22, 2026, 07_38_25 PM.png" alt="Royal Engagement" fill className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" />
-              </div>
-              <div className="p-8">
-                <p className="font-body-md text-xs uppercase tracking-widest text-on-surface-variant mb-3">Destination: UAE</p>
-                <h3 className="font-headline-sm text-2xl text-on-primary mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>The Dubai Royal Engagement</h3>
-                <p className="font-body-md text-on-surface-variant text-sm">500 Guests. 3 Days. Zero Compromise in cross-border logistics.</p>
-              </div>
-            </Link>
-
-            {/* Case Study 2 */}
-            <Link href="/case-studies/jodhpur-palace-buyout" className="group block border border-[#d4af37]/10 bg-[#121212] overflow-hidden hover:border-[#d4af37]/40 transition-colors">
-              <div className="aspect-[4/3] bg-[#222] relative overflow-hidden">
-                <div className="absolute inset-0 bg-[#0a0a0a]/50 group-hover:bg-transparent transition-colors z-10"></div>
-                <Image src="/images/ai_marriages.png" alt="Palace Buyout" fill className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" />
-              </div>
-              <div className="p-8">
-                <p className="font-body-md text-xs uppercase tracking-widest text-on-surface-variant mb-3">Destination: Rajasthan</p>
-                <h3 className="font-headline-sm text-2xl text-on-primary mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>The Jodhpur Palace Buyout</h3>
-                <p className="font-body-md text-on-surface-variant text-sm">Architecting a bespoke 4-day celebration within heritage constraints.</p>
-              </div>
-            </Link>
-
-            {/* Case Study 3 */}
-            <Link href="/case-studies/corporate-leadership-summit" className="group block border border-[#d4af37]/10 bg-[#121212] overflow-hidden hover:border-[#d4af37]/40 transition-colors">
-              <div className="aspect-[4/3] bg-[#222] relative overflow-hidden">
-                <div className="absolute inset-0 bg-[#0a0a0a]/50 group-hover:bg-transparent transition-colors z-10"></div>
-                <Image src="/images/corporate_event.png" alt="Corporate Summit" fill className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" />
-              </div>
-              <div className="p-8">
-                <p className="font-body-md text-xs uppercase tracking-widest text-on-surface-variant mb-3">Sector: Finance</p>
-                <h3 className="font-headline-sm text-2xl text-on-primary mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Global Leadership Summit</h3>
-                <p className="font-body-md text-on-surface-variant text-sm">Orchestrating absolute confidentiality for a C-suite executive retreat.</p>
-              </div>
-            </Link>
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
+              <h3 className="font-headline-sm text-2xl text-white group-hover:text-[#d4af37] transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Birthdays</h3>
+            </div>
           </div>
           
-          <div className="mt-12 text-center md:hidden">
-            <Link className="inline-flex items-center gap-2 font-body-md text-label-lg uppercase tracking-widest text-on-surface hover:text-[#d4af37] transition-colors" href="/case-studies">
-              View All Case Studies <span className="material-symbols-outlined text-[18px]">arrow_right_alt</span>
-            </Link>
+          <div className="group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:row-span-2 hover:border-[#d4af37]/40">
+            <div className="aspect-[3/4] h-full w-full overflow-hidden relative">
+              <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Luxury Indian Wedding and Marriage Planning" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/ai_marriages.png"/>
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
+              <h3 className="font-headline-sm text-2xl text-white group-hover:text-[#d4af37] transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Marriages</h3>
+            </div>
           </div>
-        </div>
+          
+          <div className="group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40">
+            <div className="aspect-square w-full overflow-hidden relative">
+              <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Vibrant Haldi Ceremony Setup" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/gallery/haldi_ChatGPT Image Jun 22, 2026, 07_38_25 PM.png"/>
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
+              <h3 className="font-headline-sm text-2xl text-white group-hover:text-[#d4af37] transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Haldi</h3>
+            </div>
+          </div>
+          
+          <div className="group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40">
+            <div className="aspect-square w-full overflow-hidden relative">
+              <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Dandiya Nights Event Organizer" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/ai_dandiya.png"/>
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
+              <h3 className="font-headline-sm text-2xl text-white group-hover:text-[#d4af37] transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Dandiya</h3>
+            </div>
+          </div>
+          
+          <div className="group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-2 hover:border-[#d4af37]/40">
+            <div className="aspect-[21/9] w-full overflow-hidden relative">
+              <Image fill sizes="(max-width: 768px) 100vw, 66vw" alt="House Warming and Griha Pravesh Event Decor" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%] object-center" src="/images/housewarming.jpeg"/>
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
+              <h3 className="font-headline-sm text-2xl text-white group-hover:text-[#d4af37] transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>House Warming</h3>
+            </div>
+          </div>
+          
+          <div className="group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40">
+            <div className="aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/3] h-full w-full overflow-hidden relative">
+              <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Corporate and School Event Organizer" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/corporate_event.png"/>
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
+              <h3 className="font-headline-sm text-2xl text-white group-hover:text-[#d4af37] transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Corporate & School Events</h3>
+            </div>
+          </div>
+          
+          <div className="group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-3 hover:border-[#d4af37]/40">
+            <div className="aspect-[16/9] lg:aspect-[21/9] h-full w-full overflow-hidden relative">
+              <Image fill sizes="100vw" alt="Festival and Devotional Event Planning" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/festival_devotional.png"/>
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
+              <h3 className="font-headline-sm text-2xl text-white group-hover:text-[#d4af37] transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Festival & Devotional Events</h3>
+            </div>
+          </div>
+        </FadeIn>
       </section>
 
       {/* The Atelier Teaser */}
