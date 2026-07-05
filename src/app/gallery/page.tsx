@@ -53,7 +53,7 @@ export default function GalleryPage() {
           if (files.length === 0) return null;
           
           return (
-            <div key={categoryName} className="mb-24">
+            <div key={categoryName} id={categoryName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '')} className="mb-24 scroll-mt-32">
               <div className="mb-8">
                 <h2 className="font-headline-md text-headline-md text-primary tracking-tighter mb-2">{categoryName}</h2>
                 <div className="w-16 h-px bg-primary/40"></div>
