@@ -102,68 +102,68 @@ export default function Home() {
         </FadeIn>
         
         <FadeIn className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-2 hover:border-[#d4af37]/40">
+          <Link href="/gallery" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-2 hover:border-[#d4af37]/40">
             <div className="aspect-[16/9] w-full overflow-hidden relative">
               <Image fill sizes="(max-width: 768px) 100vw, 66vw" alt="Luxury Birthday Party Planning by Vision Beyond Events" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/gallery/birthday_IMG_20250710_182149.jpg.jpeg"/>
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
               <h3 className="font-headline-sm text-2xl text-white group-hover:text-[#d4af37] transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Birthdays</h3>
             </div>
-          </div>
+          </Link>
           
-          <div className="group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:row-span-2 hover:border-[#d4af37]/40">
+          <Link href="/gallery" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:row-span-2 hover:border-[#d4af37]/40">
             <div className="aspect-[3/4] h-full w-full overflow-hidden relative">
               <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Luxury Indian Wedding and Marriage Planning" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/ai_marriages.png"/>
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
               <h3 className="font-headline-sm text-2xl text-white group-hover:text-[#d4af37] transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Marriages</h3>
             </div>
-          </div>
+          </Link>
           
-          <div className="group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40">
+          <Link href="/gallery" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40">
             <div className="aspect-square w-full overflow-hidden relative">
               <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Vibrant Haldi Ceremony Setup" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/gallery/haldi_ChatGPT Image Jun 22, 2026, 07_38_25 PM.png"/>
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
               <h3 className="font-headline-sm text-2xl text-white group-hover:text-[#d4af37] transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Haldi</h3>
             </div>
-          </div>
+          </Link>
           
-          <div className="group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40">
+          <Link href="/gallery" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40">
             <div className="aspect-square w-full overflow-hidden relative">
               <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Dandiya Nights Event Organizer" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/ai_dandiya.png"/>
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
               <h3 className="font-headline-sm text-2xl text-white group-hover:text-[#d4af37] transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Dandiya</h3>
             </div>
-          </div>
+          </Link>
           
-          <div className="group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-2 hover:border-[#d4af37]/40">
+          <Link href="/gallery" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-2 hover:border-[#d4af37]/40">
             <div className="aspect-[21/9] w-full overflow-hidden relative">
               <Image fill sizes="(max-width: 768px) 100vw, 66vw" alt="House Warming and Griha Pravesh Event Decor" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%] object-center" src="/images/housewarming.jpeg"/>
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
               <h3 className="font-headline-sm text-2xl text-white group-hover:text-[#d4af37] transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>House Warming</h3>
             </div>
-          </div>
+          </Link>
           
-          <div className="group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40">
+          <Link href="/gallery" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40">
             <div className="aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/3] h-full w-full overflow-hidden relative">
               <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Corporate and School Event Organizer" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/corporate_event.png"/>
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
               <h3 className="font-headline-sm text-2xl text-white group-hover:text-[#d4af37] transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Corporate & School Events</h3>
             </div>
-          </div>
+          </Link>
           
-          <div className="group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-3 hover:border-[#d4af37]/40">
+          <Link href="/gallery" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-3 hover:border-[#d4af37]/40">
             <div className="aspect-[16/9] lg:aspect-[21/9] h-full w-full overflow-hidden relative">
               <Image fill sizes="100vw" alt="Festival and Devotional Event Planning" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/festival_devotional.png"/>
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent p-8 flex flex-col justify-end">
               <h3 className="font-headline-sm text-2xl text-white group-hover:text-[#d4af37] transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>Festival & Devotional Events</h3>
             </div>
-          </div>
+          </Link>
         </FadeIn>
       </section>
 
