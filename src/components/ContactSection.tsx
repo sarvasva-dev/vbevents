@@ -78,8 +78,14 @@ export function ContactSection() {
 
   const handleContactSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
     setSubmitStatus(null);
+    
+    if (!formData.eventType) {
+      setSubmitStatus({ type: 'error', message: 'Please select an Event Type to proceed.' });
+      return;
+    }
+
+    setLoading(true);
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
