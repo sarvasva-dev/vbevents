@@ -25,13 +25,6 @@ export const metadata: Metadata = {
     description: "Private Celebrations. Global Experiences. Executed Beyond Expectation.",
     url: "https://visionbeyondevents.com",
     siteName: "Vision Beyond Events",
-    images: [
-      {
-        url: "/images/vb_logo.png",
-        width: 800,
-        height: 600,
-      },
-    ],
     locale: "en_IN",
     type: "website",
   },
@@ -39,7 +32,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Vision Beyond Events | Luxury Wedding Planners India",
     description: "Private Celebrations. Global Experiences. Executed Beyond Expectation.",
-    images: ["/images/vb_logo.png"],
   },
   robots: {
     index: true,
