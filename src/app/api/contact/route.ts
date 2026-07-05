@@ -34,19 +34,24 @@ export async function POST(req: Request) {
     const result = payloadSchema.safeParse(body);
     
     if (!result.success) {
-      console.warn("Validation failed:", result.error.format());
+      console.error("[Contact API] Validation Error:", JSON.stringify(result.error.format(), null, 2));
       return NextResponse.json(
-        { success: false, message: 'Invalid data provided.', errors: result.error.format() },
+        { 
+          success: false, 
+          message: 'Please check your inputs and try again.', 
+          errors: result.error.format() 
+        },
         { status: 400 }
       );
     }
 
     const data = result.data;
+    console.log(`[Contact API] Processing ${data.type} request for: ${data.email}`);
 
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST || 'smtp.ethereal.email',
       port: Number(process.env.SMTP_PORT) || 587,
-      secure: Number(process.env.SMTP_PORT) === 465, // Use true for 465, false for all other ports
+      secure: Number(process.env.SMTP_PORT) === 465,
       auth: {
         user: process.env.SMTP_USER || 'ethereal.user@ethereal.email',
         pass: process.env.SMTP_PASS || 'ethereal_password',
@@ -86,13 +91,13 @@ export async function POST(req: Request) {
     };
 
     const info = await transporter.sendMail(mailOptions);
-    console.log('Message sent: %s', info.messageId);
+    console.log(`[Contact API] Success - Email dispatched. MessageId: ${info.messageId}`);
 
     return NextResponse.json({ success: true, message: 'Message sent successfully!' });
-  } catch (error) {
-    console.error('Error sending email:', error);
+  } catch (error: any) {
+    console.error('[Contact API] Critical Error during email dispatch:', error.message || error);
     return NextResponse.json(
-      { success: false, message: 'Failed to send message.' },
+      { success: false, message: 'Our servers encountered an issue sending your request. Please contact us directly via WhatsApp or Phone.' },
       { status: 500 }
     );
   }

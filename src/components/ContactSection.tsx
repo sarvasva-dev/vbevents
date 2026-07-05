@@ -84,6 +84,10 @@ export function ContactSection() {
       setSubmitStatus({ type: 'error', message: 'Please select an Event Type to proceed.' });
       return;
     }
+    if (!formData.guestCount) {
+      setSubmitStatus({ type: 'error', message: 'Please estimate your Guest Count.' });
+      return;
+    }
 
     setLoading(true);
     try {
@@ -92,14 +96,24 @@ export function ContactSection() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...formData, type: 'consultation' })
       });
+      
+      const responseData = await res.json().catch(() => ({}));
+      
       if (res.ok) {
         setSubmitStatus({ type: 'success', message: 'Thank you for requesting a private consultation. Our team will contact you shortly.' });
         setFormData({ name: '', email: '', phone: '', eventType: '', destination: '', guestCount: '', date: '', message: '' });
       } else {
-        setSubmitStatus({ type: 'error', message: 'Failed to send request. Please try again or contact us via WhatsApp.' });
+        let errorMessage = responseData.message || 'Failed to send request. Please try again.';
+        if (responseData.errors) {
+          const firstErrorKey = Object.keys(responseData.errors).find(k => k !== '_errors');
+          if (firstErrorKey && responseData.errors[firstErrorKey]._errors) {
+            errorMessage = responseData.errors[firstErrorKey]._errors[0];
+          }
+        }
+        setSubmitStatus({ type: 'error', message: errorMessage });
       }
     } catch (e) {
-      setSubmitStatus({ type: 'error', message: 'An unexpected error occurred. Please try again.' });
+      setSubmitStatus({ type: 'error', message: 'Network error. Please check your connection and try again.' });
     }
     setLoading(false);
   };
@@ -114,14 +128,21 @@ export function ContactSection() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: newsletterEmail, type: 'newsletter' })
       });
+      
+      const responseData = await res.json().catch(() => ({}));
+      
       if (res.ok) {
         setNewsletterStatus({ type: 'success', message: 'Thank you for subscribing to our newsletter!' });
         setNewsletterEmail('');
       } else {
-        setNewsletterStatus({ type: 'error', message: 'Failed to subscribe. Please try again.' });
+        let errorMessage = responseData.message || 'Failed to subscribe.';
+        if (responseData.errors && responseData.errors.email) {
+          errorMessage = responseData.errors.email._errors[0];
+        }
+        setNewsletterStatus({ type: 'error', message: errorMessage });
       }
     } catch (e) {
-      setNewsletterStatus({ type: 'error', message: 'An unexpected error occurred.' });
+      setNewsletterStatus({ type: 'error', message: 'Network error. Please try again later.' });
     }
     setLoading(false);
   };
