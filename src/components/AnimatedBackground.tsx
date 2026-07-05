@@ -1,41 +1,21 @@
 "use client";
 
-import { useEffect, useState } from "react";
+// Module-level constant — Math.random() runs once at module load, never during render.
+const ORBS = Array.from({ length: 45 }).map((_, i) => {
+  const isSmall = Math.random() > 0.6;
+  const size = isSmall ? (Math.random() * 15 + 5) : (Math.random() * 100 + 40);
+  const left = Math.random() * 100;
+  const animationDuration = Math.random() * 25 + 20;
+  const animationDelay = Math.random() * -30;
+  const opacity = isSmall ? (Math.random() * 0.5 + 0.3) : (Math.random() * 0.3 + 0.05);
+  const blur = isSmall ? Math.random() * 2 : (Math.random() * 12 + 4);
+  return { id: i, size, left, animationDuration, animationDelay, opacity, blur };
+});
 
 export default function AnimatedBackground() {
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  if (!isMounted) return null;
-
-  // Generate an array of orbs with random properties
-  const orbs = Array.from({ length: 45 }).map((_, i) => {
-    // Mix of tiny sharp particles and large soft bokeh
-    const isSmall = Math.random() > 0.6; 
-    const size = isSmall ? (Math.random() * 15 + 5) : (Math.random() * 100 + 40); 
-    const left = Math.random() * 100;
-    const animationDuration = Math.random() * 25 + 20; // Slower, more elegant movement
-    const animationDelay = Math.random() * -30; // Negative delay so they are already on screen
-    const opacity = isSmall ? (Math.random() * 0.5 + 0.3) : (Math.random() * 0.3 + 0.05);
-    const blur = isSmall ? Math.random() * 2 : (Math.random() * 12 + 4);
-    
-    return {
-      id: i,
-      size,
-      left,
-      animationDuration,
-      animationDelay,
-      opacity,
-      blur
-    };
-  });
-
   return (
     <div className="absolute inset-0 overflow-hidden bg-[#070707] z-0 pointer-events-none">
-      {orbs.map((orb) => (
+      {ORBS.map((orb) => (
         <div
           key={orb.id}
           className="absolute rounded-full bokeh-orb mix-blend-screen"
@@ -43,7 +23,7 @@ export default function AnimatedBackground() {
             width: `${orb.size}px`,
             height: `${orb.size}px`,
             left: `${orb.left}%`,
-            bottom: `-20%`, // Start below the screen
+            bottom: `-20%`,
             opacity: orb.opacity,
             animationDuration: `${orb.animationDuration}s`,
             animationDelay: `${orb.animationDelay}s`,

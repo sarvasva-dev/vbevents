@@ -2,14 +2,17 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
-import { ContactSection } from '@/components/ContactSection';
 import { FadeIn } from '@/components/FadeIn';
 import AnimatedBackground from '@/components/AnimatedBackground';
 import TextReveal from '@/components/TextReveal';
 
 export const metadata: Metadata = {
-  title: "Ultra-Luxury Wedding Planner India | Vision Beyond Events",
-  description: "Experience Architecture for India's Most Consequential Celebrations. We are a luxury event management company specializing in high-security, ultra-luxury weddings and corporate events.",
+  title: "Luxury Event Organizer India — Destination Weddings & Corporate Events | Vision Beyond Events",
+  description: "India's discreet luxury event organizer. We plan palace destination weddings in Udaipur, high-security corporate offsites, and private UHNWI celebrations. NDA-by-default. Serving Mumbai, Delhi & globally.",
+  keywords: ["luxury event organizer India", "destination wedding planner Udaipur", "corporate event organizer India", "palace wedding planner", "UHNWI event planner India", "private event organizer", "NDA wedding planner India"],
+  alternates: {
+    canonical: "https://www.vbevents.co.in",
+  },
 };
 
 export default function Home() {
@@ -30,7 +33,7 @@ export default function Home() {
         <FadeIn className="relative z-10 flex flex-col items-center justify-center text-center px-6 w-full max-w-5xl mx-auto pt-20">
           <div className="w-12 h-[1px] bg-[#d4af37]/60 mb-8"></div>
           <TextReveal 
-            text="Experience Architecture for India's Most Consequential Celebrations." 
+            text="The Premier Luxury Event Organizer for India's Most Consequential Celebrations." 
             className="font-headline-lg text-4xl md:text-6xl lg:text-7xl text-white mb-12 drop-shadow-2xl max-w-4xl leading-tight"
             el="h1"
           />
@@ -49,7 +52,7 @@ export default function Home() {
       <div className="w-full border-y border-[#d4af37]/10 bg-[#121212] py-8 overflow-hidden">
         <div className="flex justify-center items-center gap-12 md:gap-24 opacity-40 grayscale flex-wrap px-6">
           <span className="font-headline-md text-xl font-bold tracking-widest" style={{ fontFamily: 'Playfair Display, serif' }}>VOGUE</span>
-          <span className="font-headline-md text-xl font-bold tracking-widest" style={{ fontFamily: 'Playfair Display, serif' }}>HARPER'S BAZAAR</span>
+          <span className="font-headline-md text-xl font-bold tracking-widest" style={{ fontFamily: 'Playfair Display, serif' }}>HARPER&apos;S BAZAAR</span>
           <span className="font-headline-md text-xl font-bold tracking-widest" style={{ fontFamily: 'Playfair Display, serif' }}>GQ</span>
           <span className="font-headline-md text-xl font-bold tracking-widest" style={{ fontFamily: 'Playfair Display, serif' }}>FORBES</span>
         </div>
@@ -79,7 +82,7 @@ export default function Home() {
           <div className="md:w-1/2">
             <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>Operational Shielding.</h2>
             <p className="font-body-md text-on-surface-variant text-lg leading-relaxed mb-8">
-              We operate under strict NDA-by-default protocols. Your identity, investment, and celebration are compartmentalized and protected. We do not design events; we architect secure, insulated experiences for UHNWIs and corporate leadership.
+              We operate under strict NDA-by-default protocols. As your premier event organizer, your identity, investment, and celebration are compartmentalized and protected. We do not just design events; we architect secure, insulated experiences for UHNWIs and corporate leadership.
             </p>
             <Link className="inline-flex items-center gap-2 font-body-md text-label-lg uppercase tracking-widest text-[#d4af37] hover:text-white transition-colors" href="/discretion">
               View Our Privacy Protocols <span className="material-symbols-outlined text-[18px]">arrow_right_alt</span>
@@ -163,10 +166,10 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#d4af37] mb-6">The Atelier</p>
           <h2 className="font-headline-lg text-4xl md:text-5xl text-on-primary mb-8 leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
-            A boutique design studio backed by institutional-grade execution.
+            A boutique event organizer backed by institutional-grade execution.
           </h2>
           <p className="font-body-md text-on-surface-variant text-lg leading-relaxed mb-10">
-            We operate at the intersection of artisanal design and relentless logistics. Discover our philosophy, leadership credentials, and the meticulous process behind every legacy celebration.
+            We operate at the intersection of artisanal design and relentless logistics. Discover why we are India&apos;s most trusted event organizer for legacy celebrations.
           </p>
           <Link className="inline-block border border-on-surface/20 text-on-surface font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:border-[#d4af37] hover:text-[#d4af37] transition-colors duration-300" href="/about">
             Discover The Atelier

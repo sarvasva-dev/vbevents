@@ -2,8 +2,10 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Discretion & Operational Shielding | Vision Beyond Events",
-  description: "Confidential event planning for India's UHNWIs and corporate leaders. We operate under strict NDA-by-default protocols, providing absolute privacy and operational shielding for legacy celebrations.",
+  title: "NDA-by-Default Confidential Event Planning | Vision Beyond Events",
+  description: "India's only luxury event organizer with NDA-by-default protocols. We provide absolute privacy, high-security guest management & confidential event planning for UHNWIs, family offices & corporate leaders.",
+  keywords: ["NDA event planner India", "confidential event organizer India", "private event planner UHNWI", "discreet wedding planner India", "high security event management", "family office event planning India"],
+  alternates: { canonical: "https://www.vbevents.co.in/discretion" },
 };
 
 export default function DiscretionPage() {
@@ -32,10 +34,10 @@ export default function DiscretionPage() {
                 The event industry often relies on client visibility as its primary marketing engine. We fundamentally reject this model. Vision Beyond Events operates on a strict NDA-by-default protocol. Before a single logistical detail is discussed, our confidentiality infrastructure is legally bound and activated.
               </p>
               <p>
-                From the moment of initial inquiry, your identity, the scale of your investment, and the nature of your celebration are compartmentalized. Our vendor partners are contracted under strict non-disclosure terms, often operating on a need-to-know basis regarding the principal host's identity. 
+                From the moment of initial inquiry, your identity, the scale of your investment, and the nature of your celebration are compartmentalized. Our vendor partners are contracted under strict non-disclosure terms, often operating on a need-to-know basis regarding the principal host&apos;s identity.
               </p>
               <p>
-                Whether you are a global corporate executive or a legacy family hosting a multi-day palace wedding, our pledge is absolute: Your celebration remains yours. We do not leverage your family's name, your guest list, or your private moments for our public portfolio.
+                Whether you are a global corporate executive or a legacy family hosting a multi-day palace wedding, our pledge is absolute: Your celebration remains yours. We do not leverage your family&apos;s name, your guest list, or your private moments for our public portfolio.
               </p>
             </div>
           </div>
@@ -43,7 +45,7 @@ export default function DiscretionPage() {
             <span className="material-symbols-outlined text-[100px] text-[#d4af37] mb-8" style={{ fontVariationSettings: "'FILL' 1" }}>lock</span>
             <h3 className="font-headline-sm text-2xl text-on-primary mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Absolute Anonymization</h3>
             <p className="font-body-md text-on-surface-variant text-lg">
-              Our case studies and internal documentation refer to events exclusively by code names and logistical metrics (e.g., "The Jodhpur Royal Buyout: 400 Guests"). No client names, recognizable faces, or specific dates are ever published.
+              Our case studies and internal documentation refer to events exclusively by code names and logistical metrics (e.g., &ldquo;The Jodhpur Royal Buyout: 400 Guests&rdquo;). No client names, recognizable faces, or specific dates are ever published.
             </p>
           </div>
         </div>
@@ -124,7 +126,7 @@ export default function DiscretionPage() {
               </div>
               <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] p-6 border border-[#d4af37]/20 bg-[#0a0a0a]">
                 <h3 className="font-headline-sm text-xl text-on-primary mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Compartmentalized Procurement</h3>
-                <p className="font-body-md text-on-surface-variant text-sm leading-relaxed">Vendor contracting executed through insulated legal entities. The principal client's identity remains abstracted from tier-2 and tier-3 suppliers.</p>
+                <p className="font-body-md text-on-surface-variant text-sm leading-relaxed">Vendor contracting executed through insulated legal entities. The principal client&apos;s identity remains abstracted from tier-2 and tier-3 suppliers.</p>
               </div>
             </div>
 

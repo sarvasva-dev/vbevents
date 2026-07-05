@@ -9,9 +9,10 @@ import VideoPlayer from './VideoPlayer';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: "Vision Boards | Vision Beyond Events",
-  description: "Explore our vision boards for bespoke celebrations, destination weddings, and corporate galas.",
-  keywords: ["Event Inspiration", "Luxury Wedding Vision Boards", "Corporate Event Concepts", "Premium Event Design"],
+  title: "Luxury Event Portfolio — Weddings, Corporate & Private Celebrations | Vision Beyond Events",
+  description: "Explore Vision Beyond Events' portfolio of luxury destination weddings in Udaipur, corporate events, haldi ceremonies, house warming, birthdays & private celebrations across India.",
+  keywords: ["luxury wedding portfolio India", "destination wedding photos Udaipur", "luxury event organizer portfolio", "corporate event photos India", "palace wedding inspiration India"],
+  alternates: { canonical: "https://www.vbevents.co.in/gallery" },
 };
 
 export default function GalleryPage() {

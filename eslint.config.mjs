@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Root utility scripts — CommonJS, not part of the Next.js app
+    "*.js",
   ]),
 ]);
 

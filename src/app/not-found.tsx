@@ -21,7 +21,7 @@ export default function NotFound() {
           The Experience You Are Looking For Is <span className="italic text-on-surface-variant font-serif">Not Found</span>
         </h2>
         <p className="font-body-md text-body-md text-on-surface-variant max-w-md mb-12">
-          It seems you've wandered off the guestlist. Let's get you back to the main event.
+          It seems you&apos;ve wandered off the guestlist. Let&apos;s get you back to the main event.
         </p>
         
         <Link 

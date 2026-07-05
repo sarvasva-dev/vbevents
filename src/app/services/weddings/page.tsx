@@ -4,8 +4,10 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 
 export const metadata: Metadata = {
-  title: "Ultra-Luxury Wedding Planner | Vision Beyond Events",
-  description: "Architecting bespoke, high-security marriages and luxury destination weddings across India and the globe.",
+  title: "Luxury Destination Wedding Planner India — Udaipur Palace Weddings | Vision Beyond Events",
+  description: "India's top luxury destination wedding planner. We architect multi-day royal palace weddings in Udaipur, Rajasthan, Jaipur & Goa for UHNWI families. Complete discretion, NDA-by-default, white-glove execution.",
+  keywords: ["destination wedding planner Udaipur", "palace wedding planner India", "luxury destination wedding India", "royal wedding planner Rajasthan", "NRI wedding planner India", "bespoke destination wedding planner"],
+  alternates: { canonical: "https://www.vbevents.co.in/services/weddings" },
 };
 
 export default function WeddingsPage() {
@@ -26,7 +28,7 @@ export default function WeddingsPage() {
             Legacy Marriages
           </h1>
           <p className="font-body-md text-on-surface-variant text-xl leading-relaxed max-w-3xl mx-auto mb-10">
-            We do not just plan weddings. We architect multi-day, immersive experiences for the world's most discerning families, operating with absolute discretion and military-grade logistics.
+            We do not just plan weddings. We architect multi-day, immersive experiences for the world&apos;s most discerning families, operating with absolute discretion and military-grade logistics.
           </p>
           <Link className="inline-block border border-[#d4af37] text-[#d4af37] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:bg-[#d4af37] hover:text-[#121212] transition-colors duration-300 backdrop-blur-sm" href="/contact">
             Request a Consultation

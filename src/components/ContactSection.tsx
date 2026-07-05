@@ -112,7 +112,7 @@ export function ContactSection() {
         }
         setSubmitStatus({ type: 'error', message: errorMessage });
       }
-    } catch (e) {
+    } catch (_e) {
       setSubmitStatus({ type: 'error', message: 'Network error. Please check your connection and try again.' });
     }
     setLoading(false);
@@ -141,7 +141,7 @@ export function ContactSection() {
         }
         setNewsletterStatus({ type: 'error', message: errorMessage });
       }
-    } catch (e) {
+    } catch (_e) {
       setNewsletterStatus({ type: 'error', message: 'Network error. Please try again later.' });
     }
     setLoading(false);

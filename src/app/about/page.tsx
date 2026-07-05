@@ -6,8 +6,10 @@ import AboutSection from '@/components/AboutSection';
 import AuthoritySection from '@/components/AuthoritySection';
 
 export const metadata: Metadata = {
-  title: "The Atelier | Vision Beyond Events",
-  description: "Learn about the philosophy, leadership, and institutional-grade execution behind Vision Beyond Events.",
+  title: "The Atelier — India's Ultra-Luxury Event Organizer | Vision Beyond Events",
+  description: "Discover the philosophy, leadership, and NDA-first operational framework behind Vision Beyond Events — India's most discreet luxury event organizer for UHNWI families and corporate leadership.",
+  keywords: ["luxury event organizer philosophy", "UHNWI event planner India", "discreet wedding planner India", "high net worth event management"],
+  alternates: { canonical: "https://www.vbevents.co.in/about" },
 };
 
 export default function AboutPage() {

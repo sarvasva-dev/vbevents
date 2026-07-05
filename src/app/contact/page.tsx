@@ -3,8 +3,10 @@ import { ContactSection } from '@/components/ContactSection';
 import Navbar from '@/components/Navbar';
 
 export const metadata: Metadata = {
-  title: "Private Consultation | Vision Beyond Events",
-  description: "Request a private consultation with Vision Beyond Events for your legacy celebration or corporate summit.",
+  title: "Request a Private Consultation — Luxury Event Organizer India | Vision Beyond Events",
+  description: "Begin a confidential dialogue with India's most discreet luxury event organizer. We handle destination weddings, corporate events & private UHNWI celebrations. NDA signed before your first call.",
+  keywords: ["contact luxury event organizer India", "hire event planner India", "private event consultation", "destination wedding planner inquiry"],
+  alternates: { canonical: "https://www.vbevents.co.in/contact" },
 };
 
 export default function ContactPage() {

@@ -94,8 +94,9 @@ export async function POST(req: Request) {
     console.log(`[Contact API] Success - Email dispatched. MessageId: ${info.messageId}`);
 
     return NextResponse.json({ success: true, message: 'Message sent successfully!' });
-  } catch (error: any) {
-    console.error('[Contact API] Critical Error during email dispatch:', error.message || error);
+  } catch (error: unknown) {
+    const message = error instanceof Error ? error.message : String(error);
+    console.error('[Contact API] Critical Error during email dispatch:', message);
     return NextResponse.json(
       { success: false, message: 'Our servers encountered an issue sending your request. Please contact us directly via WhatsApp or Phone.' },
       { status: 500 }

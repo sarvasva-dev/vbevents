@@ -41,7 +41,7 @@ export default function Testimonials() {
             <FadeIn key={idx} className="bg-background border border-primary/10 p-10 hover:border-primary/40 transition-colors duration-500 group relative">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary/0 to-transparent group-hover:via-primary/50 transition-all duration-500"></div>
               <p className="font-body-md text-on-surface-variant leading-loose italic mb-8 relative z-10">
-                "{t.quote}"
+                &ldquo;{t.quote}&rdquo;
               </p>
               <div className="border-t border-primary/10 pt-6">
                 <div className="font-label-lg uppercase tracking-widest text-primary mb-1">{t.author}</div>

@@ -38,7 +38,7 @@ export default function TextReveal({
 }: { 
   text: string; 
   className?: string; 
-  el?: any;
+  el?: React.ElementType;
 }) {
   const words = text.split(" ");
 

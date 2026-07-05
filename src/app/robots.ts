@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://visionbeyondevents.com/sitemap.xml',
+    sitemap: 'https://www.vbevents.co.in/sitemap.xml',
   };
 }
