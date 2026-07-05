@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Montserrat, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import CustomCursor from "@/components/CustomCursor";
-import WhatsAppButton from "@/components/WhatsAppButton";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -105,7 +104,6 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <CustomCursor />
         {children}
-        <WhatsAppButton />
       </body>
     </html>
   );
