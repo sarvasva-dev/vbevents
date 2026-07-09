@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
@@ -32,7 +32,7 @@ export default function Home() {
           <div className="w-12 h-[1px] bg-[#d4af37]/60 mb-8"></div>
           <TextReveal 
             text="Making Your Dream Weddings & Luxury Events a Reality." 
-            className="font-headline-lg text-4xl md:text-6xl lg:text-7xl text-[#0f172a] mb-12 drop-shadow-2xl max-w-4xl leading-tight"
+            className="font-headline-lg text-4xl md:text-6xl lg:text-7xl text-[#0f172a] mb-12 max-w-4xl leading-tight font-semibold"
             el="h1"
           />
           <div className="flex flex-col sm:flex-row gap-6 justify-center">

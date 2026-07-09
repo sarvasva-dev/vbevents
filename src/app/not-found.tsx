@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -12,9 +12,9 @@ export default function NotFound() {
       </div>
       
       <div className="relative z-10 flex flex-col items-center">
-        <Image src="/images/vb_logo.png" alt="Vision Beyond Events" width={100} height={100} className="mb-12 opacity-80" />
+        <Image src="/images/logo_white.png" alt="Vision Beyond Events" width={140} height={50} className="mb-12 object-contain" />
         
-        <h1 className="font-headline-lg text-[120px] leading-none text-primary mb-4 font-bold tracking-tighter drop-shadow-lg">
+        <h1 className="font-headline-lg text-[120px] leading-none text-primary mb-4 font-bold tracking-tighter">
           404
         </h1>
         <h2 className="font-headline-md text-headline-md text-on-surface mb-6">
