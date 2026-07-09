@@ -42,10 +42,10 @@ export default function Navbar() {
         </div>
         <nav className="flex flex-col gap-2">
           <Link href="/services/weddings" onClick={() => setIsDrawerOpen(false)} className="flex items-center gap-4 py-4 font-body-md text-label-lg uppercase tracking-widest text-[#d0c5af] pl-4 hover:bg-[#d4af37]/10 hover:text-primary transition-all duration-200 ease-in-out rounded-lg group">
-            <span className="material-symbols-outlined text-[#99907c] group-hover:text-primary transition-colors">auto_awesome</span> Capabilities
+            <span className="material-symbols-outlined text-[#99907c] group-hover:text-primary transition-colors">auto_awesome</span> Services
           </Link>
           <Link href="/gallery?v=1" onClick={() => setIsDrawerOpen(false)} className="flex items-center gap-4 py-4 font-body-md text-label-lg uppercase tracking-widest text-[#d0c5af] pl-4 hover:bg-[#d4af37]/10 hover:text-primary transition-all duration-200 ease-in-out rounded-lg group">
-            <span className="material-symbols-outlined text-[#99907c] group-hover:text-primary transition-colors">collections</span> Vision Boards
+            <span className="material-symbols-outlined text-[#99907c] group-hover:text-primary transition-colors">collections</span> Gallery
           </Link>
           <Link href="/contact" onClick={() => setIsDrawerOpen(false)} className="flex items-center gap-4 py-4 font-body-md text-label-lg uppercase tracking-widest text-[#d0c5af] pl-4 hover:bg-[#d4af37]/10 hover:text-primary transition-all duration-200 ease-in-out rounded-lg group">
             <span className="material-symbols-outlined text-[#99907c] group-hover:text-primary transition-colors">contact_support</span> Inquire
@@ -71,8 +71,8 @@ export default function Navbar() {
           <span className="hidden lg:block font-headline-md text-headline-md text-primary tracking-tighter">Vision Beyond Events</span>
         </Link>
         <div className="hidden lg:flex items-center gap-gutter">
-          <Link className="font-body-md text-label-lg uppercase tracking-widest text-on-background/70 hover:text-primary transition-colors duration-300" href="/services/weddings">Capabilities</Link>
-          <Link className="font-body-md text-label-lg uppercase tracking-widest text-on-background/70 hover:text-primary transition-colors duration-300" href="/gallery?v=1">Vision Boards</Link>
+          <Link className="font-body-md text-label-lg uppercase tracking-widest text-on-background/70 hover:text-primary transition-colors duration-300" href="/services/weddings">Services</Link>
+          <Link className="font-body-md text-label-lg uppercase tracking-widest text-on-background/70 hover:text-primary transition-colors duration-300" href="/gallery?v=1">Gallery</Link>
           <Link className="font-body-md text-label-lg uppercase tracking-widest text-on-background/70 hover:text-primary transition-colors duration-300" href="/contact">Inquire</Link>
           <Link className="gold-gradient-bg text-[#121212] font-body-md text-label-lg uppercase tracking-widest px-8 py-3 rounded-full hover:opacity-90 transition-opacity shadow-lg" href="/contact">Private Consultation</Link>
         </div>

@@ -2,14 +2,15 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
+import { ContactSection } from '@/components/ContactSection';
 import { FadeIn } from '@/components/FadeIn';
 import AnimatedBackground from '@/components/AnimatedBackground';
 import TextReveal from '@/components/TextReveal';
 
 export const metadata: Metadata = {
-  title: "Luxury Event Organizer India — Destination Weddings & Corporate Events | Vision Beyond Events",
-  description: "India's discreet luxury event organizer. We plan palace destination weddings in Udaipur, high-security corporate offsites, and private UHNWI celebrations. NDA-by-default. Serving Mumbai, Delhi & globally.",
-  keywords: ["luxury event organizer India", "destination wedding planner Udaipur", "corporate event organizer India", "palace wedding planner", "UHNWI event planner India", "private event organizer", "NDA wedding planner India"],
+  title: "Best Luxury Event Organizer India — Destination Weddings & Corporate Events | Vision Beyond Events",
+  description: "Vision Beyond Events is the premier luxury event planner in India. We specialize in destination weddings in Udaipur, corporate events, and memorable private celebrations.",
+  keywords: ["best event organizer India", "destination wedding planner Udaipur", "luxury wedding planner Mumbai", "corporate event organizer Delhi", "top wedding planner India", "premium event management"],
   alternates: {
     canonical: "https://www.vbevents.co.in",
   },
@@ -24,25 +25,23 @@ export default function Home() {
       <main className="relative h-[100dvh] w-full min-h-[600px] flex items-center justify-center overflow-hidden bg-[#0a0a0a]">
         <AnimatedBackground />
         
-        {/* Placeholder for Cinematic Video Loop */}
         <div className="absolute inset-0 z-0 opacity-30">
           <div className="w-full h-full bg-[#121212] object-cover absolute inset-0"></div>
-          {/* <video autoPlay loop muted playsInline className="w-full h-full object-cover grayscale-[30%]"><source src="/video/hero-cinematic.mp4" type="video/mp4" /></video> */}
         </div>
 
         <FadeIn className="relative z-10 flex flex-col items-center justify-center text-center px-6 w-full max-w-5xl mx-auto pt-20">
           <div className="w-12 h-[1px] bg-[#d4af37]/60 mb-8"></div>
           <TextReveal 
-            text="The Premier Luxury Event Organizer for India's Most Consequential Celebrations." 
+            text="Making Your Dream Weddings & Luxury Events a Reality." 
             className="font-headline-lg text-4xl md:text-6xl lg:text-7xl text-white mb-12 drop-shadow-2xl max-w-4xl leading-tight"
             el="h1"
           />
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link className="inline-block gold-gradient-bg text-[#121212] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]" href="/contact">
-              Request a Private Consultation
+              Plan Your Event
             </Link>
             <Link className="inline-block border border-[#d4af37] text-[#d4af37] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:bg-[#d4af37] hover:text-[#121212] transition-colors duration-300 backdrop-blur-sm" href="/gallery?v=1">
-              View Vision Boards
+              See Our Work
             </Link>
           </div>
         </FadeIn>
@@ -58,20 +57,66 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Stats Section */}
+      {/* Who We Are Section (New) */}
       <section className="py-24 px-6 md:px-20 bg-[#0a0a0a]">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#d4af37] mb-6">Who We Are</p>
+          <h2 className="font-headline-lg text-3xl md:text-5xl text-white mb-8 leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
+            We turn your special moments into unforgettable memories.
+          </h2>
+          <p className="font-body-md text-on-surface-variant text-lg leading-relaxed">
+            Based in India, Vision Beyond Events is a premium event management company dedicated to crafting flawless destination weddings, grand corporate events, and intimate private celebrations. Our passion is to take away all your stress so you can truly enjoy your big day. From finding the perfect venue to designing breathtaking decor, our team handles everything with a warm, personal touch.
+          </p>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-16 px-6 md:px-20 bg-[#121212] border-y border-[#d4af37]/10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-[#d4af37]/20">
-          <div className="py-8 md:py-0">
-            <h3 className="font-headline-lg text-6xl text-[#d4af37] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>500+</h3>
-            <p className="font-body-md text-on-surface-variant text-sm uppercase tracking-widest">Guests Coordinated Across 3 Continents</p>
+          <div className="py-4 md:py-0">
+            <h3 className="font-headline-lg text-5xl md:text-6xl text-[#d4af37] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>500+</h3>
+            <p className="font-body-md text-on-surface-variant text-sm uppercase tracking-widest">Happy Guests Hosted Globally</p>
           </div>
-          <div className="py-8 md:py-0">
-            <h3 className="font-headline-lg text-6xl text-[#d4af37] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>22+</h3>
-            <p className="font-body-md text-on-surface-variant text-sm uppercase tracking-widest">Legacy Celebrations Executed</p>
+          <div className="py-4 md:py-0">
+            <h3 className="font-headline-lg text-5xl md:text-6xl text-[#d4af37] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>22+</h3>
+            <p className="font-body-md text-on-surface-variant text-sm uppercase tracking-widest">Successful Events Completed</p>
           </div>
-          <div className="py-8 md:py-0">
-            <h3 className="font-headline-lg text-6xl text-[#d4af37] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>0</h3>
-            <p className="font-body-md text-on-surface-variant text-sm uppercase tracking-widest">Execution Incidents</p>
+          <div className="py-4 md:py-0">
+            <h3 className="font-headline-lg text-5xl md:text-6xl text-[#d4af37] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>100%</h3>
+            <p className="font-body-md text-on-surface-variant text-sm uppercase tracking-widest">Client Satisfaction</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section (New) */}
+      <section className="py-24 px-6 md:px-20 bg-[#0a0a0a]">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Why Choose Us?</h2>
+            <p className="font-body-md text-on-surface-variant text-lg">We bring expertise, elegance, and peace of mind to your celebrations.</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-[#121212] p-8 border border-[#d4af37]/10 hover:border-[#d4af37]/40 transition-colors text-center rounded-lg">
+              <span className="material-symbols-outlined text-4xl text-[#d4af37] mb-4">diamond</span>
+              <h3 className="font-headline-sm text-xl text-white mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Premium Venues</h3>
+              <p className="font-body-md text-on-surface-variant text-sm">Exclusive access to the best palaces, resorts, and banquet halls across India.</p>
+            </div>
+            <div className="bg-[#121212] p-8 border border-[#d4af37]/10 hover:border-[#d4af37]/40 transition-colors text-center rounded-lg">
+              <span className="material-symbols-outlined text-4xl text-[#d4af37] mb-4">support_agent</span>
+              <h3 className="font-headline-sm text-xl text-white mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Expert Planning</h3>
+              <p className="font-body-md text-on-surface-variant text-sm">Our dedicated team manages everything from catering to guest hospitality smoothly.</p>
+            </div>
+            <div className="bg-[#121212] p-8 border border-[#d4af37]/10 hover:border-[#d4af37]/40 transition-colors text-center rounded-lg">
+              <span className="material-symbols-outlined text-4xl text-[#d4af37] mb-4">security</span>
+              <h3 className="font-headline-sm text-xl text-white mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Complete Privacy</h3>
+              <p className="font-body-md text-on-surface-variant text-sm">We ensure 100% security and confidentiality for our VIP guests and high-profile clients.</p>
+            </div>
+            <div className="bg-[#121212] p-8 border border-[#d4af37]/10 hover:border-[#d4af37]/40 transition-colors text-center rounded-lg">
+              <span className="material-symbols-outlined text-4xl text-[#d4af37] mb-4">check_circle</span>
+              <h3 className="font-headline-sm text-xl text-white mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Stress-Free Experience</h3>
+              <p className="font-body-md text-on-surface-variant text-sm">You enjoy the celebration while we handle all the behind-the-scenes hard work.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -80,17 +125,17 @@ export default function Home() {
       <section className="py-24 px-6 md:px-20 bg-[#121212] border-y border-[#d4af37]/10">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
           <div className="md:w-1/2">
-            <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>Operational Shielding.</h2>
+            <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>Your Privacy, Our Priority.</h2>
             <p className="font-body-md text-on-surface-variant text-lg leading-relaxed mb-8">
-              We operate under strict NDA-by-default protocols. As your premier event organizer, your identity, investment, and celebration are compartmentalized and protected. We do not just design events; we architect secure, insulated experiences for UHNWIs and corporate leadership.
+              We understand that some celebrations require absolute discretion. For our special guests, VIPs, and corporate leaders, we provide strict privacy protocols. Your event details, guest lists, and memories are kept completely secure and confidential.
             </p>
             <Link className="inline-flex items-center gap-2 font-body-md text-label-lg uppercase tracking-widest text-[#d4af37] hover:text-white transition-colors" href="/discretion">
-              View Our Privacy Protocols <span className="material-symbols-outlined text-[18px]">arrow_right_alt</span>
+              View Our Privacy Policy <span className="material-symbols-outlined text-[18px]">arrow_right_alt</span>
             </Link>
           </div>
-          <div className="md:w-1/2 relative aspect-square w-full max-w-md mx-auto border border-[#d4af37]/20 p-4">
-            <div className="w-full h-full bg-[#0a0a0a] flex items-center justify-center">
-              <span className="material-symbols-outlined text-[80px] text-[#d4af37]/50" style={{ fontVariationSettings: "'FILL' 1" }}>lock</span>
+          <div className="md:w-1/2 relative aspect-square w-full max-w-md mx-auto border border-[#d4af37]/20 p-4 rounded-full">
+            <div className="w-full h-full bg-[#0a0a0a] flex items-center justify-center rounded-full">
+              <span className="material-symbols-outlined text-[80px] text-[#d4af37]/50" style={{ fontVariationSettings: "'FILL' 1" }}>shield_lock</span>
             </div>
           </div>
         </div>
@@ -99,8 +144,8 @@ export default function Home() {
       {/* Services Section */}
       <section className="py-[120px] md:py-[160px] px-6 md:px-20 w-full max-w-[1440px] mx-auto bg-[#0a0a0a]" id="services">
         <FadeIn className="text-center mb-20">
-          <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-on-surface-variant mb-4">Our Expertise</p>
-          <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] mb-4 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>Capabilities & Curation</h2>
+          <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-on-surface-variant mb-4">What We Do</p>
+          <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] mb-4 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>Our Services</h2>
           <div className="w-24 h-px bg-[#d4af37]/30 mx-auto"></div>
         </FadeIn>
         
@@ -161,18 +206,118 @@ export default function Home() {
         </FadeIn>
       </section>
 
+      {/* Testimonials Section (New) */}
+      <section className="py-24 px-6 md:px-20 bg-[#121212] border-t border-[#d4af37]/10">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#d4af37] mb-4">Happy Clients</p>
+            <h2 className="font-headline-lg text-4xl md:text-5xl text-white mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>What People Say</h2>
+            <div className="w-24 h-px bg-[#d4af37]/30 mx-auto"></div>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-[#0a0a0a] p-8 rounded-lg border border-[#d4af37]/10">
+              <div className="flex gap-1 text-[#d4af37] mb-6">
+                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+              </div>
+              <p className="font-body-md text-on-surface-variant italic mb-6">
+                "Vision Beyond Events made our Udaipur destination wedding absolutely magical. From the decor to guest hospitality, everything was perfect. We didn't have to worry about a single thing!"
+              </p>
+              <div className="font-headline-sm text-white">Rahul & Sneha</div>
+              <div className="font-body-md text-sm text-[#d4af37]">Destination Wedding</div>
+            </div>
+            
+            <div className="bg-[#0a0a0a] p-8 rounded-lg border border-[#d4af37]/10">
+              <div className="flex gap-1 text-[#d4af37] mb-6">
+                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+              </div>
+              <p className="font-body-md text-on-surface-variant italic mb-6">
+                "We hired them for our company's annual leadership summit. Their professionalism and attention to detail, especially regarding security and privacy, was highly impressive."
+              </p>
+              <div className="font-headline-sm text-white">Amit Sharma</div>
+              <div className="font-body-md text-sm text-[#d4af37]">Corporate Event</div>
+            </div>
+
+            <div className="bg-[#0a0a0a] p-8 rounded-lg border border-[#d4af37]/10">
+              <div className="flex gap-1 text-[#d4af37] mb-6">
+                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+              </div>
+              <p className="font-body-md text-on-surface-variant italic mb-6">
+                "Best event planners in town! They organized my son's first birthday party. The decor was breathtaking and the management was flawless. Highly recommended."
+              </p>
+              <div className="font-headline-sm text-white">Priya Patel</div>
+              <div className="font-body-md text-sm text-[#d4af37]">Birthday Celebration</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section (New) */}
+      <section className="py-24 px-6 md:px-20 bg-[#0a0a0a] border-t border-[#d4af37]/10">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Frequently Asked Questions</h2>
+            <p className="font-body-md text-on-surface-variant text-lg">Got questions? We have answers to help you get started.</p>
+          </div>
+          
+          <div className="flex flex-col gap-4">
+            <details className="group bg-[#121212] border border-[#d4af37]/20 rounded-lg open:border-[#d4af37]/50 transition-colors">
+              <summary className="flex justify-between items-center font-headline-sm text-xl text-white cursor-pointer p-6 list-none">
+                Do you plan events outside of your city?
+                <span className="material-symbols-outlined text-[#d4af37] group-open:rotate-180 transition-transform">expand_more</span>
+              </summary>
+              <div className="px-6 pb-6 pt-0 font-body-md text-on-surface-variant leading-relaxed">
+                Yes! We are destination wedding specialists. Whether you want to get married in Udaipur, Jaipur, Goa, Mumbai, or internationally, our team will travel to manage the entire event smoothly.
+              </div>
+            </details>
+            
+            <details className="group bg-[#121212] border border-[#d4af37]/20 rounded-lg open:border-[#d4af37]/50 transition-colors">
+              <summary className="flex justify-between items-center font-headline-sm text-xl text-white cursor-pointer p-6 list-none">
+                Do you handle everything from decor to catering?
+                <span className="material-symbols-outlined text-[#d4af37] group-open:rotate-180 transition-transform">expand_more</span>
+              </summary>
+              <div className="px-6 pb-6 pt-0 font-body-md text-on-surface-variant leading-relaxed">
+                Absolutely. We provide end-to-end event management. This includes venue booking, luxury decor, catering, photography, guest hospitality, transport, and artist management.
+              </div>
+            </details>
+
+            <details className="group bg-[#121212] border border-[#d4af37]/20 rounded-lg open:border-[#d4af37]/50 transition-colors">
+              <summary className="flex justify-between items-center font-headline-sm text-xl text-white cursor-pointer p-6 list-none">
+                How do I book a consultation with your team?
+                <span className="material-symbols-outlined text-[#d4af37] group-open:rotate-180 transition-transform">expand_more</span>
+              </summary>
+              <div className="px-6 pb-6 pt-0 font-body-md text-on-surface-variant leading-relaxed">
+                You can easily book a private consultation by clicking the "Inquire" button at the top of the page. Fill out the contact form, and our team will get back to you within 24 hours.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
       {/* The Atelier Teaser */}
-      <section className="py-24 px-6 md:px-20 bg-[#121212]">
+      <section className="py-24 px-6 md:px-20 bg-[#121212] border-t border-[#d4af37]/10">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#d4af37] mb-6">The Atelier</p>
+          <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#d4af37] mb-6">Our Team</p>
           <h2 className="font-headline-lg text-4xl md:text-5xl text-on-primary mb-8 leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
-            A boutique event organizer backed by institutional-grade execution.
+            A passionate team backed by professional experience.
           </h2>
           <p className="font-body-md text-on-surface-variant text-lg leading-relaxed mb-10">
-            We operate at the intersection of artisanal design and relentless logistics. Discover why we are India&apos;s most trusted event organizer for legacy celebrations.
+            We operate with a perfect balance of beautiful design and strong management. Discover why we are India&apos;s most trusted event organizers for weddings and celebrations.
           </p>
           <Link className="inline-block border border-on-surface/20 text-on-surface font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:border-[#d4af37] hover:text-[#d4af37] transition-colors duration-300" href="/about">
-            Discover The Atelier
+            Meet The Team
           </Link>
         </div>
       </section>
@@ -182,11 +327,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 md:px-20 flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left">
             <div className="font-headline-md text-2xl text-[#d4af37] tracking-tighter mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Vision Beyond Events</div>
-            <div className="font-body-md text-on-surface-variant text-sm tracking-widest uppercase">Experience Architecture</div>
+            <div className="font-body-md text-on-surface-variant text-sm tracking-widest uppercase">Luxury Event Planners</div>
           </div>
           <div className="flex gap-8">
-            <Link className="font-body-md text-sm text-on-surface-variant hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/discretion">Client Access</Link>
-            <Link className="font-body-md text-sm text-on-surface-variant hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/contact">Inquire</Link>
+            <Link className="font-body-md text-sm text-on-surface-variant hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/discretion">Privacy</Link>
+            <Link className="font-body-md text-sm text-on-surface-variant hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/contact">Contact Us</Link>
           </div>
         </div>
       </footer>
