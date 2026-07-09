@@ -62,7 +62,7 @@ export default function Navbar() {
             <g transform="translate(5, 5)">
               <circle cx="20" cy="20" r="19" fill="none" stroke="url(#goldGradDrawer)" strokeWidth="1.2" strokeOpacity="0.8" />
               <text x="8" y="26" fontFamily="'Playfair Display', serif" fontSize="18" fontWeight="600" fontStyle="italic" fill="url(#goldGradDrawer)">V</text>
-              <text x="21" y="26" fontFamily="'Playfair Display', serif" fontSize="18" fontWeight="600" font-style="italic" fill="url(#goldGradDrawer)">B</text>
+              <text x="21" y="26" fontFamily="'Playfair Display', serif" fontSize="18" fontWeight="600" fontStyle="italic" fill="url(#goldGradDrawer)">B</text>
             </g>
             <g transform="translate(58, 0)">
               <text x="0" y="23" fontFamily="'Playfair Display', serif" fontSize="18" fontWeight="700" fill="#0f172a" letterSpacing="1.5">VISION BEYOND</text>
