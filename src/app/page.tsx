@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
@@ -7,7 +7,7 @@ import AnimatedBackground from '@/components/AnimatedBackground';
 import TextReveal from '@/components/TextReveal';
 
 export const metadata: Metadata = {
-  title: "Best Luxury Event Organizer India — Destination Weddings & Corporate Events | Vision Beyond Events",
+  title: "Best Luxury Event Organizer India â€” Destination Weddings & Corporate Events | Vision Beyond Events",
   description: "Vision Beyond Events is the premier luxury event planner in India. We specialize in destination weddings in Udaipur, corporate events, and memorable private celebrations.",
   keywords: ["best event organizer India", "destination wedding planner Udaipur", "luxury wedding planner Mumbai", "corporate event organizer Delhi", "top wedding planner India", "premium event management"],
   alternates: {
@@ -21,11 +21,11 @@ export default function Home() {
       <Navbar />
 
       {/* Main Hero Section */}
-      <main className="relative h-[100dvh] w-full min-h-[600px] flex items-center justify-center overflow-hidden bg-[#0a0a0a]">
+      <main className="relative h-[100dvh] w-full min-h-[600px] flex items-center justify-center overflow-hidden bg-[#0d1526]">
         <AnimatedBackground />
         
         <div className="absolute inset-0 z-0 opacity-30">
-          <div className="w-full h-full bg-[#121212] object-cover absolute inset-0"></div>
+          <div className="w-full h-full bg-[#111c38] object-cover absolute inset-0"></div>
         </div>
 
         <FadeIn className="relative z-10 flex flex-col items-center justify-center text-center px-6 w-full max-w-5xl mx-auto pt-20">
@@ -36,10 +36,10 @@ export default function Home() {
             el="h1"
           />
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Link className="inline-block gold-gradient-bg text-[#121212] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]" href="/contact">
+            <Link className="inline-block gold-gradient-bg text-[#0d1526] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]" href="/contact">
               Plan Your Event
             </Link>
-            <Link className="inline-block border border-[#d4af37] text-[#d4af37] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:bg-[#d4af37] hover:text-[#121212] transition-colors duration-300 backdrop-blur-sm" href="/gallery?v=1">
+            <Link className="inline-block border border-[#d4af37] text-[#d4af37] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:bg-[#d4af37] hover:text-[#0d1526] transition-colors duration-300 backdrop-blur-sm" href="/gallery?v=1">
               See Our Work
             </Link>
           </div>
@@ -47,7 +47,7 @@ export default function Home() {
       </main>
 
       {/* Press / Editorial Mentions Strip */}
-      <div className="w-full border-y border-[#d4af37]/10 bg-[#121212] py-8 overflow-hidden">
+      <div className="w-full border-y border-[#d4af37]/10 bg-[#111c38] py-8 overflow-hidden">
         <div className="flex justify-center items-center gap-12 md:gap-24 opacity-40 grayscale flex-wrap px-6">
           <span className="font-headline-md text-xl font-bold tracking-widest" style={{ fontFamily: 'Playfair Display, serif' }}>VOGUE</span>
           <span className="font-headline-md text-xl font-bold tracking-widest" style={{ fontFamily: 'Playfair Display, serif' }}>HARPER&apos;S BAZAAR</span>
@@ -57,7 +57,7 @@ export default function Home() {
       </div>
 
       {/* Who We Are Section */}
-      <section className="py-24 px-6 md:px-20 bg-[#0a0a0a]">
+      <section className="py-24 px-6 md:px-20 bg-[#0d1526]">
         <div className="max-w-4xl mx-auto text-center">
           <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#d4af37] mb-6">Who We Are</p>
           <h2 className="font-headline-lg text-3xl md:text-5xl text-white mb-8 leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
@@ -70,7 +70,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 px-6 md:px-20 bg-[#121212] border-y border-[#d4af37]/10">
+      <section className="py-16 px-6 md:px-20 bg-[#111c38] border-y border-[#d4af37]/10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-[#d4af37]/20">
           <div className="py-4 md:py-0">
             <h3 className="font-headline-lg text-5xl md:text-6xl text-[#d4af37] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>500+</h3>
@@ -88,7 +88,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-24 px-6 md:px-20 bg-[#0a0a0a]">
+      <section className="py-24 px-6 md:px-20 bg-[#0d1526]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Why Choose Us?</h2>
@@ -96,22 +96,22 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-[#121212] p-8 border border-[#d4af37]/10 hover:border-[#d4af37]/40 transition-colors text-center rounded-lg">
+            <div className="bg-[#111c38] p-8 border border-[#d4af37]/10 hover:border-[#d4af37]/40 transition-colors text-center rounded-lg">
               <span className="material-symbols-outlined text-4xl text-[#d4af37] mb-4">diamond</span>
               <h3 className="font-headline-sm text-xl text-white mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Premium Venues</h3>
               <p className="font-body-md text-on-surface-variant text-sm">Exclusive access to the best palaces, resorts, and banquet halls across India.</p>
             </div>
-            <div className="bg-[#121212] p-8 border border-[#d4af37]/10 hover:border-[#d4af37]/40 transition-colors text-center rounded-lg">
+            <div className="bg-[#111c38] p-8 border border-[#d4af37]/10 hover:border-[#d4af37]/40 transition-colors text-center rounded-lg">
               <span className="material-symbols-outlined text-4xl text-[#d4af37] mb-4">support_agent</span>
               <h3 className="font-headline-sm text-xl text-white mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Expert Planning</h3>
               <p className="font-body-md text-on-surface-variant text-sm">Our dedicated team manages everything from catering to guest hospitality smoothly.</p>
             </div>
-            <div className="bg-[#121212] p-8 border border-[#d4af37]/10 hover:border-[#d4af37]/40 transition-colors text-center rounded-lg">
+            <div className="bg-[#111c38] p-8 border border-[#d4af37]/10 hover:border-[#d4af37]/40 transition-colors text-center rounded-lg">
               <span className="material-symbols-outlined text-4xl text-[#d4af37] mb-4">security</span>
               <h3 className="font-headline-sm text-xl text-white mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Complete Privacy</h3>
               <p className="font-body-md text-on-surface-variant text-sm">We ensure 100% security and confidentiality for our VIP guests and high-profile clients.</p>
             </div>
-            <div className="bg-[#121212] p-8 border border-[#d4af37]/10 hover:border-[#d4af37]/40 transition-colors text-center rounded-lg">
+            <div className="bg-[#111c38] p-8 border border-[#d4af37]/10 hover:border-[#d4af37]/40 transition-colors text-center rounded-lg">
               <span className="material-symbols-outlined text-4xl text-[#d4af37] mb-4">check_circle</span>
               <h3 className="font-headline-sm text-xl text-white mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Stress-Free Experience</h3>
               <p className="font-body-md text-on-surface-variant text-sm">You enjoy the celebration while we handle all the behind-the-scenes hard work.</p>
@@ -121,7 +121,7 @@ export default function Home() {
       </section>
 
       {/* Discretion Teaser */}
-      <section className="py-24 px-6 md:px-20 bg-[#121212] border-y border-[#d4af37]/10">
+      <section className="py-24 px-6 md:px-20 bg-[#111c38] border-y border-[#d4af37]/10">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
           <div className="md:w-1/2">
             <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>Your Privacy, Our Priority.</h2>
@@ -133,7 +133,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="md:w-1/2 relative aspect-square w-full max-w-md mx-auto border border-[#d4af37]/20 p-4 rounded-full">
-            <div className="w-full h-full bg-[#0a0a0a] flex items-center justify-center rounded-full">
+            <div className="w-full h-full bg-[#0d1526] flex items-center justify-center rounded-full">
               <span className="material-symbols-outlined text-[80px] text-[#d4af37]/50" style={{ fontVariationSettings: "'FILL' 1" }}>shield_lock</span>
             </div>
           </div>
@@ -141,7 +141,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-[120px] md:py-[160px] px-6 md:px-20 w-full max-w-[1440px] mx-auto bg-[#0a0a0a]" id="services">
+      <section className="py-[120px] md:py-[160px] px-6 md:px-20 w-full max-w-[1440px] mx-auto bg-[#0d1526]" id="services">
         <FadeIn className="text-center mb-20">
           <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-on-surface-variant mb-4">What We Do</p>
           <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] mb-4 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>Our Services</h2>
@@ -149,7 +149,7 @@ export default function Home() {
         </FadeIn>
         
         <FadeIn className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <Link href="/gallery?v=1#birthdays" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-2 hover:border-[#d4af37]/40">
+          <Link href="/gallery?v=1#birthdays" className="block group relative bg-[#111c38] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-2 hover:border-[#d4af37]/40">
             <div className="aspect-[16/9] w-full overflow-hidden relative">
               <Image fill sizes="(max-width: 768px) 100vw, 66vw" alt="Luxury Birthday Party Planning by Vision Beyond Events" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/gallery/birthday_IMG_20250710_182149.jpg.jpeg"/>
             </div>
@@ -158,7 +158,7 @@ export default function Home() {
             </div>
           </Link>
           
-          <Link href="/gallery?v=1#marriages" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:row-span-2 hover:border-[#d4af37]/40">
+          <Link href="/gallery?v=1#marriages" className="block group relative bg-[#111c38] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:row-span-2 hover:border-[#d4af37]/40">
             <div className="aspect-[3/4] h-full w-full overflow-hidden relative">
               <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Luxury Indian Wedding and Marriage Planning" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/ai_marriages.png"/>
             </div>
@@ -167,7 +167,7 @@ export default function Home() {
             </div>
           </Link>
           
-          <Link href="/gallery?v=1#haldi-ceremonies" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40 lg:col-span-2">
+          <Link href="/gallery?v=1#haldi-ceremonies" className="block group relative bg-[#111c38] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40 lg:col-span-2">
             <div className="aspect-[16/9] w-full overflow-hidden relative">
               <Image fill sizes="(max-width: 768px) 100vw, 66vw" alt="Vibrant Haldi Ceremony Setup" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/gallery/haldi_ChatGPT Image Jun 22, 2026, 07_38_25 PM.png"/>
             </div>
@@ -176,7 +176,7 @@ export default function Home() {
             </div>
           </Link>
           
-          <Link href="/gallery?v=1#house-warming-griha-pravesh" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-2 hover:border-[#d4af37]/40">
+          <Link href="/gallery?v=1#house-warming-griha-pravesh" className="block group relative bg-[#111c38] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-2 hover:border-[#d4af37]/40">
             <div className="aspect-[21/9] w-full overflow-hidden relative">
               <Image fill sizes="(max-width: 768px) 100vw, 66vw" alt="House Warming and Griha Pravesh Event Decor" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%] object-center" src="/images/housewarming.jpeg"/>
             </div>
@@ -185,7 +185,7 @@ export default function Home() {
             </div>
           </Link>
           
-          <Link href="/gallery?v=1#corporate-school-events" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40">
+          <Link href="/gallery?v=1#corporate-school-events" className="block group relative bg-[#111c38] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40">
             <div className="aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/3] h-full w-full overflow-hidden relative">
               <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Corporate and School Event Organizer" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/corporate_event.png"/>
             </div>
@@ -194,7 +194,7 @@ export default function Home() {
             </div>
           </Link>
           
-          <Link href="/gallery?v=1#festival-devotional-events" className="block group relative bg-[#121212] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-3 hover:border-[#d4af37]/40">
+          <Link href="/gallery?v=1#festival-devotional-events" className="block group relative bg-[#111c38] border border-[#d4af37]/10 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-3 hover:border-[#d4af37]/40">
             <div className="aspect-[16/9] lg:aspect-[21/9] h-full w-full overflow-hidden relative">
               <Image fill sizes="100vw" alt="Festival and Devotional Event Planning" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/festival_devotional.png"/>
             </div>
@@ -206,7 +206,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-24 px-6 md:px-20 bg-[#121212] border-t border-[#d4af37]/10">
+      <section className="py-24 px-6 md:px-20 bg-[#111c38] border-t border-[#d4af37]/10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#d4af37] mb-4">Happy Clients</p>
@@ -215,7 +215,7 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-[#0a0a0a] p-8 rounded-lg border border-[#d4af37]/10">
+            <div className="bg-[#0d1526] p-8 rounded-lg border border-[#d4af37]/10">
               <div className="flex gap-1 text-[#d4af37] mb-6">
                 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
@@ -230,7 +230,7 @@ export default function Home() {
               <div className="font-body-md text-sm text-[#d4af37]">Destination Wedding</div>
             </div>
             
-            <div className="bg-[#0a0a0a] p-8 rounded-lg border border-[#d4af37]/10">
+            <div className="bg-[#0d1526] p-8 rounded-lg border border-[#d4af37]/10">
               <div className="flex gap-1 text-[#d4af37] mb-6">
                 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
@@ -245,7 +245,7 @@ export default function Home() {
               <div className="font-body-md text-sm text-[#d4af37]">Corporate Event</div>
             </div>
 
-            <div className="bg-[#0a0a0a] p-8 rounded-lg border border-[#d4af37]/10">
+            <div className="bg-[#0d1526] p-8 rounded-lg border border-[#d4af37]/10">
               <div className="flex gap-1 text-[#d4af37] mb-6">
                 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
@@ -264,7 +264,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 px-6 md:px-20 bg-[#0a0a0a] border-t border-[#d4af37]/10">
+      <section className="py-24 px-6 md:px-20 bg-[#0d1526] border-t border-[#d4af37]/10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Frequently Asked Questions</h2>
@@ -272,7 +272,7 @@ export default function Home() {
           </div>
           
           <div className="flex flex-col gap-4">
-            <details className="group bg-[#121212] border border-[#d4af37]/20 rounded-lg open:border-[#d4af37]/50 transition-colors">
+            <details className="group bg-[#111c38] border border-[#d4af37]/20 rounded-lg open:border-[#d4af37]/50 transition-colors">
               <summary className="flex justify-between items-center font-headline-sm text-xl text-white cursor-pointer p-6 list-none">
                 Do you plan events outside of your city?
                 <span className="material-symbols-outlined text-[#d4af37] group-open:rotate-180 transition-transform">expand_more</span>
@@ -282,7 +282,7 @@ export default function Home() {
               </div>
             </details>
             
-            <details className="group bg-[#121212] border border-[#d4af37]/20 rounded-lg open:border-[#d4af37]/50 transition-colors">
+            <details className="group bg-[#111c38] border border-[#d4af37]/20 rounded-lg open:border-[#d4af37]/50 transition-colors">
               <summary className="flex justify-between items-center font-headline-sm text-xl text-white cursor-pointer p-6 list-none">
                 Do you handle everything from decor to catering?
                 <span className="material-symbols-outlined text-[#d4af37] group-open:rotate-180 transition-transform">expand_more</span>
@@ -292,7 +292,7 @@ export default function Home() {
               </div>
             </details>
 
-            <details className="group bg-[#121212] border border-[#d4af37]/20 rounded-lg open:border-[#d4af37]/50 transition-colors">
+            <details className="group bg-[#111c38] border border-[#d4af37]/20 rounded-lg open:border-[#d4af37]/50 transition-colors">
               <summary className="flex justify-between items-center font-headline-sm text-xl text-white cursor-pointer p-6 list-none">
                 How do I book a consultation with your team?
                 <span className="material-symbols-outlined text-[#d4af37] group-open:rotate-180 transition-transform">expand_more</span>
@@ -306,7 +306,7 @@ export default function Home() {
       </section>
 
       {/* The Team Teaser */}
-      <section className="py-24 px-6 md:px-20 bg-[#121212] border-t border-[#d4af37]/10">
+      <section className="py-24 px-6 md:px-20 bg-[#111c38] border-t border-[#d4af37]/10">
         <div className="max-w-4xl mx-auto text-center">
           <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#d4af37] mb-6">Our Team</p>
           <h2 className="font-headline-lg text-4xl md:text-5xl text-on-primary mb-8 leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
@@ -322,7 +322,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="w-full py-16 bg-[#0a0a0a] border-t border-[#d4af37]/20">
+      <footer className="w-full py-16 bg-[#0d1526] border-t border-[#d4af37]/20">
         <div className="max-w-7xl mx-auto px-6 md:px-20 flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left">
             <div className="font-headline-md text-2xl text-[#d4af37] tracking-tighter mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Vision Beyond Events</div>
@@ -337,3 +337,4 @@ export default function Home() {
     </>
   );
 }
+

@@ -1,4 +1,4 @@
-import fs from 'fs';
+﻿import fs from 'fs';
 import path from 'path';
 import { Metadata } from 'next';
 import Image from 'next/image';
@@ -9,7 +9,7 @@ import VideoPlayer from './VideoPlayer';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: "Luxury Event Portfolio — Weddings, Corporate & Private Celebrations | Vision Beyond Events",
+  title: "Luxury Event Portfolio â€” Weddings, Corporate & Private Celebrations | Vision Beyond Events",
   description: "Explore Vision Beyond Events' portfolio of luxury destination weddings in Udaipur, corporate events, haldi ceremonies, house warming, birthdays & private celebrations across India.",
   keywords: ["luxury wedding portfolio India", "destination wedding photos Udaipur", "luxury event organizer portfolio", "corporate event photos India", "palace wedding inspiration India"],
   alternates: { canonical: "https://www.vbevents.co.in/gallery" },
@@ -63,7 +63,7 @@ export default function GalleryPage() {
                 {files.map((file, i) => {
                   const isVideo = file.toLowerCase().endsWith('.mp4');
                   return (
-                    <div key={i} className="break-inside-avoid rounded-xl overflow-hidden shadow-lg bg-[#121212] ghost-border group relative">
+                    <div key={i} className="break-inside-avoid rounded-xl overflow-hidden shadow-lg bg-[#111c38] ghost-border group relative">
                       {isVideo ? (
                         <VideoPlayer file={file} />
                       ) : (
@@ -98,7 +98,7 @@ export default function GalleryPage() {
           <div className="flex flex-col gap-2 text-center lg:text-left">
             <div className="font-headline-md text-headline-md text-primary tracking-tighter">Vision Beyond Events</div>
             <div className="font-body-md text-on-surface-variant flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
-              <span>📞 +91 80818 08902</span>
+              <span>ðŸ“ž +91 80818 08902</span>
               <span className="hidden sm:inline">|</span>
               <Link href="/" className="hover:text-primary transition-colors">Instagram (Coming Soon)</Link>
             </div>
@@ -108,10 +108,11 @@ export default function GalleryPage() {
             <Link className="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="/">Terms of Service</Link>
           </div>
           <div className="font-body-md text-body-md text-on-surface-variant text-center lg:text-right">
-              © {new Date().getFullYear()} Vision Beyond Events.<br/>Crafting Memories Since 2024.
+              Â© {new Date().getFullYear()} Vision Beyond Events.<br/>Crafting Memories Since 2024.
           </div>
         </div>
       </footer>
     </>
   );
 }
+

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useRef, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
@@ -41,7 +41,7 @@ function CustomSelect({
       </button>
       
       {isOpen && (
-        <div className="absolute top-full left-0 w-full mt-1 bg-[#121212] border border-primary/20 z-50 shadow-2xl max-h-60 overflow-y-auto">
+        <div className="absolute top-full left-0 w-full mt-1 bg-[#111c38] border border-primary/20 z-50 shadow-2xl max-h-60 overflow-y-auto">
           {options.map((opt) => (
             <div 
               key={opt.value}
@@ -148,7 +148,7 @@ export function ContactSection() {
   };
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 bg-[#121212] ghost-border relative z-10">
+    <div className="grid grid-cols-1 lg:grid-cols-2 bg-[#111c38] ghost-border relative z-10">
       {/* Consultation Form */}
       <div className="p-10 md:p-16 border-b lg:border-b-0 lg:border-r border-primary/10">
         <h2 className="font-headline-lg text-headline-lg text-primary mb-4 tracking-tighter">Private Consultation</h2>
@@ -266,3 +266,4 @@ export function ContactSection() {
     </div>
   );
 }
+

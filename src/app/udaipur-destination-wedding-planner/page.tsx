@@ -1,11 +1,11 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import { FadeIn } from '@/components/FadeIn';
 
 export const metadata: Metadata = {
   title: 'Udaipur Destination Wedding Planner | Palace Weddings by Vision Beyond Events',
-  description: 'The definitive luxury wedding planner for Udaipur palace weddings — lake palaces, fort venues, heritage havelis and lakeside estates. NDA-by-default. Zero public exposure.',
+  description: 'The definitive luxury wedding planner for Udaipur palace weddings â€” lake palaces, fort venues, heritage havelis and lakeside estates. NDA-by-default. Zero public exposure.',
   keywords: [
     'Udaipur destination wedding planner',
     'luxury wedding planner Udaipur',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.vbevents.co.in/udaipur-destination-wedding-planner' },
   openGraph: {
     title: 'Udaipur Destination Wedding Planner | Palace Weddings | Vision Beyond Events',
-    description: 'The definitive luxury wedding planner for Udaipur palace weddings — lake palaces, fort venues, and lakeside estates. NDA-by-default discretion.',
+    description: 'The definitive luxury wedding planner for Udaipur palace weddings â€” lake palaces, fort venues, and lakeside estates. NDA-by-default discretion.',
     url: 'https://www.vbevents.co.in/udaipur-destination-wedding-planner',
     siteName: 'Vision Beyond Events',
     locale: 'en_IN',
@@ -43,7 +43,7 @@ const serviceSchema = {
     { '@type': 'State', name: 'Rajasthan' },
     { '@type': 'Country', name: 'India' },
   ],
-  description: 'Ultra-luxury, NDA-protected destination wedding planning in Udaipur — palace buyouts, fort ceremonies, lakeside estates, and complete discreet guest management.',
+  description: 'Ultra-luxury, NDA-protected destination wedding planning in Udaipur â€” palace buyouts, fort ceremonies, lakeside estates, and complete discreet guest management.',
   serviceType: 'Luxury Destination Wedding Planning',
   url: 'https://www.vbevents.co.in/udaipur-destination-wedding-planner',
 };
@@ -51,12 +51,12 @@ const serviceSchema = {
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'Vision Beyond Events — Udaipur Wedding Planner',
+  name: 'Vision Beyond Events â€” Udaipur Wedding Planner',
   url: 'https://www.vbevents.co.in/udaipur-destination-wedding-planner',
   telephone: '+91-80818-08902',
   areaServed: { '@type': 'City', name: 'Udaipur' },
   description: 'Luxury destination wedding planner specializing in palace and fort weddings in Udaipur, Rajasthan.',
-  priceRange: '₹₹₹₹',
+  priceRange: 'â‚¹â‚¹â‚¹â‚¹',
 };
 
 const faqSchema = {
@@ -68,7 +68,7 @@ const faqSchema = {
       name: 'What is the best season for a palace wedding in Udaipur?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'October through February is the peak season for palace weddings in Udaipur — mild temperatures (15°C–28°C), clear skies, and golden light make for ideal conditions. November and December are the most sought-after months. March and September offer shoulder-season advantages including venue availability and more competitive pricing, while still maintaining pleasant conditions.',
+        text: 'October through February is the peak season for palace weddings in Udaipur â€” mild temperatures (15Â°Câ€“28Â°C), clear skies, and golden light make for ideal conditions. November and December are the most sought-after months. March and September offer shoulder-season advantages including venue availability and more competitive pricing, while still maintaining pleasant conditions.',
       },
     },
     {
@@ -76,7 +76,7 @@ const faqSchema = {
       name: 'How many guests can Udaipur palace venues typically accommodate?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Udaipur\'s heritage properties range significantly in capacity. Intimate heritage havelis comfortably host 50–150 guests for a truly private celebration. Mid-scale palace properties accommodate 200–500 guests across multiple event spaces. Grand palace and fort buyouts can manage 800+ guests across multiple event zones and days. We work across all scales.',
+        text: 'Udaipur\'s heritage properties range significantly in capacity. Intimate heritage havelis comfortably host 50â€“150 guests for a truly private celebration. Mid-scale palace properties accommodate 200â€“500 guests across multiple event spaces. Grand palace and fort buyouts can manage 800+ guests across multiple event zones and days. We work across all scales.',
       },
     },
     {
@@ -84,7 +84,7 @@ const faqSchema = {
       name: 'Do you handle permits and permissions for palace and fort properties in Udaipur?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Heritage property events in Udaipur require coordination with ASI (Archaeological Survey of India) for certain venues, state authority approvals, police permissions for large gatherings, and noise and lighting clearances. Our local operations team manages this entire permitting chain — including contingency plans if timelines shift.',
+        text: 'Yes. Heritage property events in Udaipur require coordination with ASI (Archaeological Survey of India) for certain venues, state authority approvals, police permissions for large gatherings, and noise and lighting clearances. Our local operations team manages this entire permitting chain â€” including contingency plans if timelines shift.',
       },
     },
     {
@@ -92,7 +92,7 @@ const faqSchema = {
       name: 'Can you handle monsoon contingency planning for outdoor Udaipur events?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Udaipur\'s monsoon season (July–September) brings beautiful scenery but requires comprehensive weather contingency planning. We deploy rapid-deployment structural tenting, complete venue-pivot protocols executable within a 4-hour window, and weather monitoring teams. No outdoor event operates without a shadow plan.',
+        text: 'Yes. Udaipur\'s monsoon season (Julyâ€“September) brings beautiful scenery but requires comprehensive weather contingency planning. We deploy rapid-deployment structural tenting, complete venue-pivot protocols executable within a 4-hour window, and weather monitoring teams. No outdoor event operates without a shadow plan.',
       },
     },
   ],
@@ -112,7 +112,7 @@ const VENUE_CATEGORIES = [
   {
     icon: 'water',
     title: 'Lake Palace Properties',
-    desc: 'Island and lakefront palace properties offering iconic Udaipur imagery — boat arrival sequences, lake-lit ceremonies, and an exclusivity that simply cannot be replicated elsewhere in India.',
+    desc: 'Island and lakefront palace properties offering iconic Udaipur imagery â€” boat arrival sequences, lake-lit ceremonies, and an exclusivity that simply cannot be replicated elsewhere in India.',
     tag: 'Intimate to Grand',
   },
   {
@@ -124,13 +124,13 @@ const VENUE_CATEGORIES = [
   {
     icon: 'villa',
     title: 'Heritage Havelis',
-    desc: 'Boutique 18th–19th century havelis within the old city walls. Intimate, atmospheric, and fiercely private — for families who value depth of experience over scale.',
-    tag: '50–200 Guests',
+    desc: 'Boutique 18thâ€“19th century havelis within the old city walls. Intimate, atmospheric, and fiercely private â€” for families who value depth of experience over scale.',
+    tag: '50â€“200 Guests',
   },
   {
     icon: 'landscape',
     title: 'Lakeside Estates',
-    desc: 'Private residential estates on the Udaipur lakes with exclusive garden and terrace access — without the heritage restrictions that come with classified properties.',
+    desc: 'Private residential estates on the Udaipur lakes with exclusive garden and terrace access â€” without the heritage restrictions that come with classified properties.',
     tag: 'Full Buyout',
   },
 ];
@@ -145,17 +145,17 @@ export default function UdaipurWeddingPlannerPage() {
 
       <Navbar />
 
-      <main className="min-h-screen bg-[#0a0a0a]">
+      <main className="min-h-screen bg-[#0d1526]">
 
         {/* Hero */}
-        <section className="relative pt-40 pb-24 px-6 md:px-20 border-b border-[#d4af37]/20 bg-gradient-to-b from-[#0a0a0a] to-[#121212]">
+        <section className="relative pt-40 pb-24 px-6 md:px-20 border-b border-[#d4af37]/20 bg-gradient-to-b from-[#0d1526] to-[#111c38]">
           <div className="max-w-4xl mx-auto">
             <nav aria-label="Breadcrumb" className="mb-10">
               <ol className="flex items-center gap-2 font-body-md text-xs uppercase tracking-widest text-on-surface-variant">
                 <li><Link href="/" className="hover:text-[#d4af37] transition-colors">Home</Link></li>
-                <li className="text-[#d4af37]/40">›</li>
+                <li className="text-[#d4af37]/40">â€º</li>
                 <li><Link href="/services/weddings" className="hover:text-[#d4af37] transition-colors">Services</Link></li>
-                <li className="text-[#d4af37]/40">›</li>
+                <li className="text-[#d4af37]/40">â€º</li>
                 <li className="text-[#d4af37]">Udaipur</li>
               </ol>
             </nav>
@@ -165,10 +165,10 @@ export default function UdaipurWeddingPlannerPage() {
               Udaipur Destination Wedding Planner
             </h1>
             <p className="font-body-md text-on-surface-variant text-xl leading-relaxed max-w-3xl mb-12">
-              Udaipur is India&apos;s most iconic destination for palace weddings — and also its most operationally complex. Permits, heritage restrictions, seasonal logistics, and VIP guest management across a lakeside city require a partner with deep local execution capability. That is what we provide, backed by our NDA-first discretion standard.
+              Udaipur is India&apos;s most iconic destination for palace weddings â€” and also its most operationally complex. Permits, heritage restrictions, seasonal logistics, and VIP guest management across a lakeside city require a partner with deep local execution capability. That is what we provide, backed by our NDA-first discretion standard.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact" className="inline-block gold-gradient-bg text-[#121212] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]">
+              <Link href="/contact" className="inline-block gold-gradient-bg text-[#111c38] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]">
                 Request a Confidential Consultation
               </Link>
               <Link href="/luxury-destination-wedding-planner-india" className="inline-block border border-[#d4af37]/60 text-[#d4af37] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:border-[#d4af37] hover:bg-[#d4af37]/5 transition-all duration-300">
@@ -179,13 +179,13 @@ export default function UdaipurWeddingPlannerPage() {
         </section>
 
         {/* Proof Strip */}
-        <section className="py-16 px-6 md:px-20 bg-[#121212] border-b border-[#d4af37]/10">
+        <section className="py-16 px-6 md:px-20 bg-[#111c38] border-b border-[#d4af37]/10">
           <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-[#d4af37]/20">
             {[
               { stat: '15+', label: 'Udaipur Weddings Executed' },
               { stat: '4', label: 'Venue Category Types' },
               { stat: '300+', label: 'VIP Guests Managed in Udaipur' },
-              { stat: 'Oct–Feb', label: 'Peak Season Window' },
+              { stat: 'Octâ€“Feb', label: 'Peak Season Window' },
             ].map(({ stat, label }) => (
               <div key={label} className="py-6 md:py-0 px-4">
                 <p className="font-headline-lg text-3xl md:text-4xl text-[#d4af37] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>{stat}</p>
@@ -197,7 +197,7 @@ export default function UdaipurWeddingPlannerPage() {
 
         {/* Venue Categories */}
         <FadeIn>
-          <section className="py-24 px-6 md:px-20 bg-[#0a0a0a]">
+          <section className="py-24 px-6 md:px-20 bg-[#0d1526]">
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-20">
                 <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-on-surface-variant mb-4">Venue Expertise</p>
@@ -211,7 +211,7 @@ export default function UdaipurWeddingPlannerPage() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {VENUE_CATEGORIES.map(({ icon, title, desc, tag }) => (
-                  <div key={title} className="border border-[#d4af37]/10 p-10 bg-[#121212] hover:border-[#d4af37]/40 transition-colors">
+                  <div key={title} className="border border-[#d4af37]/10 p-10 bg-[#111c38] hover:border-[#d4af37]/40 transition-colors">
                     <div className="flex items-start justify-between mb-6">
                       <span className="material-symbols-outlined text-4xl text-[#d4af37]">{icon}</span>
                       <span className="font-body-md text-xs uppercase tracking-widest text-[#d4af37]/60 border border-[#d4af37]/20 px-3 py-1">{tag}</span>
@@ -227,7 +227,7 @@ export default function UdaipurWeddingPlannerPage() {
 
         {/* Local Logistics Expertise */}
         <FadeIn>
-          <section className="py-24 px-6 md:px-20 bg-[#121212] border-y border-[#d4af37]/10">
+          <section className="py-24 px-6 md:px-20 bg-[#111c38] border-y border-[#d4af37]/10">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
               <div>
                 <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-on-surface-variant mb-4">Ground-Level Capability</p>
@@ -239,16 +239,16 @@ export default function UdaipurWeddingPlannerPage() {
                     The Udaipur Lakes region presents logistical challenges that generic Delhi or Mumbai-based planners consistently underestimate: narrow heritage lanes that restrict convoy movement, ASI permits for protected monuments, mandatory liaison with Rajasthan Tourism Development Corporation for certain locations, and a local vendor market that requires years of relationship cultivation.
                   </p>
                   <p>
-                    Our Udaipur operations capability includes on-ground logistics teams, pre-negotiated relationships with Maharaja-era property management offices, and an established local vendor ecosystem across décor, florals, catering, and entertainment.
+                    Our Udaipur operations capability includes on-ground logistics teams, pre-negotiated relationships with Maharaja-era property management offices, and an established local vendor ecosystem across dÃ©cor, florals, catering, and entertainment.
                   </p>
                 </div>
               </div>
               <div className="grid grid-cols-1 gap-4">
                 {[
-                  { icon: 'flight', title: 'Airport Transfer Management', desc: 'Maharana Pratap Airport to hotel — coordinated VIP fleet with guest name boards, lounge access for transit delays, and real-time tracking.' },
-                  { icon: 'description', title: 'Permit & Heritage Clearances', desc: 'ASI approvals, police event permissions, local authority NOCs — all managed by our regulatory team so you don\'t encounter surprises on day one.' },
+                  { icon: 'flight', title: 'Airport Transfer Management', desc: 'Maharana Pratap Airport to hotel â€” coordinated VIP fleet with guest name boards, lounge access for transit delays, and real-time tracking.' },
+                  { icon: 'description', title: 'Permit & Heritage Clearances', desc: 'ASI approvals, police event permissions, local authority NOCs â€” all managed by our regulatory team so you don\'t encounter surprises on day one.' },
                   { icon: 'wb_sunny', title: 'Season & Weather Planning', desc: 'Monsoon contingency protocols, winter heating solutions for open-air venues, and micro-climate briefings for event-day logistics.' },
-                  { icon: 'store', title: 'Curated Local Vendor Network', desc: 'Vetted Udaipur-based artisans, heritage caterers, folk performers, and floral studios — each under NDA, each selected for excellence.' },
+                  { icon: 'store', title: 'Curated Local Vendor Network', desc: 'Vetted Udaipur-based artisans, heritage caterers, folk performers, and floral studios â€” each under NDA, each selected for excellence.' },
                 ].map(({ icon, title, desc }) => (
                   <div key={title} className="flex gap-5 p-6 border border-[#d4af37]/10 hover:border-[#d4af37]/30 transition-colors">
                     <span className="material-symbols-outlined text-2xl text-[#d4af37] shrink-0 mt-0.5">{icon}</span>
@@ -264,31 +264,31 @@ export default function UdaipurWeddingPlannerPage() {
         </FadeIn>
 
         {/* FAQ */}
-        <section className="py-24 px-6 md:px-20 bg-[#0a0a0a]">
+        <section className="py-24 px-6 md:px-20 bg-[#0d1526]">
           <div className="max-w-3xl mx-auto">
             <div className="mb-16">
               <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-on-surface-variant mb-4">Common Questions</p>
               <h2 className="font-headline-lg text-4xl text-[#d4af37] tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
-                Udaipur Palace Weddings — FAQs
+                Udaipur Palace Weddings â€” FAQs
               </h2>
             </div>
             <div className="space-y-0">
               {[
                 {
                   q: 'What is the best season for a palace wedding in Udaipur?',
-                  a: 'October through February is the peak season — mild temperatures (15°C–28°C), clear skies, and golden light make for ideal conditions. November and December are most sought-after. March and September offer shoulder-season advantages including venue availability and more competitive pricing, while still maintaining pleasant conditions.',
+                  a: 'October through February is the peak season â€” mild temperatures (15Â°Câ€“28Â°C), clear skies, and golden light make for ideal conditions. November and December are most sought-after. March and September offer shoulder-season advantages including venue availability and more competitive pricing, while still maintaining pleasant conditions.',
                 },
                 {
                   q: 'How many guests can Udaipur palace venues typically accommodate?',
-                  a: "Udaipur's heritage properties range significantly in capacity. Intimate heritage havelis comfortably host 50–150 guests for a truly private celebration. Mid-scale palace properties accommodate 200–500 guests across multiple event spaces. Grand palace and fort buyouts can manage 800+ guests across multiple event zones and days.",
+                  a: "Udaipur's heritage properties range significantly in capacity. Intimate heritage havelis comfortably host 50â€“150 guests for a truly private celebration. Mid-scale palace properties accommodate 200â€“500 guests across multiple event spaces. Grand palace and fort buyouts can manage 800+ guests across multiple event zones and days.",
                 },
                 {
                   q: 'Do you handle permits and permissions for palace and fort properties in Udaipur?',
-                  a: 'Yes. Heritage property events in Udaipur require coordination with ASI for certain venues, state authority approvals, police permissions for large gatherings, and noise and lighting clearances. Our local operations team manages this entire permitting chain — including contingency plans if timelines shift.',
+                  a: 'Yes. Heritage property events in Udaipur require coordination with ASI for certain venues, state authority approvals, police permissions for large gatherings, and noise and lighting clearances. Our local operations team manages this entire permitting chain â€” including contingency plans if timelines shift.',
                 },
                 {
                   q: 'Can you handle monsoon contingency planning for outdoor Udaipur events?',
-                  a: "Udaipur's monsoon season (July–September) brings beautiful scenery but requires comprehensive weather contingency planning. We deploy rapid-deployment structural tenting, complete venue-pivot protocols executable within a 4-hour window, and weather monitoring teams. No outdoor event operates without a shadow plan.",
+                  a: "Udaipur's monsoon season (Julyâ€“September) brings beautiful scenery but requires comprehensive weather contingency planning. We deploy rapid-deployment structural tenting, complete venue-pivot protocols executable within a 4-hour window, and weather monitoring teams. No outdoor event operates without a shadow plan.",
                 },
               ].map(({ q, a }, i) => (
                 <details key={i} className="group border-b border-[#d4af37]/10 py-6">
@@ -304,7 +304,7 @@ export default function UdaipurWeddingPlannerPage() {
         </section>
 
         {/* Internal Link + CTA */}
-        <section className="py-24 px-6 text-center bg-[#121212] border-t border-[#d4af37]/20">
+        <section className="py-24 px-6 text-center bg-[#111c38] border-t border-[#d4af37]/20">
           <p className="font-body-md text-label-lg uppercase tracking-[0.3em] text-[#d4af37] mb-6">Begin in Confidence</p>
           <h2 className="font-headline-lg text-4xl md:text-5xl text-white mb-8 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
             Your Udaipur wedding. Flawlessly private.
@@ -313,7 +313,7 @@ export default function UdaipurWeddingPlannerPage() {
             An NDA is signed before your first consultation. No names, no guest lists, no venue details leave our office without your written consent.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="inline-block gold-gradient-bg text-[#121212] font-body-md text-label-lg uppercase tracking-widest px-12 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]">
+            <Link href="/contact" className="inline-block gold-gradient-bg text-[#111c38] font-body-md text-label-lg uppercase tracking-widest px-12 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]">
               Request a Confidential Consultation
             </Link>
             <Link href="/discretion" className="inline-block border border-[#d4af37]/60 text-[#d4af37] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:border-[#d4af37] transition-colors">
@@ -324,7 +324,7 @@ export default function UdaipurWeddingPlannerPage() {
 
       </main>
 
-      <footer className="w-full py-16 bg-[#0a0a0a] border-t border-[#d4af37]/20">
+      <footer className="w-full py-16 bg-[#0d1526] border-t border-[#d4af37]/20">
         <div className="max-w-7xl mx-auto px-6 md:px-20 flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left">
             <div className="font-headline-md text-2xl text-[#d4af37] tracking-tighter mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Vision Beyond Events</div>
@@ -340,3 +340,4 @@ export default function UdaipurWeddingPlannerPage() {
     </>
   );
 }
+

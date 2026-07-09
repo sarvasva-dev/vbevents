@@ -1,4 +1,4 @@
-import { FadeIn } from "./FadeIn";
+﻿import { FadeIn } from "./FadeIn";
 import ParallaxImage from "@/components/ParallaxImage";
 import TextReveal from "@/components/TextReveal";
 import Image from "next/image";
@@ -33,7 +33,7 @@ export default function AboutSection() {
               <svg viewBox="0 0 100 100" className="w-full h-full overflow-visible">
                 <path id="curve" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="transparent"/>
                 <text className="text-[14px] font-label-lg tracking-widest font-bold fill-current">
-                  <textPath href="#curve">EST. 2024 • PREMIUM EVENTS •</textPath>
+                  <textPath href="#curve">EST. 2024 â€¢ PREMIUM EVENTS â€¢</textPath>
                 </text>
               </svg>
             </div>
@@ -77,3 +77,4 @@ export default function AboutSection() {
     </section>
   );
 }
+

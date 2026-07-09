@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -30,7 +30,7 @@ export default function Navbar() {
       
       {/* Mobile Drawer */}
       <aside 
-        className="fixed top-0 left-0 h-full w-80 bg-[#201f1f] shadow-2xl z-[52] flex flex-col gap-2 p-6 rounded-r-xl border-r border-[#4d4635]/20 overflow-y-auto transition-transform duration-300 ease-in-out lg:hidden" 
+        className="fixed top-0 left-0 h-full w-80 bg-[#162040] shadow-2xl z-[52] flex flex-col gap-2 p-6 rounded-r-xl border-r border-[#4d4635]/20 overflow-y-auto transition-transform duration-300 ease-in-out lg:hidden" 
         style={{ transform: isDrawerOpen ? 'translateX(0)' : 'translateX(-100%)' }}
       >
         <div className="flex justify-between items-center mb-8 pb-4 border-b border-[#4d4635]/20 pt-4">
@@ -41,7 +41,7 @@ export default function Navbar() {
             height={50}
             className="h-10 w-auto object-contain rounded-full"
           />
-          <button onClick={() => setIsDrawerOpen(false)} className="text-[#d0c5af] hover:text-primary p-2 rounded-full hover:bg-[#2a2a2a] transition-colors">
+          <button onClick={() => setIsDrawerOpen(false)} className="text-[#d0c5af] hover:text-primary p-2 rounded-full hover:bg-[#1a2d50] transition-colors">
             <span className="material-symbols-outlined">close</span>
           </button>
         </div>
@@ -85,7 +85,7 @@ export default function Navbar() {
           <Link className="font-body-md text-label-lg uppercase tracking-widest text-on-background/70 hover:text-primary transition-colors duration-300" href="/services/weddings">Services</Link>
           <Link className="font-body-md text-label-lg uppercase tracking-widest text-on-background/70 hover:text-primary transition-colors duration-300" href="/gallery?v=1">Gallery</Link>
           <Link className="font-body-md text-label-lg uppercase tracking-widest text-on-background/70 hover:text-primary transition-colors duration-300" href="/contact">Inquire</Link>
-          <Link className="gold-gradient-bg text-[#121212] font-body-md text-label-lg uppercase tracking-widest px-8 py-3 rounded-full hover:opacity-90 transition-opacity shadow-lg" href="/contact">Private Consultation</Link>
+          <Link className="gold-gradient-bg text-[#111c38] font-body-md text-label-lg uppercase tracking-widest px-8 py-3 rounded-full hover:opacity-90 transition-opacity shadow-lg" href="/contact">Private Consultation</Link>
         </div>
         <button onClick={() => setIsDrawerOpen(true)} aria-label="Menu" className="lg:hidden text-primary hover:text-primary-container transition-colors duration-300 active:scale-95 flex items-center justify-center p-2 rounded-full hover:bg-surface-container-high w-10 h-10">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -98,3 +98,4 @@ export default function Navbar() {
     </>
   );
 }
+

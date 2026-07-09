@@ -1,11 +1,11 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import { FadeIn } from '@/components/FadeIn';
 
 export const metadata: Metadata = {
   title: 'Corporate Event Organizer India | Product Launches, Offsites & Brand Activations | Vision Beyond Events',
-  description: 'Enterprise-grade corporate event management for product launches, leadership offsites, and brand activations — discreet execution for global companies and leadership teams operating in India.',
+  description: 'Enterprise-grade corporate event management for product launches, leadership offsites, and brand activations â€” discreet execution for global companies and leadership teams operating in India.',
   keywords: [
     'corporate event organizer India',
     'best corporate event organizer',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.vbevents.co.in/corporate-event-organizer-india' },
   openGraph: {
     title: 'Corporate Event Organizer India | Vision Beyond Events',
-    description: 'Enterprise-grade corporate event management — product launches, leadership offsites & brand activations. Discreet execution for global companies.',
+    description: 'Enterprise-grade corporate event management â€” product launches, leadership offsites & brand activations. Discreet execution for global companies.',
     url: 'https://www.vbevents.co.in/corporate-event-organizer-india',
     siteName: 'Vision Beyond Events',
     locale: 'en_IN',
@@ -46,7 +46,7 @@ const serviceSchema = {
     { '@type': 'City', name: 'Udaipur' },
     { '@type': 'Country', name: 'India' },
   ],
-  description: 'Confidential corporate event organizer for product launches, leadership retreats, board offsites and investor summits across India — with NDA-by-default protocols.',
+  description: 'Confidential corporate event organizer for product launches, leadership retreats, board offsites and investor summits across India â€” with NDA-by-default protocols.',
   serviceType: 'Corporate Event Management',
   url: 'https://www.vbevents.co.in/corporate-event-organizer-india',
 };
@@ -68,7 +68,7 @@ const faqSchema = {
       name: 'Do you offer NDAs for sensitive internal corporate events such as M&A announcements or leadership transitions?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. NDA-protected execution is our standard operating model — not an add-on. For sensitive announcements, leadership transitions, or board-level retreats, we implement additional compartmentalization protocols: vendors operate on a need-to-know basis, and all event staff sign individual confidentiality agreements.',
+        text: 'Yes. NDA-protected execution is our standard operating model â€” not an add-on. For sensitive announcements, leadership transitions, or board-level retreats, we implement additional compartmentalization protocols: vendors operate on a need-to-know basis, and all event staff sign individual confidentiality agreements.',
       },
     },
     {
@@ -76,7 +76,7 @@ const faqSchema = {
       name: 'What is your minimum event scale for corporate engagements?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We work with corporate events from intimate 20-person leadership retreats to large-scale 1,000+ attendee conferences. Our sweet spot — and where our UHNWI-grade attention to detail has maximum impact — is typically in the 50–500 attendee range for high-value, reputation-sensitive events.',
+        text: 'We work with corporate events from intimate 20-person leadership retreats to large-scale 1,000+ attendee conferences. Our sweet spot â€” and where our UHNWI-grade attention to detail has maximum impact â€” is typically in the 50â€“500 attendee range for high-value, reputation-sensitive events.',
       },
     },
   ],
@@ -124,17 +124,17 @@ export default function CorporateEventOrganizerPage() {
 
       <Navbar />
 
-      <main className="min-h-screen bg-[#0a0a0a]">
+      <main className="min-h-screen bg-[#0d1526]">
 
         {/* Hero */}
-        <section className="relative pt-40 pb-24 px-6 md:px-20 border-b border-[#d4af37]/20 bg-gradient-to-b from-[#0a0a0a] to-[#121212]">
+        <section className="relative pt-40 pb-24 px-6 md:px-20 border-b border-[#d4af37]/20 bg-gradient-to-b from-[#0d1526] to-[#111c38]">
           <div className="max-w-4xl mx-auto">
             <nav aria-label="Breadcrumb" className="mb-10">
               <ol className="flex items-center gap-2 font-body-md text-xs uppercase tracking-widest text-on-surface-variant">
                 <li><Link href="/" className="hover:text-[#d4af37] transition-colors">Home</Link></li>
-                <li className="text-[#d4af37]/40">›</li>
+                <li className="text-[#d4af37]/40">â€º</li>
                 <li><Link href="/services/weddings" className="hover:text-[#d4af37] transition-colors">Services</Link></li>
-                <li className="text-[#d4af37]/40">›</li>
+                <li className="text-[#d4af37]/40">â€º</li>
                 <li className="text-[#d4af37]">Corporate Events</li>
               </ol>
             </nav>
@@ -147,7 +147,7 @@ export default function CorporateEventOrganizerPage() {
               We are not a MICE vendor competing on headcount and screens. We are a precision corporate event organizer for leadership teams, boards, and global brands who require flawless execution, zero leaks, and an experience that reflects the caliber of the organization hosting it.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact" className="inline-block gold-gradient-bg text-[#121212] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]">
+              <Link href="/contact" className="inline-block gold-gradient-bg text-[#111c38] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]">
                 Request a Confidential Consultation
               </Link>
               <Link href="/discretion" className="inline-block border border-[#d4af37]/60 text-[#d4af37] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:border-[#d4af37] hover:bg-[#d4af37]/5 transition-all duration-300">
@@ -158,7 +158,7 @@ export default function CorporateEventOrganizerPage() {
         </section>
 
         {/* Proof Strip */}
-        <section className="py-16 px-6 md:px-20 bg-[#121212] border-b border-[#d4af37]/10">
+        <section className="py-16 px-6 md:px-20 bg-[#111c38] border-b border-[#d4af37]/10">
           <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-[#d4af37]/20">
             {[
               { stat: '50+', label: 'Corporate Events Executed' },
@@ -176,7 +176,7 @@ export default function CorporateEventOrganizerPage() {
 
         {/* Service Pillars */}
         <FadeIn>
-          <section className="py-24 px-6 md:px-20 bg-[#0a0a0a]">
+          <section className="py-24 px-6 md:px-20 bg-[#0d1526]">
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-20">
                 <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-on-surface-variant mb-4">Capabilities</p>
@@ -187,7 +187,7 @@ export default function CorporateEventOrganizerPage() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {SERVICE_PILLARS.map(({ icon, title, desc }) => (
-                  <div key={title} className="border border-[#d4af37]/10 p-10 bg-[#121212] hover:border-[#d4af37]/40 transition-colors group">
+                  <div key={title} className="border border-[#d4af37]/10 p-10 bg-[#111c38] hover:border-[#d4af37]/40 transition-colors group">
                     <span className="material-symbols-outlined text-4xl text-[#d4af37] mb-6 block">{icon}</span>
                     <h3 className="font-headline-sm text-2xl text-white mb-4 group-hover:text-[#d4af37] transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>{title}</h3>
                     <p className="font-body-md text-on-surface-variant leading-relaxed">{desc}</p>
@@ -200,7 +200,7 @@ export default function CorporateEventOrganizerPage() {
 
         {/* Anonymized Case Study Block */}
         <FadeIn>
-          <section className="py-24 px-6 md:px-20 bg-[#121212] border-y border-[#d4af37]/10">
+          <section className="py-24 px-6 md:px-20 bg-[#111c38] border-y border-[#d4af37]/10">
             <div className="max-w-7xl mx-auto">
               <div className="mb-16">
                 <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-on-surface-variant mb-4">Proof of Execution</p>
@@ -214,15 +214,15 @@ export default function CorporateEventOrganizerPage() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {[
                   {
-                    label: 'Global Product Launch — Tier 1 City',
+                    label: 'Global Product Launch â€” Tier 1 City',
                     details: ['800+ attendees across 3 days', '15 international delegations', 'Zero media leaks pre-announcement', 'Coordinated press access protocol'],
                   },
                   {
-                    label: 'Board Leadership Retreat — Heritage Property',
+                    label: 'Board Leadership Retreat â€” Heritage Property',
                     details: ['22 C-suite executives', 'Full property buyout, 4 days', 'NDA signed by all support staff', 'No device policy enforced on-site'],
                   },
                   {
-                    label: 'Annual Investor Summit — Metro Convention',
+                    label: 'Annual Investor Summit â€” Metro Convention',
                     details: ['400+ HNWI attendees', 'Multi-country guest logistics', 'Curated experiential dining program', 'Branded environment end-to-end'],
                   },
                 ].map(({ label, details }) => (
@@ -232,7 +232,7 @@ export default function CorporateEventOrganizerPage() {
                     <ul className="space-y-3">
                       {details.map((d) => (
                         <li key={d} className="font-body-md text-on-surface-variant text-sm flex items-start gap-3">
-                          <span className="text-[#d4af37] mt-0.5">—</span>
+                          <span className="text-[#d4af37] mt-0.5">â€”</span>
                           {d}
                         </li>
                       ))}
@@ -245,7 +245,7 @@ export default function CorporateEventOrganizerPage() {
         </FadeIn>
 
         {/* Discretion Link */}
-        <section className="py-16 px-6 md:px-20 bg-[#0a0a0a]">
+        <section className="py-16 px-6 md:px-20 bg-[#0d1526]">
           <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 border border-[#d4af37]/10 p-10">
             <div>
               <h3 className="font-headline-sm text-2xl text-white mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Why enterprises choose discretion-first partners</h3>
@@ -260,12 +260,12 @@ export default function CorporateEventOrganizerPage() {
         </section>
 
         {/* FAQ */}
-        <section className="py-24 px-6 md:px-20 bg-[#121212]">
+        <section className="py-24 px-6 md:px-20 bg-[#111c38]">
           <div className="max-w-3xl mx-auto">
             <div className="mb-16">
               <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-on-surface-variant mb-4">Common Questions</p>
               <h2 className="font-headline-lg text-4xl text-[#d4af37] tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
-                Corporate Event Management — FAQs
+                Corporate Event Management â€” FAQs
               </h2>
             </div>
             <div className="space-y-0">
@@ -276,11 +276,11 @@ export default function CorporateEventOrganizerPage() {
                 },
                 {
                   q: 'Do you offer NDAs for sensitive internal corporate events such as M&A announcements or leadership transitions?',
-                  a: 'Yes. NDA-protected execution is our standard operating model — not an add-on. For sensitive announcements, leadership transitions, or board-level retreats, we implement additional compartmentalization protocols: vendors operate on a need-to-know basis, and all event staff sign individual confidentiality agreements.',
+                  a: 'Yes. NDA-protected execution is our standard operating model â€” not an add-on. For sensitive announcements, leadership transitions, or board-level retreats, we implement additional compartmentalization protocols: vendors operate on a need-to-know basis, and all event staff sign individual confidentiality agreements.',
                 },
                 {
                   q: 'What is your minimum event scale for corporate engagements?',
-                  a: 'We work with corporate events from intimate 20-person leadership retreats to large-scale 1,000+ attendee conferences. Our sweet spot — and where our UHNWI-grade attention to detail has maximum impact — is typically in the 50–500 attendee range for high-value, reputation-sensitive events.',
+                  a: 'We work with corporate events from intimate 20-person leadership retreats to large-scale 1,000+ attendee conferences. Our sweet spot â€” and where our UHNWI-grade attention to detail has maximum impact â€” is typically in the 50â€“500 attendee range for high-value, reputation-sensitive events.',
                 },
               ].map(({ q, a }, i) => (
                 <details key={i} className="group border-b border-[#d4af37]/10 py-6">
@@ -296,7 +296,7 @@ export default function CorporateEventOrganizerPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-24 px-6 text-center bg-[#0a0a0a] border-t border-[#d4af37]/20">
+        <section className="py-24 px-6 text-center bg-[#0d1526] border-t border-[#d4af37]/20">
           <p className="font-body-md text-label-lg uppercase tracking-[0.3em] text-[#d4af37] mb-6">Begin Here</p>
           <h2 className="font-headline-lg text-4xl md:text-5xl text-white mb-8 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
             Precision execution. Boardroom-standard discretion.
@@ -304,14 +304,14 @@ export default function CorporateEventOrganizerPage() {
           <p className="font-body-md text-on-surface-variant text-lg max-w-xl mx-auto mb-10">
             Every corporate inquiry is treated with the same confidentiality as a private family engagement. Your first call is protected.
           </p>
-          <Link href="/contact" className="inline-block gold-gradient-bg text-[#121212] font-body-md text-label-lg uppercase tracking-widest px-12 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]">
+          <Link href="/contact" className="inline-block gold-gradient-bg text-[#111c38] font-body-md text-label-lg uppercase tracking-widest px-12 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]">
             Request a Confidential Consultation
           </Link>
         </section>
 
       </main>
 
-      <footer className="w-full py-16 bg-[#0a0a0a] border-t border-[#d4af37]/20">
+      <footer className="w-full py-16 bg-[#0d1526] border-t border-[#d4af37]/20">
         <div className="max-w-7xl mx-auto px-6 md:px-20 flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left">
             <div className="font-headline-md text-2xl text-[#d4af37] tracking-tighter mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Vision Beyond Events</div>
@@ -327,3 +327,4 @@ export default function CorporateEventOrganizerPage() {
     </>
   );
 }
+

@@ -1,9 +1,9 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { ContactSection } from '@/components/ContactSection';
 import Navbar from '@/components/Navbar';
 
 export const metadata: Metadata = {
-  title: "Request a Private Consultation — Luxury Event Organizer India | Vision Beyond Events",
+  title: "Request a Private Consultation â€” Luxury Event Organizer India | Vision Beyond Events",
   description: "Begin a confidential dialogue with India's most discreet luxury event organizer. We handle destination weddings, corporate events & private UHNWI celebrations. NDA signed before your first call.",
   keywords: ["contact luxury event organizer India", "hire event planner India", "private event consultation", "destination wedding planner inquiry"],
   alternates: { canonical: "https://www.vbevents.co.in/contact" },
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-[#0a0a0a]">
+    <main className="min-h-screen bg-[#0d1526]">
       <Navbar />
       
       <div className="pt-32 pb-24 px-6 md:px-20 max-w-7xl mx-auto">
@@ -25,10 +25,11 @@ export default function ContactPage() {
           </p>
         </div>
         
-        <div className="bg-[#121212] border border-[#d4af37]/20 p-8 md:p-12 shadow-2xl">
+        <div className="bg-[#111c38] border border-[#d4af37]/20 p-8 md:p-12 shadow-2xl">
           <ContactSection />
         </div>
       </div>
     </main>
   );
 }
+

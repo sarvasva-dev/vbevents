@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { FadeIn } from "./FadeIn";
 
@@ -56,3 +56,4 @@ export default function AuthoritySection() {
     </section>
   );
 }
+

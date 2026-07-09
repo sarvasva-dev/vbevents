@@ -1,6 +1,6 @@
-"use client";
+﻿"use client";
 
-// Module-level constant — Math.random() runs once at module load, never during render.
+// Module-level constant â€” Math.random() runs once at module load, never during render.
 const ORBS = Array.from({ length: 45 }).map((_, i) => {
   const isSmall = Math.random() > 0.6;
   const size = isSmall ? (Math.random() * 15 + 5) : (Math.random() * 100 + 40);
@@ -47,3 +47,4 @@ export default function AnimatedBackground() {
     </div>
   );
 }
+
