@@ -96,22 +96,22 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-[#faf9f6] p-8 border border-[#d4af37]/30 hover:border-[#d4af37]/40 transition-colors text-center rounded-lg">
+            <div className="glass-card p-8 text-center rounded-2xl hover:border-[#d4af37]/60 transition-all duration-300">
               <span className="material-symbols-outlined text-4xl text-[#d4af37] mb-4">diamond</span>
               <h3 className="font-headline-sm text-xl text-[#0f172a] mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Premium Venues</h3>
               <p className="font-body-md text-[#475569] text-sm">Exclusive access to the best palaces, resorts, and banquet halls across India.</p>
             </div>
-            <div className="bg-[#faf9f6] p-8 border border-[#d4af37]/30 hover:border-[#d4af37]/40 transition-colors text-center rounded-lg">
+            <div className="glass-card p-8 text-center rounded-2xl hover:border-[#d4af37]/60 transition-all duration-300">
               <span className="material-symbols-outlined text-4xl text-[#d4af37] mb-4">support_agent</span>
               <h3 className="font-headline-sm text-xl text-[#0f172a] mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Expert Planning</h3>
               <p className="font-body-md text-[#475569] text-sm">Our dedicated team manages everything from catering to guest hospitality smoothly.</p>
             </div>
-            <div className="bg-[#faf9f6] p-8 border border-[#d4af37]/30 hover:border-[#d4af37]/40 transition-colors text-center rounded-lg">
+            <div className="glass-card p-8 text-center rounded-2xl hover:border-[#d4af37]/60 transition-all duration-300">
               <span className="material-symbols-outlined text-4xl text-[#d4af37] mb-4">security</span>
               <h3 className="font-headline-sm text-xl text-[#0f172a] mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Complete Privacy</h3>
               <p className="font-body-md text-[#475569] text-sm">We ensure 100% security and confidentiality for our VIP guests and high-profile clients.</p>
             </div>
-            <div className="bg-[#faf9f6] p-8 border border-[#d4af37]/30 hover:border-[#d4af37]/40 transition-colors text-center rounded-lg">
+            <div className="glass-card p-8 text-center rounded-2xl hover:border-[#d4af37]/60 transition-all duration-300">
               <span className="material-symbols-outlined text-4xl text-[#d4af37] mb-4">check_circle</span>
               <h3 className="font-headline-sm text-xl text-[#0f172a] mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Stress-Free Experience</h3>
               <p className="font-body-md text-[#475569] text-sm">You enjoy the celebration while we handle all the behind-the-scenes hard work.</p>
@@ -215,7 +215,7 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-[#ffffff] p-8 rounded-lg border border-[#d4af37]/30">
+            <div className="glass-card p-8 rounded-2xl hover:border-[#d4af37]/60 transition-all duration-300">
               <div className="flex gap-1 text-[#d4af37] mb-6">
                 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
@@ -230,7 +230,7 @@ export default function Home() {
               <div className="font-body-md text-sm text-[#d4af37]">Destination Wedding</div>
             </div>
             
-            <div className="bg-[#ffffff] p-8 rounded-lg border border-[#d4af37]/30">
+            <div className="glass-card p-8 rounded-2xl hover:border-[#d4af37]/60 transition-all duration-300">
               <div className="flex gap-1 text-[#d4af37] mb-6">
                 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
@@ -245,7 +245,7 @@ export default function Home() {
               <div className="font-body-md text-sm text-[#d4af37]">Corporate Event</div>
             </div>
 
-            <div className="bg-[#ffffff] p-8 rounded-lg border border-[#d4af37]/30">
+            <div className="glass-card p-8 rounded-2xl hover:border-[#d4af37]/60 transition-all duration-300">
               <div className="flex gap-1 text-[#d4af37] mb-6">
                 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
@@ -272,7 +272,7 @@ export default function Home() {
           </div>
           
           <div className="flex flex-col gap-4">
-            <details className="group bg-[#faf9f6] border border-[#d4af37]/30 rounded-lg open:border-[#d4af37]/50 transition-colors">
+            <details className="group glass-card rounded-2xl open:border-[#d4af37]/50 transition-all duration-300">
               <summary className="flex justify-between items-center font-headline-sm text-xl text-[#0f172a] cursor-pointer p-6 list-none">
                 Do you plan events outside of your city?
                 <span className="material-symbols-outlined text-[#d4af37] group-open:rotate-180 transition-transform">expand_more</span>
@@ -282,7 +282,7 @@ export default function Home() {
               </div>
             </details>
             
-            <details className="group bg-[#faf9f6] border border-[#d4af37]/30 rounded-lg open:border-[#d4af37]/50 transition-colors">
+            <details className="group glass-card rounded-2xl open:border-[#d4af37]/50 transition-all duration-300">
               <summary className="flex justify-between items-center font-headline-sm text-xl text-[#0f172a] cursor-pointer p-6 list-none">
                 Do you handle everything from decor to catering?
                 <span className="material-symbols-outlined text-[#d4af37] group-open:rotate-180 transition-transform">expand_more</span>
@@ -292,7 +292,7 @@ export default function Home() {
               </div>
             </details>
 
-            <details className="group bg-[#faf9f6] border border-[#d4af37]/30 rounded-lg open:border-[#d4af37]/50 transition-colors">
+            <details className="group glass-card rounded-2xl open:border-[#d4af37]/50 transition-all duration-300">
               <summary className="flex justify-between items-center font-headline-sm text-xl text-[#0f172a] cursor-pointer p-6 list-none">
                 How do I book a consultation with your team?
                 <span className="material-symbols-outlined text-[#d4af37] group-open:rotate-180 transition-transform">expand_more</span>

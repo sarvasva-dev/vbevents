@@ -39,7 +39,7 @@ export default function Navbar() {
             alt="Vision Beyond Events Logo"
             width={130}
             height={50}
-            className="h-10 w-auto object-contain"
+            className="h-10 w-auto object-contain mix-blend-multiply"
           />
           <button onClick={() => setIsDrawerOpen(false)} className="text-slate-500 hover:text-[#a07820] p-2 rounded-full hover:bg-slate-50 transition-colors">
             <span className="material-symbols-outlined">close</span>
@@ -77,7 +77,7 @@ export default function Navbar() {
             height={48}
             priority
             alt="Vision Beyond Events Logo"
-            className="h-11 w-auto object-contain transition-opacity opacity-95 group-hover:opacity-100"
+            className="h-11 w-auto object-contain transition-opacity opacity-95 group-hover:opacity-100 mix-blend-multiply"
             src="/images/logo_white.png"
           />
         </Link>
