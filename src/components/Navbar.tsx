@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
@@ -9,8 +9,13 @@ import { useTheme } from "next-themes";
 export default function Navbar() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [hidden, setHidden] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const { scrollY } = useScroll();
   const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const previous = scrollY.getPrevious() || 0;
@@ -22,7 +27,8 @@ export default function Navbar() {
     }
   });
 
-  const isDark = theme === "dark";
+  // Only check theme after mount to prevent SSR/client mismatch
+  const isDark = mounted ? theme !== "light" : true;
 
   return (
     <>
