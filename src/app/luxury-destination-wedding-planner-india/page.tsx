@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from 'next';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import { FadeIn } from '@/components/FadeIn';
 
 export const metadata: Metadata = {
@@ -279,7 +280,8 @@ export default function LuxuryDestinationWeddingPlannerPage() {
           </Link>
         </section>
 
-      </main>
+      	  <Footer />
+    </main>
 
       {/* Footer */}
       <footer className="w-full py-16 bg-[#ffffff] border-t border-[#d4af37]/30">
@@ -298,6 +300,7 @@ export default function LuxuryDestinationWeddingPlannerPage() {
     </>
   );
 }
+
 
 
 

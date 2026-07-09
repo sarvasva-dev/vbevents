@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from 'next';
 import { ContactSection } from '@/components/ContactSection';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: "Request a Private Consultation â€” Luxury Event Organizer India | Vision Beyond Events",
@@ -29,8 +30,10 @@ export default function ContactPage() {
           <ContactSection />
         </div>
       </div>
+    	  <Footer />
     </main>
   );
 }
+
 
 

@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: "Luxury Destination Wedding Planner India Ã¢â‚¬â€ Udaipur Palace Weddings | Vision Beyond Events",
@@ -95,9 +96,11 @@ export default function WeddingsPage() {
         </div>
       </section>
 
+    	  <Footer />
     </main>
   );
 }
+
 
 
 

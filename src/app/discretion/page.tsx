@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from 'next';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: "NDA-by-Default Confidential Event Planning | Vision Beyond Events",
@@ -171,9 +172,11 @@ export default function DiscretionPage() {
         </div>
       </section>
 
+    	  <Footer />
     </main>
   );
 }
+
 
 
 

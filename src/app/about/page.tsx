@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import AboutSection from '@/components/AboutSection';
 import AuthoritySection from '@/components/AuthoritySection';
 
@@ -32,9 +33,11 @@ export default function AboutPage() {
           Inquire Now
         </Link>
       </section>
+    	  <Footer />
     </main>
   );
 }
+
 
 
 

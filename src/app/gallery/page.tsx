@@ -1,9 +1,10 @@
-﻿import fs from 'fs';
+import fs from 'fs';
 import path from 'path';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import VideoPlayer from './VideoPlayer';
 
 export const dynamic = 'force-dynamic';
@@ -93,25 +94,7 @@ export default function GalleryPage() {
         )}
       </main>
 
-      <footer className="w-full py-20 bg-surface-dim border-t border-primary/10">
-        <div className="flex flex-col lg:flex-row justify-between items-center px-6 md:px-20 gap-8 w-full max-w-[1440px] mx-auto">
-          <div className="flex flex-col gap-2 text-center lg:text-left">
-            <div className="font-headline-md text-headline-md text-primary tracking-tighter">Vision Beyond Events</div>
-            <div className="font-body-md text-[#475569] flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
-              <span>ðŸ“ž +91 80818 08902</span>
-              <span className="hidden sm:inline">|</span>
-              <Link href="/" className="hover:text-primary transition-colors">Instagram (Coming Soon)</Link>
-            </div>
-          </div>
-          <div className="flex gap-8">
-            <Link className="font-body-md text-body-md text-[#475569] hover:text-primary transition-colors" href="/">Privacy Policy</Link>
-            <Link className="font-body-md text-body-md text-[#475569] hover:text-primary transition-colors" href="/">Terms of Service</Link>
-          </div>
-          <div className="font-body-md text-body-md text-[#475569] text-center lg:text-right">
-              Â© {new Date().getFullYear()} Vision Beyond Events.<br/>Crafting Memories Since 2024.
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from 'next';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import { FadeIn } from '@/components/FadeIn';
 
 export const metadata: Metadata = {
@@ -322,7 +323,8 @@ export default function UdaipurWeddingPlannerPage() {
           </div>
         </section>
 
-      </main>
+      	  <Footer />
+    </main>
 
       <footer className="w-full py-16 bg-[#ffffff] border-t border-[#d4af37]/30">
         <div className="max-w-7xl mx-auto px-6 md:px-20 flex flex-col md:flex-row justify-between items-center gap-8">
@@ -340,6 +342,7 @@ export default function UdaipurWeddingPlannerPage() {
     </>
   );
 }
+
 
 
 
