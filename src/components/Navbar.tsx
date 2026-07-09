@@ -35,10 +35,9 @@ export default function Navbar() {
       >
         <div className="flex justify-between items-center mb-8 pb-4 border-b border-slate-100 pt-4">
           <img
-            src="/images/logo_white.png"
+            src="/images/logo_clean.svg"
             alt="Vision Beyond Events Logo"
             className="h-10 w-auto object-contain transition-opacity opacity-95"
-            style={{ mixBlendMode: 'multiply' }}
           />
           <button onClick={() => setIsDrawerOpen(false)} className="text-slate-500 hover:text-[#a07820] p-2 rounded-full hover:bg-slate-50 transition-colors">
             <span className="material-symbols-outlined">close</span>
@@ -72,10 +71,9 @@ export default function Navbar() {
       >
         <Link className="flex items-center gap-4 group" href="/">
           <img
-            src="/images/logo_white.png"
+            src="/images/logo_clean.svg"
             alt="Vision Beyond Events Logo"
             className="h-11 w-auto object-contain transition-opacity opacity-95 group-hover:opacity-100"
-            style={{ mixBlendMode: 'multiply' }}
           />
         </Link>
         <div className="hidden lg:flex items-center gap-gutter">

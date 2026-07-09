@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" width="280" height="60">
+  <defs>
+    <!-- Premium Metallic Gold Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b5892b" />
+      <stop offset="50%" stop-color="#e2c582" />
+      <stop offset="100%" stop-color="#9a711d" />
+    </linearGradient>
+  </defs>
+
+  <!-- Stylized Luxury 'VB' Monogram Emblem -->
+  <g transform="translate(10, 5)">
+    <!-- Elegant outer thin gold ring section -->
+    <circle cx="25" cy="25" r="23" fill="none" stroke="url(#goldGrad)" stroke-width="1" stroke-opacity="0.4" />
+    
+    <!-- Stylized Monogram VB Paths -->
+    <!-- The V (Thick left downstroke, thin right upstroke) -->
+    <path d="M 12 14 L 21 35 L 23 35 L 30 14" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- The B (Stylized loops starting from the V's right stroke) -->
+    <path d="M 23 14 C 29 14, 33 17, 30 23 C 34 29, 29 35, 21 35" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <line x1="22" y1="23" x2="29" y2="23" stroke="url(#goldGrad)" stroke-width="1.5" />
+    
+    <!-- Central Luxury Star Sparkle -->
+    <path d="M 31 11 Q 31 14 34 14 Q 31 14 31 17 Q 31 14 28 14 Q 31 14 31 11 Z" fill="url(#goldGrad)" />
+  </g>
+
+  <!-- Typography Column -->
+  <g transform="translate(72, 0)">
+    <!-- VISION BEYOND (Luxury Serif Style) -->
+    <text x="0" y="27" 
+          font-family="'Playfair Display', 'Didot', 'Georgia', serif" 
+          font-size="20" 
+          font-weight="700" 
+          fill="#0f172a" 
+          letter-spacing="2">VISION BEYOND</text>
+          
+    <!-- EVENTS (Minimalist Spaced Sans-Serif Style) -->
+    <text x="2" y="44" 
+          font-family="'Montserrat', 'Inter', 'Helvetica', sans-serif" 
+          font-size="10" 
+          font-weight="600" 
+          fill="#b5892b" 
+          letter-spacing="9">E V E N T S</text>
+  </g>
+</svg>
