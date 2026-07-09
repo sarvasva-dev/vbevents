@@ -34,12 +34,11 @@ export default function Navbar() {
         style={{ transform: isDrawerOpen ? 'translateX(0)' : 'translateX(-100%)' }}
       >
         <div className="flex justify-between items-center mb-8 pb-4 border-b border-slate-100 pt-4">
-          <Image
+          <img
             src="/images/logo_white.png"
             alt="Vision Beyond Events Logo"
-            width={130}
-            height={50}
-            className="h-10 w-auto object-contain mix-blend-multiply"
+            className="h-10 w-auto object-contain transition-opacity opacity-95"
+            style={{ mixBlendMode: 'multiply' }}
           />
           <button onClick={() => setIsDrawerOpen(false)} className="text-slate-500 hover:text-[#a07820] p-2 rounded-full hover:bg-slate-50 transition-colors">
             <span className="material-symbols-outlined">close</span>
@@ -72,13 +71,11 @@ export default function Navbar() {
         className="fixed top-0 w-full z-50 glass-nav flex justify-between items-center px-6 md:px-20 py-4 h-20"
       >
         <Link className="flex items-center gap-4 group" href="/">
-          <Image
-            width={140}
-            height={48}
-            priority
-            alt="Vision Beyond Events Logo"
-            className="h-11 w-auto object-contain transition-opacity opacity-95 group-hover:opacity-100 mix-blend-multiply"
+          <img
             src="/images/logo_white.png"
+            alt="Vision Beyond Events Logo"
+            className="h-11 w-auto object-contain transition-opacity opacity-95 group-hover:opacity-100"
+            style={{ mixBlendMode: 'multiply' }}
           />
         </Link>
         <div className="hidden lg:flex items-center gap-gutter">
