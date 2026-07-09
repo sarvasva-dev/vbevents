@@ -148,7 +148,7 @@ export default function UdaipurWeddingPlannerPage() {
       <main className="min-h-screen bg-[#ffffff]">
 
         {/* Hero */}
-        <section className="relative pt-40 pb-24 px-6 md:px-20 border-b border-[#d4af37]/30 bg-gradient-to-b from-[#ffffff] to-[#111c38]">
+        <section className="relative pt-40 pb-24 px-6 md:px-20 border-b border-[#d4af37]/30 bg-gradient-to-b from-[#ffffff] to-[#faf9f6]">
           <div className="max-w-4xl mx-auto">
             <nav aria-label="Breadcrumb" className="mb-10">
               <ol className="flex items-center gap-2 font-body-md text-xs uppercase tracking-widest text-[#475569]">
@@ -168,7 +168,7 @@ export default function UdaipurWeddingPlannerPage() {
               Udaipur is India&apos;s most iconic destination for palace weddings â€” and also its most operationally complex. Permits, heritage restrictions, seasonal logistics, and VIP guest management across a lakeside city require a partner with deep local execution capability. That is what we provide, backed by our NDA-first discretion standard.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact" className="inline-block gold-gradient-bg text-[#111c38] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]">
+              <Link href="/contact" className="inline-block gold-gradient-bg text-[#0f172a] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]">
                 Request a Confidential Consultation
               </Link>
               <Link href="/luxury-destination-wedding-planner-india" className="inline-block border border-[#d4af37]/60 text-[#d4af37] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:border-[#d4af37] hover:bg-[#d4af37]/5 transition-all duration-300">
@@ -313,7 +313,7 @@ export default function UdaipurWeddingPlannerPage() {
             An NDA is signed before your first consultation. No names, no guest lists, no venue details leave our office without your written consent.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="inline-block gold-gradient-bg text-[#111c38] font-body-md text-label-lg uppercase tracking-widest px-12 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]">
+            <Link href="/contact" className="inline-block gold-gradient-bg text-[#0f172a] font-body-md text-label-lg uppercase tracking-widest px-12 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]">
               Request a Confidential Consultation
             </Link>
             <Link href="/discretion" className="inline-block border border-[#d4af37]/60 text-[#d4af37] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:border-[#d4af37] transition-colors">
@@ -340,5 +340,6 @@ export default function UdaipurWeddingPlannerPage() {
     </>
   );
 }
+
 
 

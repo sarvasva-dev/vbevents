@@ -1,10 +1,10 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 
 export const metadata: Metadata = {
-  title: "Luxury Destination Wedding Planner India â€” Udaipur Palace Weddings | Vision Beyond Events",
+  title: "Luxury Destination Wedding Planner India Ã¢â‚¬â€ Udaipur Palace Weddings | Vision Beyond Events",
   description: "India's top luxury destination wedding planner. We architect multi-day royal palace weddings in Udaipur, Rajasthan, Jaipur & Goa for UHNWI families. Complete discretion, NDA-by-default, white-glove execution.",
   keywords: ["destination wedding planner Udaipur", "palace wedding planner India", "luxury destination wedding India", "royal wedding planner Rajasthan", "NRI wedding planner India", "bespoke destination wedding planner"],
   alternates: { canonical: "https://www.vbevents.co.in/services/weddings" },
@@ -30,7 +30,7 @@ export default function WeddingsPage() {
           <p className="font-body-md text-[#475569] text-xl leading-relaxed max-w-3xl mx-auto mb-10">
             We do not just plan weddings. We architect multi-day, immersive experiences for the world&apos;s most discerning families, operating with absolute discretion and military-grade logistics.
           </p>
-          <Link className="inline-block border border-[#d4af37] text-[#d4af37] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:bg-[#d4af37] hover:text-[#111c38] transition-colors duration-300 backdrop-blur-sm" href="/contact">
+          <Link className="inline-block border border-[#d4af37] text-[#d4af37] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:bg-[#d4af37] hover:text-[#0f172a] transition-colors duration-300 backdrop-blur-sm" href="/contact">
             Request a Consultation
           </Link>
         </div>
@@ -43,10 +43,10 @@ export default function WeddingsPage() {
             <h2 className="font-headline-md text-4xl md:text-5xl text-[#d4af37] mb-8" style={{ fontFamily: 'Playfair Display, serif' }}>Our Approach</h2>
             <div className="space-y-6 font-body-md text-[#475569] leading-relaxed text-lg">
               <p>
-                Planning a multi-day destination wedding means managing hundreds of guests, cross-city logistics, beautiful decor, and multiple venues â€” all at once. It can feel overwhelming.
+                Planning a multi-day destination wedding means managing hundreds of guests, cross-city logistics, beautiful decor, and multiple venues Ã¢â‚¬â€ all at once. It can feel overwhelming.
               </p>
               <p>
-                That is exactly where we step in. Our team takes care of every single detail â€” from booking the venue and managing the guest list, to coordinating vendors and ensuring everything runs on time.
+                That is exactly where we step in. Our team takes care of every single detail Ã¢â‚¬â€ from booking the venue and managing the guest list, to coordinating vendors and ensuring everything runs on time.
               </p>
               <p>
                 You show up, enjoy every moment, and make memories. We handle everything else behind the scenes.
@@ -98,5 +98,6 @@ export default function WeddingsPage() {
     </main>
   );
 }
+
 
 

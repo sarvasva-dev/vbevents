@@ -111,7 +111,7 @@ export default function LuxuryDestinationWeddingPlannerPage() {
       <main className="min-h-screen bg-[#ffffff]">
 
         {/* Hero */}
-        <section className="relative pt-40 pb-24 px-6 md:px-20 border-b border-[#d4af37]/30 bg-gradient-to-b from-[#ffffff] to-[#111c38]">
+        <section className="relative pt-40 pb-24 px-6 md:px-20 border-b border-[#d4af37]/30 bg-gradient-to-b from-[#ffffff] to-[#faf9f6]">
           <div className="max-w-4xl mx-auto">
             {/* Breadcrumb â€” semantic + visible */}
             <nav aria-label="Breadcrumb" className="mb-10">
@@ -132,7 +132,7 @@ export default function LuxuryDestinationWeddingPlannerPage() {
               Vision Beyond Events is India&apos;s discreet luxury destination wedding planner â€” architecting palace weddings, fort celebrations, and lakeside estate ceremonies for UHNWI families and global clients. Every engagement begins with an NDA. Every detail is executed with military precision.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact" className="inline-block gold-gradient-bg text-[#111c38] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]">
+              <Link href="/contact" className="inline-block gold-gradient-bg text-[#0f172a] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]">
                 Request a Confidential Consultation
               </Link>
               <Link href="/discretion" className="inline-block border border-[#d4af37]/60 text-[#d4af37] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:border-[#d4af37] hover:bg-[#d4af37]/5 transition-all duration-300">
@@ -274,7 +274,7 @@ export default function LuxuryDestinationWeddingPlannerPage() {
           <p className="font-body-md text-[#475569] text-lg max-w-xl mx-auto mb-10">
             Every inquiry is held in complete confidence. An NDA is signed before your first call.
           </p>
-          <Link href="/contact" className="inline-block gold-gradient-bg text-[#111c38] font-body-md text-label-lg uppercase tracking-widest px-12 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]">
+          <Link href="/contact" className="inline-block gold-gradient-bg text-[#0f172a] font-body-md text-label-lg uppercase tracking-widest px-12 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]">
             Request a Confidential Consultation
           </Link>
         </section>
@@ -298,5 +298,6 @@ export default function LuxuryDestinationWeddingPlannerPage() {
     </>
   );
 }
+
 
 

@@ -28,12 +28,13 @@ export default function AboutPage() {
       
       <section className="py-24 px-6 text-center">
         <h2 className="font-headline-lg text-4xl md:text-5xl text-[#0f172a] mb-8" style={{ fontFamily: 'Playfair Display, serif' }}>Ready to architect your vision?</h2>
-        <Link className="inline-block gold-gradient-bg text-[#111c38] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]" href="/contact">
+        <Link className="inline-block gold-gradient-bg text-[#0f172a] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]" href="/contact">
           Inquire Now
         </Link>
       </section>
     </main>
   );
 }
+
 
 

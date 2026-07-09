@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
@@ -7,7 +7,7 @@ import AnimatedBackground from '@/components/AnimatedBackground';
 import TextReveal from '@/components/TextReveal';
 
 export const metadata: Metadata = {
-  title: "Best Luxury Event Organizer India â€” Destination Weddings & Corporate Events | Vision Beyond Events",
+  title: "Best Luxury Event Organizer India Ã¢â‚¬â€ Destination Weddings & Corporate Events | Vision Beyond Events",
   description: "Vision Beyond Events is the premier luxury event planner in India. We specialize in destination weddings in Udaipur, corporate events, and memorable private celebrations.",
   keywords: ["best event organizer India", "destination wedding planner Udaipur", "luxury wedding planner Mumbai", "corporate event organizer Delhi", "top wedding planner India", "premium event management"],
   alternates: {
@@ -309,7 +309,7 @@ export default function Home() {
       <section className="py-24 px-6 md:px-20 bg-[#faf9f6] border-t border-[#d4af37]/30">
         <div className="max-w-4xl mx-auto text-center">
           <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#d4af37] mb-6">Our Team</p>
-          <h2 className="font-headline-lg text-4xl md:text-5xl text-white mb-8 leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
+          <h2 className="font-headline-lg text-4xl md:text-5xl text-[#0f172a] mb-8 leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
             A passionate team backed by professional experience.
           </h2>
           <p className="font-body-md text-[#475569] text-lg leading-relaxed mb-10">
@@ -337,5 +337,6 @@ export default function Home() {
     </>
   );
 }
+
 
 
