@@ -22,8 +22,8 @@ export default function Home() {
       <Navbar />
 
       {/* Main Hero Section */}
-      <main className="relative h-[100dvh] w-full min-h-[600px] flex items-center justify-center overflow-hidden bg-[#ffffff]">
-        {/* Background Image of a grand luxury event stage */}
+      <main className="relative h-[100dvh] w-full min-h-[600px] flex items-center justify-center overflow-hidden bg-black">
+        {/* Background Image of a grand luxury event stage - Rich and Vivid */}
         <div className="absolute inset-0 z-0">
           <Image 
             src="/images/ai_marriages.png" 
@@ -31,24 +31,24 @@ export default function Home() {
             fill 
             priority
             sizes="100vw"
-            className="object-cover opacity-25"
+            className="object-cover opacity-80"
           />
-          {/* Dense premium light overlay for maximum text readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/90 to-white"></div>
+          {/* Rich dark overlay to make text pop while keeping the event photo extremely vivid */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/85"></div>
         </div>
 
         <FadeIn className="relative z-10 flex flex-col items-center justify-center text-center px-6 w-full max-w-5xl mx-auto pt-20">
-          <div className="w-12 h-[1px] bg-[#d4af37]/60 mb-8"></div>
+          <div className="w-12 h-[1px] bg-[#d4af37] mb-8"></div>
           <TextReveal 
             text="Making Your Dream Weddings & Luxury Events a Reality." 
-            className="font-headline-lg text-4xl md:text-6xl lg:text-7xl text-[#0f172a] mb-12 max-w-4xl leading-tight font-semibold"
+            className="font-headline-lg text-4xl md:text-6xl lg:text-7xl text-white mb-12 max-w-4xl leading-tight font-bold drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]"
             el="h1"
           />
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Link className="inline-block gold-gradient-bg text-[#0d1526] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]" href="/contact">
+            <Link className="inline-block gold-gradient-bg text-white font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.4)]" href="/contact">
               Plan Your Event
             </Link>
-            <Link className="inline-block border border-[#d4af37] text-[#d4af37] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:bg-[#d4af37] hover:text-[#0d1526] transition-colors duration-300 backdrop-blur-sm" href="/gallery?v=1">
+            <Link className="inline-block border-2 border-white text-white font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:bg-white hover:text-black transition-all duration-300 backdrop-blur-sm" href="/gallery?v=1">
               See Our Work
             </Link>
           </div>
