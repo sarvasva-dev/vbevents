@@ -21,11 +21,19 @@ export default function Home() {
       <Navbar />
 
       {/* Main Hero Section */}
-      <main className="relative h-[100dvh] w-full min-h-[600px] flex items-center justify-center overflow-hidden bg-transparent">
-        <AnimatedBackground />
-        
-        <div className="absolute inset-0 z-0 opacity-30">
-          <div className="w-full h-full bg-transparent object-cover absolute inset-0"></div>
+      <main className="relative h-[100dvh] w-full min-h-[600px] flex items-center justify-center overflow-hidden bg-[#ffffff]">
+        {/* Background Image of a grand luxury event stage */}
+        <div className="absolute inset-0 z-0">
+          <Image 
+            src="/images/ai_marriages.png" 
+            alt="Grand Luxury Event Decor" 
+            fill 
+            priority
+            sizes="100vw"
+            className="object-cover opacity-55"
+          />
+          {/* Elegant light overlay to blend with navbar and make text highly readable */}
+          <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-white/80 to-[#ffffff]"></div>
         </div>
 
         <FadeIn className="relative z-10 flex flex-col items-center justify-center text-center px-6 w-full max-w-5xl mx-auto pt-20">
