@@ -35,11 +35,11 @@ export default function Navbar() {
       >
         <div className="flex justify-between items-center mb-8 pb-4 border-b border-[#4d4635]/20 pt-4">
           <Image
-            src="/images/logo-dark.jpg"
+            src="/images/vb_logo.png"
             alt="Vision Beyond Events Logo"
             width={130}
             height={50}
-            className="h-10 w-auto object-contain rounded"
+            className="h-10 w-auto object-contain rounded-full"
           />
           <button onClick={() => setIsDrawerOpen(false)} className="text-[#d0c5af] hover:text-primary p-2 rounded-full hover:bg-[#2a2a2a] transition-colors">
             <span className="material-symbols-outlined">close</span>
@@ -77,8 +77,8 @@ export default function Navbar() {
             height={48}
             priority
             alt="Vision Beyond Events Logo"
-            className="h-11 w-auto object-contain drop-shadow-md transition-opacity opacity-90 group-hover:opacity-100"
-            src="/images/logo-dark.jpg"
+            className="h-12 w-auto object-contain drop-shadow-md rounded-full border border-primary/20 transition-opacity opacity-90 group-hover:opacity-100"
+            src="/images/vb_logo.png"
           />
         </Link>
         <div className="hidden lg:flex items-center gap-gutter">
