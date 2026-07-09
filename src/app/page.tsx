@@ -7,7 +7,7 @@ import AnimatedBackground from '@/components/AnimatedBackground';
 import TextReveal from '@/components/TextReveal';
 
 export const metadata: Metadata = {
-  title: "Best Luxury Event Organizer India Ã¢â‚¬â€ Destination Weddings & Corporate Events | Vision Beyond Events",
+  title: "Best Luxury Event Organizer India ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Destination Weddings & Corporate Events | Vision Beyond Events",
   description: "Vision Beyond Events is the premier luxury event planner in India. We specialize in destination weddings in Udaipur, corporate events, and memorable private celebrations.",
   keywords: ["best event organizer India", "destination wedding planner Udaipur", "luxury wedding planner Mumbai", "corporate event organizer Delhi", "top wedding planner India", "premium event management"],
   alternates: {
@@ -21,11 +21,11 @@ export default function Home() {
       <Navbar />
 
       {/* Main Hero Section */}
-      <main className="relative h-[100dvh] w-full min-h-[600px] flex items-center justify-center overflow-hidden bg-[#ffffff]">
+      <main className="relative h-[100dvh] w-full min-h-[600px] flex items-center justify-center overflow-hidden bg-transparent">
         <AnimatedBackground />
         
         <div className="absolute inset-0 z-0 opacity-30">
-          <div className="w-full h-full bg-[#faf9f6] object-cover absolute inset-0"></div>
+          <div className="w-full h-full bg-transparent object-cover absolute inset-0"></div>
         </div>
 
         <FadeIn className="relative z-10 flex flex-col items-center justify-center text-center px-6 w-full max-w-5xl mx-auto pt-20">
@@ -47,7 +47,7 @@ export default function Home() {
       </main>
 
       {/* Press / Editorial Mentions Strip */}
-      <div className="w-full border-y border-[#d4af37]/30 bg-[#faf9f6] py-8 overflow-hidden">
+      <div className="w-full border-y border-[#d4af37]/30 bg-transparent py-8 overflow-hidden">
         <div className="flex justify-center items-center gap-12 md:gap-24 opacity-40 grayscale flex-wrap px-6">
           <span className="font-headline-md text-xl font-bold tracking-widest" style={{ fontFamily: 'Playfair Display, serif' }}>VOGUE</span>
           <span className="font-headline-md text-xl font-bold tracking-widest" style={{ fontFamily: 'Playfair Display, serif' }}>HARPER&apos;S BAZAAR</span>
@@ -57,7 +57,7 @@ export default function Home() {
       </div>
 
       {/* Who We Are Section */}
-      <section className="py-24 px-6 md:px-20 bg-[#ffffff]">
+      <section className="py-24 px-6 md:px-20 bg-transparent">
         <div className="max-w-4xl mx-auto text-center">
           <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#d4af37] mb-6">Who We Are</p>
           <h2 className="font-headline-lg text-3xl md:text-5xl text-[#0f172a] mb-8 leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
@@ -70,7 +70,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 px-6 md:px-20 bg-[#faf9f6] border-y border-[#d4af37]/30">
+      <section className="py-16 px-6 md:px-20 glass-card border-x-0 border-y border-[#d4af37]/30 backdrop-blur-md rounded-none shadow-none">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-[#d4af37]/30">
           <div className="py-4 md:py-0">
             <h3 className="font-headline-lg text-5xl md:text-6xl text-[#d4af37] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>500+</h3>
@@ -88,7 +88,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-24 px-6 md:px-20 bg-[#ffffff]">
+      <section className="py-24 px-6 md:px-20 bg-transparent">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Why Choose Us?</h2>
@@ -121,7 +121,7 @@ export default function Home() {
       </section>
 
       {/* Discretion Teaser */}
-      <section className="py-24 px-6 md:px-20 bg-[#faf9f6] border-y border-[#d4af37]/30">
+      <section className="py-24 px-6 md:px-20 glass-card border-x-0 border-y border-[#d4af37]/30 backdrop-blur-md rounded-none shadow-none">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
           <div className="md:w-1/2">
             <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>Your Privacy, Our Priority.</h2>
@@ -133,7 +133,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="md:w-1/2 relative aspect-square w-full max-w-md mx-auto border border-[#d4af37]/30 p-4 rounded-full">
-            <div className="w-full h-full bg-[#ffffff] flex items-center justify-center rounded-full">
+            <div className="w-full h-full bg-transparent flex items-center justify-center rounded-full">
               <span className="material-symbols-outlined text-[80px] text-[#d4af37]/50" style={{ fontVariationSettings: "'FILL' 1" }}>shield_lock</span>
             </div>
           </div>
@@ -141,7 +141,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-[120px] md:py-[160px] px-6 md:px-20 w-full max-w-[1440px] mx-auto bg-[#ffffff]" id="services">
+      <section className="py-[120px] md:py-[160px] px-6 md:px-20 w-full max-w-[1440px] mx-auto bg-transparent" id="services">
         <FadeIn className="text-center mb-20">
           <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#475569] mb-4">What We Do</p>
           <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] mb-4 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>Our Services</h2>
@@ -149,7 +149,7 @@ export default function Home() {
         </FadeIn>
         
         <FadeIn className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <Link href="/gallery?v=1#birthdays" className="block group relative bg-[#faf9f6] border border-[#d4af37]/30 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-2 hover:border-[#d4af37]/40">
+          <Link href="/gallery?v=1#birthdays" className="block group relative bg-transparent border border-[#d4af37]/30 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-2 hover:border-[#d4af37]/40">
             <div className="aspect-[16/9] w-full overflow-hidden relative">
               <Image fill sizes="(max-width: 768px) 100vw, 66vw" alt="Luxury Birthday Party Planning by Vision Beyond Events" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/gallery/birthday_IMG_20250710_182149.jpg.jpeg"/>
             </div>
@@ -158,7 +158,7 @@ export default function Home() {
             </div>
           </Link>
           
-          <Link href="/gallery?v=1#marriages" className="block group relative bg-[#faf9f6] border border-[#d4af37]/30 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:row-span-2 hover:border-[#d4af37]/40">
+          <Link href="/gallery?v=1#marriages" className="block group relative bg-transparent border border-[#d4af37]/30 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:row-span-2 hover:border-[#d4af37]/40">
             <div className="aspect-[3/4] h-full w-full overflow-hidden relative">
               <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Luxury Indian Wedding and Marriage Planning" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/ai_marriages.png"/>
             </div>
@@ -167,7 +167,7 @@ export default function Home() {
             </div>
           </Link>
           
-          <Link href="/gallery?v=1#haldi-ceremonies" className="block group relative bg-[#faf9f6] border border-[#d4af37]/30 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40 lg:col-span-2">
+          <Link href="/gallery?v=1#haldi-ceremonies" className="block group relative bg-transparent border border-[#d4af37]/30 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40 lg:col-span-2">
             <div className="aspect-[16/9] w-full overflow-hidden relative">
               <Image fill sizes="(max-width: 768px) 100vw, 66vw" alt="Vibrant Haldi Ceremony Setup" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/gallery/haldi_ChatGPT Image Jun 22, 2026, 07_38_25 PM.png"/>
             </div>
@@ -176,7 +176,7 @@ export default function Home() {
             </div>
           </Link>
           
-          <Link href="/gallery?v=1#house-warming-griha-pravesh" className="block group relative bg-[#faf9f6] border border-[#d4af37]/30 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-2 hover:border-[#d4af37]/40">
+          <Link href="/gallery?v=1#house-warming-griha-pravesh" className="block group relative bg-transparent border border-[#d4af37]/30 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-2 hover:border-[#d4af37]/40">
             <div className="aspect-[21/9] w-full overflow-hidden relative">
               <Image fill sizes="(max-width: 768px) 100vw, 66vw" alt="House Warming and Griha Pravesh Event Decor" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%] object-center" src="/images/housewarming.jpeg"/>
             </div>
@@ -185,7 +185,7 @@ export default function Home() {
             </div>
           </Link>
           
-          <Link href="/gallery?v=1#corporate-school-events" className="block group relative bg-[#faf9f6] border border-[#d4af37]/30 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40">
+          <Link href="/gallery?v=1#corporate-school-events" className="block group relative bg-transparent border border-[#d4af37]/30 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:border-[#d4af37]/40">
             <div className="aspect-[4/3] md:aspect-[3/4] lg:aspect-[4/3] h-full w-full overflow-hidden relative">
               <Image fill sizes="(max-width: 768px) 100vw, 33vw" alt="Corporate and School Event Organizer" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/corporate_event.png"/>
             </div>
@@ -194,7 +194,7 @@ export default function Home() {
             </div>
           </Link>
           
-          <Link href="/gallery?v=1#festival-devotional-events" className="block group relative bg-[#faf9f6] border border-[#d4af37]/30 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-3 hover:border-[#d4af37]/40">
+          <Link href="/gallery?v=1#festival-devotional-events" className="block group relative bg-transparent border border-[#d4af37]/30 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 lg:col-span-3 hover:border-[#d4af37]/40">
             <div className="aspect-[16/9] lg:aspect-[21/9] h-full w-full overflow-hidden relative">
               <Image fill sizes="100vw" alt="Festival and Devotional Event Planning" className="object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-700 grayscale-[20%]" src="/images/festival_devotional.png"/>
             </div>
@@ -206,7 +206,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-24 px-6 md:px-20 bg-[#faf9f6] border-t border-[#d4af37]/30">
+      <section className="py-24 px-6 md:px-20 bg-transparent border-t border-[#d4af37]/30">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#d4af37] mb-4">Happy Clients</p>
@@ -264,7 +264,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 px-6 md:px-20 bg-[#ffffff] border-t border-[#d4af37]/30">
+      <section className="py-24 px-6 md:px-20 bg-transparent border-t border-[#d4af37]/30">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Frequently Asked Questions</h2>
@@ -306,7 +306,7 @@ export default function Home() {
       </section>
 
       {/* The Team Teaser */}
-      <section className="py-24 px-6 md:px-20 bg-[#faf9f6] border-t border-[#d4af37]/30">
+      <section className="py-24 px-6 md:px-20 bg-transparent border-t border-[#d4af37]/30">
         <div className="max-w-4xl mx-auto text-center">
           <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#d4af37] mb-6">Our Team</p>
           <h2 className="font-headline-lg text-4xl md:text-5xl text-[#0f172a] mb-8 leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
@@ -322,7 +322,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="w-full py-16 bg-[#ffffff] border-t border-[#d4af37]/30">
+      <footer className="w-full py-16 bg-[#ffffff]/80 backdrop-blur-md border-t border-[#d4af37]/20">
         <div className="max-w-7xl mx-auto px-6 md:px-20 flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left">
             <div className="font-headline-md text-2xl text-[#d4af37] tracking-tighter mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Vision Beyond Events</div>
@@ -337,6 +337,7 @@ export default function Home() {
     </>
   );
 }
+
 
 
 
