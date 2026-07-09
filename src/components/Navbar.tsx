@@ -54,19 +54,19 @@ export default function Navbar() {
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 50" className="h-10 w-auto">
             <defs>
               <linearGradient id="goldGradDrawer" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#b5892b" />
-                <stop offset="50%" stop-color="#e2c582" />
-                <stop offset="100%" stop-color="#9a711d" />
+                <stop offset="0%" stopColor="#b5892b" />
+                <stop offset="50%" stopColor="#e2c582" />
+                <stop offset="100%" stopColor="#9a711d" />
               </linearGradient>
             </defs>
             <g transform="translate(5, 5)">
-              <circle cx="20" cy="20" r="19" fill="none" stroke="url(#goldGradDrawer)" stroke-width="1.2" stroke-opacity="0.8" />
-              <text x="8" y="26" font-family="'Playfair Display', serif" font-size="18" font-weight="600" font-style="italic" fill="url(#goldGradDrawer)">V</text>
-              <text x="21" y="26" font-family="'Playfair Display', serif" font-size="18" font-weight="600" font-style="italic" fill="url(#goldGradDrawer)">B</text>
+              <circle cx="20" cy="20" r="19" fill="none" stroke="url(#goldGradDrawer)" strokeWidth="1.2" strokeOpacity="0.8" />
+              <text x="8" y="26" fontFamily="'Playfair Display', serif" fontSize="18" fontWeight="600" fontStyle="italic" fill="url(#goldGradDrawer)">V</text>
+              <text x="21" y="26" fontFamily="'Playfair Display', serif" fontSize="18" fontWeight="600" font-style="italic" fill="url(#goldGradDrawer)">B</text>
             </g>
             <g transform="translate(58, 0)">
-              <text x="0" y="23" font-family="'Playfair Display', serif" font-size="18" font-weight="700" fill="#0f172a" letter-spacing="1.5">VISION BEYOND</text>
-              <text x="1" y="38" font-family="'Montserrat', sans-serif" font-size="9" font-weight="600" fill="url(#goldGradDrawer)" letter-spacing="8">E V E N T S</text>
+              <text x="0" y="23" fontFamily="'Playfair Display', serif" fontSize="18" fontWeight="700" fill="#0f172a" letterSpacing="1.5">VISION BEYOND</text>
+              <text x="1" y="38" fontFamily="'Montserrat', sans-serif" fontSize="9" fontWeight="600" fill="url(#goldGradDrawer)" letterSpacing="8">E V E N T S</text>
             </g>
           </svg>
           <button onClick={() => setIsDrawerOpen(false)} className="text-slate-500 hover:text-[#a07820] p-2 rounded-full hover:bg-slate-50 transition-colors">
@@ -106,17 +106,17 @@ export default function Navbar() {
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 50" className="h-11 w-auto">
             <defs>
               <linearGradient id="goldGradNav" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#b5892b" />
-                <stop offset="50%" stop-color="#e2c582" />
-                <stop offset="100%" stop-color="#9a711d" />
+                <stop offset="0%" stopColor="#b5892b" />
+                <stop offset="50%" stopColor="#e2c582" />
+                <stop offset="100%" stopColor="#9a711d" />
               </linearGradient>
             </defs>
 
             {/* Emblem circle + V/B text */}
             <g transform="translate(5, 5)">
-              <circle cx="20" cy="20" r="19" fill="none" stroke="url(#goldGradNav)" stroke-width="1.2" stroke-opacity="0.8" />
-              <text x="8" y="26" font-family="'Playfair Display', 'Didot', 'Georgia', serif" font-size="18" font-weight="600" font-style="italic" fill="url(#goldGradNav)">V</text>
-              <text x="21" y="26" font-family="'Playfair Display', 'Didot', 'Georgia', serif" font-size="18" font-weight="600" font-style="italic" fill="url(#goldGradNav)">B</text>
+              <circle cx="20" cy="20" r="19" fill="none" stroke="url(#goldGradNav)" strokeWidth="1.2" strokeOpacity="0.8" />
+              <text x="8" y="26" fontFamily="'Playfair Display', 'Didot', 'Georgia', serif" fontSize="18" fontWeight="600" fontStyle="italic" fill="url(#goldGradNav)">V</text>
+              <text x="21" y="26" fontFamily="'Playfair Display', 'Didot', 'Georgia', serif" fontSize="18" fontWeight="600" fontStyle="italic" fill="url(#goldGradNav)">B</text>
             </g>
 
             {/* Typography brand name */}
@@ -124,23 +124,23 @@ export default function Navbar() {
               <text 
                 x="0" 
                 y="23" 
-                font-family="'Playfair Display', 'Didot', 'Georgia', serif" 
-                font-size="18" 
-                font-weight="700" 
+                fontFamily="'Playfair Display', 'Didot', 'Georgia', serif" 
+                fontSize="18" 
+                fontWeight="700" 
                 fill={activeStyle ? "#0f172a" : "#ffffff"} 
                 className="transition-colors duration-300"
-                letter-spacing="1.5"
+                letterSpacing="1.5"
               >
                 VISION BEYOND
               </text>
               <text 
                 x="1" 
                 y="38" 
-                font-family="'Montserrat', 'Inter', 'Helvetica', sans-serif" 
-                font-size="9" 
-                font-weight="600" 
+                fontFamily="'Montserrat', 'Inter', 'Helvetica', sans-serif" 
+                fontSize="9" 
+                fontWeight="600" 
                 fill="url(#goldGradNav)" 
-                letter-spacing="8"
+                letterSpacing="8"
               >
                 E V E N T S
               </text>
