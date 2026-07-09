@@ -124,13 +124,13 @@ export default function CorporateEventOrganizerPage() {
 
       <Navbar />
 
-      <main className="min-h-screen bg-[#0d1526]">
+      <main className="min-h-screen bg-[#ffffff]">
 
         {/* Hero */}
-        <section className="relative pt-40 pb-24 px-6 md:px-20 border-b border-[#d4af37]/20 bg-gradient-to-b from-[#0d1526] to-[#111c38]">
+        <section className="relative pt-40 pb-24 px-6 md:px-20 border-b border-[#d4af37]/30 bg-gradient-to-b from-[#ffffff] to-[#111c38]">
           <div className="max-w-4xl mx-auto">
             <nav aria-label="Breadcrumb" className="mb-10">
-              <ol className="flex items-center gap-2 font-body-md text-xs uppercase tracking-widest text-on-surface-variant">
+              <ol className="flex items-center gap-2 font-body-md text-xs uppercase tracking-widest text-[#475569]">
                 <li><Link href="/" className="hover:text-[#d4af37] transition-colors">Home</Link></li>
                 <li className="text-[#d4af37]/40">â€º</li>
                 <li><Link href="/services/weddings" className="hover:text-[#d4af37] transition-colors">Services</Link></li>
@@ -140,10 +140,10 @@ export default function CorporateEventOrganizerPage() {
             </nav>
 
             <p className="font-body-md text-label-lg uppercase tracking-[0.3em] text-[#d4af37] mb-6">Enterprise-Grade. Boardroom-Discreet.</p>
-            <h1 className="font-headline-lg text-5xl md:text-7xl text-white mb-8 tracking-tighter leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
+            <h1 className="font-headline-lg text-5xl md:text-7xl text-[#0f172a] mb-8 tracking-tighter leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
               Corporate Event Organizer for Global & Enterprise Clients
             </h1>
-            <p className="font-body-md text-on-surface-variant text-xl leading-relaxed max-w-3xl mb-12">
+            <p className="font-body-md text-[#475569] text-xl leading-relaxed max-w-3xl mb-12">
               We are not a MICE vendor competing on headcount and screens. We are a precision corporate event organizer for leadership teams, boards, and global brands who require flawless execution, zero leaks, and an experience that reflects the caliber of the organization hosting it.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -158,8 +158,8 @@ export default function CorporateEventOrganizerPage() {
         </section>
 
         {/* Proof Strip */}
-        <section className="py-16 px-6 md:px-20 bg-[#111c38] border-b border-[#d4af37]/10">
-          <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-[#d4af37]/20">
+        <section className="py-16 px-6 md:px-20 bg-[#faf9f6] border-b border-[#d4af37]/30">
+          <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-[#d4af37]/30">
             {[
               { stat: '50+', label: 'Corporate Events Executed' },
               { stat: '20+', label: 'Countries Represented' },
@@ -168,7 +168,7 @@ export default function CorporateEventOrganizerPage() {
             ].map(({ stat, label }) => (
               <div key={label} className="py-6 md:py-0 px-4">
                 <p className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>{stat}</p>
-                <p className="font-body-md text-on-surface-variant text-xs uppercase tracking-widest">{label}</p>
+                <p className="font-body-md text-[#475569] text-xs uppercase tracking-widest">{label}</p>
               </div>
             ))}
           </div>
@@ -176,10 +176,10 @@ export default function CorporateEventOrganizerPage() {
 
         {/* Service Pillars */}
         <FadeIn>
-          <section className="py-24 px-6 md:px-20 bg-[#0d1526]">
+          <section className="py-24 px-6 md:px-20 bg-[#ffffff]">
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-20">
-                <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-on-surface-variant mb-4">Capabilities</p>
+                <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#475569] mb-4">Capabilities</p>
                 <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
                   Corporate Event Management Verticals
                 </h2>
@@ -187,10 +187,10 @@ export default function CorporateEventOrganizerPage() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {SERVICE_PILLARS.map(({ icon, title, desc }) => (
-                  <div key={title} className="border border-[#d4af37]/10 p-10 bg-[#111c38] hover:border-[#d4af37]/40 transition-colors group">
+                  <div key={title} className="border border-[#d4af37]/30 p-10 bg-[#faf9f6] hover:border-[#d4af37]/40 transition-colors group">
                     <span className="material-symbols-outlined text-4xl text-[#d4af37] mb-6 block">{icon}</span>
-                    <h3 className="font-headline-sm text-2xl text-white mb-4 group-hover:text-[#d4af37] transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>{title}</h3>
-                    <p className="font-body-md text-on-surface-variant leading-relaxed">{desc}</p>
+                    <h3 className="font-headline-sm text-2xl text-[#0f172a] mb-4 group-hover:text-[#d4af37] transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>{title}</h3>
+                    <p className="font-body-md text-[#475569] leading-relaxed">{desc}</p>
                   </div>
                 ))}
               </div>
@@ -200,14 +200,14 @@ export default function CorporateEventOrganizerPage() {
 
         {/* Anonymized Case Study Block */}
         <FadeIn>
-          <section className="py-24 px-6 md:px-20 bg-[#111c38] border-y border-[#d4af37]/10">
+          <section className="py-24 px-6 md:px-20 bg-[#faf9f6] border-y border-[#d4af37]/30">
             <div className="max-w-7xl mx-auto">
               <div className="mb-16">
-                <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-on-surface-variant mb-4">Proof of Execution</p>
+                <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#475569] mb-4">Proof of Execution</p>
                 <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
                   What We&apos;ve Delivered
                 </h2>
-                <p className="font-body-md text-on-surface-variant text-lg mt-4">
+                <p className="font-body-md text-[#475569] text-lg mt-4">
                   Client names and organizations remain confidential per our NDA-first model. The numbers speak.
                 </p>
               </div>
@@ -226,12 +226,12 @@ export default function CorporateEventOrganizerPage() {
                     details: ['400+ HNWI attendees', 'Multi-country guest logistics', 'Curated experiential dining program', 'Branded environment end-to-end'],
                   },
                 ].map(({ label, details }) => (
-                  <div key={label} className="border border-[#d4af37]/10 p-8 hover:border-[#d4af37]/30 transition-colors">
+                  <div key={label} className="border border-[#d4af37]/30 p-8 hover:border-[#d4af37]/30 transition-colors">
                     <p className="font-body-md text-label-lg uppercase tracking-widest text-[#d4af37] mb-6 text-xs">Confidential Engagement</p>
-                    <h3 className="font-headline-sm text-xl text-white mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>{label}</h3>
+                    <h3 className="font-headline-sm text-xl text-[#0f172a] mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>{label}</h3>
                     <ul className="space-y-3">
                       {details.map((d) => (
-                        <li key={d} className="font-body-md text-on-surface-variant text-sm flex items-start gap-3">
+                        <li key={d} className="font-body-md text-[#475569] text-sm flex items-start gap-3">
                           <span className="text-[#d4af37] mt-0.5">â€”</span>
                           {d}
                         </li>
@@ -245,25 +245,25 @@ export default function CorporateEventOrganizerPage() {
         </FadeIn>
 
         {/* Discretion Link */}
-        <section className="py-16 px-6 md:px-20 bg-[#0d1526]">
-          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 border border-[#d4af37]/10 p-10">
+        <section className="py-16 px-6 md:px-20 bg-[#ffffff]">
+          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 border border-[#d4af37]/30 p-10">
             <div>
-              <h3 className="font-headline-sm text-2xl text-white mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Why enterprises choose discretion-first partners</h3>
-              <p className="font-body-md text-on-surface-variant leading-relaxed">
+              <h3 className="font-headline-sm text-2xl text-[#0f172a] mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Why enterprises choose discretion-first partners</h3>
+              <p className="font-body-md text-[#475569] leading-relaxed">
                 A single information leak before an M&A announcement, leadership transition, or strategic launch can cost more than the entire event budget. Our operational framework is built around this reality.
               </p>
             </div>
-            <Link href="/discretion" className="shrink-0 inline-flex items-center gap-2 font-body-md text-label-lg uppercase tracking-widest text-[#d4af37] hover:text-white transition-colors whitespace-nowrap">
+            <Link href="/discretion" className="shrink-0 inline-flex items-center gap-2 font-body-md text-label-lg uppercase tracking-widest text-[#d4af37] hover:text-[#0f172a] transition-colors whitespace-nowrap">
               Read Our Protocols <span className="material-symbols-outlined text-[18px]">arrow_right_alt</span>
             </Link>
           </div>
         </section>
 
         {/* FAQ */}
-        <section className="py-24 px-6 md:px-20 bg-[#111c38]">
+        <section className="py-24 px-6 md:px-20 bg-[#faf9f6]">
           <div className="max-w-3xl mx-auto">
             <div className="mb-16">
-              <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-on-surface-variant mb-4">Common Questions</p>
+              <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#475569] mb-4">Common Questions</p>
               <h2 className="font-headline-lg text-4xl text-[#d4af37] tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
                 Corporate Event Management â€” FAQs
               </h2>
@@ -283,12 +283,12 @@ export default function CorporateEventOrganizerPage() {
                   a: 'We work with corporate events from intimate 20-person leadership retreats to large-scale 1,000+ attendee conferences. Our sweet spot â€” and where our UHNWI-grade attention to detail has maximum impact â€” is typically in the 50â€“500 attendee range for high-value, reputation-sensitive events.',
                 },
               ].map(({ q, a }, i) => (
-                <details key={i} className="group border-b border-[#d4af37]/10 py-6">
+                <details key={i} className="group border-b border-[#d4af37]/30 py-6">
                   <summary className="flex justify-between items-start gap-4 cursor-pointer list-none">
-                    <h3 className="font-body-md text-on-surface text-lg font-medium leading-snug">{q}</h3>
+                    <h3 className="font-body-md text-[#0f172a] text-lg font-medium leading-snug">{q}</h3>
                     <span className="material-symbols-outlined text-[#d4af37] shrink-0 group-open:rotate-45 transition-transform duration-300">add</span>
                   </summary>
-                  <p className="font-body-md text-on-surface-variant leading-relaxed mt-4 pr-8">{a}</p>
+                  <p className="font-body-md text-[#475569] leading-relaxed mt-4 pr-8">{a}</p>
                 </details>
               ))}
             </div>
@@ -296,12 +296,12 @@ export default function CorporateEventOrganizerPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-24 px-6 text-center bg-[#0d1526] border-t border-[#d4af37]/20">
+        <section className="py-24 px-6 text-center bg-[#ffffff] border-t border-[#d4af37]/30">
           <p className="font-body-md text-label-lg uppercase tracking-[0.3em] text-[#d4af37] mb-6">Begin Here</p>
-          <h2 className="font-headline-lg text-4xl md:text-5xl text-white mb-8 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
+          <h2 className="font-headline-lg text-4xl md:text-5xl text-[#0f172a] mb-8 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
             Precision execution. Boardroom-standard discretion.
           </h2>
-          <p className="font-body-md text-on-surface-variant text-lg max-w-xl mx-auto mb-10">
+          <p className="font-body-md text-[#475569] text-lg max-w-xl mx-auto mb-10">
             Every corporate inquiry is treated with the same confidentiality as a private family engagement. Your first call is protected.
           </p>
           <Link href="/contact" className="inline-block gold-gradient-bg text-[#111c38] font-body-md text-label-lg uppercase tracking-widest px-12 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]">
@@ -311,20 +311,21 @@ export default function CorporateEventOrganizerPage() {
 
       </main>
 
-      <footer className="w-full py-16 bg-[#0d1526] border-t border-[#d4af37]/20">
+      <footer className="w-full py-16 bg-[#ffffff] border-t border-[#d4af37]/30">
         <div className="max-w-7xl mx-auto px-6 md:px-20 flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left">
             <div className="font-headline-md text-2xl text-[#d4af37] tracking-tighter mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Vision Beyond Events</div>
-            <div className="font-body-md text-on-surface-variant text-sm tracking-widest uppercase">Corporate Event Organizer, India</div>
+            <div className="font-body-md text-[#475569] text-sm tracking-widest uppercase">Corporate Event Organizer, India</div>
           </div>
           <div className="flex gap-8">
-            <Link className="font-body-md text-sm text-on-surface-variant hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/discretion">Privacy Protocols</Link>
-            <Link className="font-body-md text-sm text-on-surface-variant hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/contact">Inquire</Link>
-            <Link className="font-body-md text-sm text-on-surface-variant hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/">Home</Link>
+            <Link className="font-body-md text-sm text-[#475569] hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/discretion">Privacy Protocols</Link>
+            <Link className="font-body-md text-sm text-[#475569] hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/contact">Inquire</Link>
+            <Link className="font-body-md text-sm text-[#475569] hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/">Home</Link>
           </div>
         </div>
       </footer>
     </>
   );
 }
+
 

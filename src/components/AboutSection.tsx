@@ -29,7 +29,7 @@ export default function AboutSection() {
           
           {/* Aesthetic Gold Badge */}
           <FadeIn className="absolute top-1/2 right-1/4 -translate-y-1/2 translate-x-1/2 z-30 w-32 h-32 rounded-full gold-gradient-bg flex items-center justify-center shadow-[0_0_40px_rgba(212,175,55,0.4)] animate-[spin_20s_linear_infinite]">
-            <div className="w-full h-full absolute inset-0 flex items-center justify-center p-2 text-on-primary">
+            <div className="w-full h-full absolute inset-0 flex items-center justify-center p-2 text-white">
               <svg viewBox="0 0 100 100" className="w-full h-full overflow-visible">
                 <path id="curve" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="transparent"/>
                 <text className="text-[14px] font-label-lg tracking-widest font-bold fill-current">
@@ -46,28 +46,28 @@ export default function AboutSection() {
             <h4 className="font-label-lg text-primary uppercase tracking-[0.3em] mb-4">Our Story</h4>
             <TextReveal 
               text="We Don't Just Plan Events. We Curate Legacies."
-              className="font-headline-lg text-headline-lg text-on-surface mb-8 tracking-tighter"
+              className="font-headline-lg text-headline-lg text-[#0f172a] mb-8 tracking-tighter"
               el="h2"
             />
             <div className="w-16 h-px bg-primary/50 mb-8"></div>
           </FadeIn>
           
           <FadeIn>
-            <p className="font-body-lg text-on-surface-variant/90 mb-6 leading-relaxed">
+            <p className="font-body-lg text-[#475569]/90 mb-6 leading-relaxed">
               Founded on the belief that every celebration should be a masterpiece, Vision Beyond Events brings an unparalleled level of sophistication and detail to the Indian event landscape.
             </p>
-            <p className="font-body-md text-on-surface-variant/70 mb-10 leading-relaxed">
+            <p className="font-body-md text-[#475569]/70 mb-10 leading-relaxed">
               From the vibrant energy of Dandiya nights and the sacred intimacy of Haldi ceremonies to grand corporate galas and ultra-luxury weddings, our dedicated team works tirelessly behind the scenes. We blend traditional aesthetics with modern, high-end production to ensure your special day is absolutely flawless.
             </p>
             
             <div className="grid grid-cols-2 gap-8 border-t border-outline-variant/30 pt-8 mt-4">
               <div>
                 <div className="font-headline-md text-primary mb-2">50+</div>
-                <div className="font-label-sm uppercase tracking-widest text-on-surface-variant/60">Events Mastered</div>
+                <div className="font-label-sm uppercase tracking-widest text-[#475569]/60">Events Mastered</div>
               </div>
               <div>
                 <div className="font-headline-md text-primary mb-2">100%</div>
-                <div className="font-label-sm uppercase tracking-widest text-on-surface-variant/60">Client Satisfaction</div>
+                <div className="font-label-sm uppercase tracking-widest text-[#475569]/60">Client Satisfaction</div>
               </div>
             </div>
           </FadeIn>
@@ -77,4 +77,5 @@ export default function AboutSection() {
     </section>
   );
 }
+
 

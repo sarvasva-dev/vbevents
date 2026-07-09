@@ -42,7 +42,7 @@ export default function GalleryPage() {
         <div className="text-center mb-16">
           <h1 className="font-headline-lg text-headline-lg text-primary mb-4 tracking-tighter">Our Gallery</h1>
           <div className="w-24 h-px bg-primary/30 mx-auto mb-8"></div>
-          <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
+          <p className="font-body-md text-body-md text-[#475569] max-w-2xl mx-auto">
             A look at some of our most beautiful weddings, birthday parties, haldi ceremonies, and other events we have planned.
           </p>
         </div>
@@ -63,7 +63,7 @@ export default function GalleryPage() {
                 {files.map((file, i) => {
                   const isVideo = file.toLowerCase().endsWith('.mp4');
                   return (
-                    <div key={i} className="break-inside-avoid rounded-xl overflow-hidden shadow-lg bg-[#111c38] ghost-border group relative">
+                    <div key={i} className="break-inside-avoid rounded-xl overflow-hidden shadow-lg bg-[#faf9f6] ghost-border group relative">
                       {isVideo ? (
                         <VideoPlayer file={file} />
                       ) : (
@@ -87,7 +87,7 @@ export default function GalleryPage() {
         })}
 
         {mediaFiles.length === 0 && (
-          <div className="col-span-full text-center text-on-surface-variant py-20">
+          <div className="col-span-full text-center text-[#475569] py-20">
             Gallery is currently updating... Please check back in a few minutes!
           </div>
         )}
@@ -97,17 +97,17 @@ export default function GalleryPage() {
         <div className="flex flex-col lg:flex-row justify-between items-center px-6 md:px-20 gap-8 w-full max-w-[1440px] mx-auto">
           <div className="flex flex-col gap-2 text-center lg:text-left">
             <div className="font-headline-md text-headline-md text-primary tracking-tighter">Vision Beyond Events</div>
-            <div className="font-body-md text-on-surface-variant flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+            <div className="font-body-md text-[#475569] flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
               <span>ðŸ“ž +91 80818 08902</span>
               <span className="hidden sm:inline">|</span>
               <Link href="/" className="hover:text-primary transition-colors">Instagram (Coming Soon)</Link>
             </div>
           </div>
           <div className="flex gap-8">
-            <Link className="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="/">Privacy Policy</Link>
-            <Link className="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="/">Terms of Service</Link>
+            <Link className="font-body-md text-body-md text-[#475569] hover:text-primary transition-colors" href="/">Privacy Policy</Link>
+            <Link className="font-body-md text-body-md text-[#475569] hover:text-primary transition-colors" href="/">Terms of Service</Link>
           </div>
-          <div className="font-body-md text-body-md text-on-surface-variant text-center lg:text-right">
+          <div className="font-body-md text-body-md text-[#475569] text-center lg:text-right">
               Â© {new Date().getFullYear()} Vision Beyond Events.<br/>Crafting Memories Since 2024.
           </div>
         </div>
@@ -115,4 +115,5 @@ export default function GalleryPage() {
     </>
   );
 }
+
 

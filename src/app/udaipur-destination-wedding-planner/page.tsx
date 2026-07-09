@@ -145,13 +145,13 @@ export default function UdaipurWeddingPlannerPage() {
 
       <Navbar />
 
-      <main className="min-h-screen bg-[#0d1526]">
+      <main className="min-h-screen bg-[#ffffff]">
 
         {/* Hero */}
-        <section className="relative pt-40 pb-24 px-6 md:px-20 border-b border-[#d4af37]/20 bg-gradient-to-b from-[#0d1526] to-[#111c38]">
+        <section className="relative pt-40 pb-24 px-6 md:px-20 border-b border-[#d4af37]/30 bg-gradient-to-b from-[#ffffff] to-[#111c38]">
           <div className="max-w-4xl mx-auto">
             <nav aria-label="Breadcrumb" className="mb-10">
-              <ol className="flex items-center gap-2 font-body-md text-xs uppercase tracking-widest text-on-surface-variant">
+              <ol className="flex items-center gap-2 font-body-md text-xs uppercase tracking-widest text-[#475569]">
                 <li><Link href="/" className="hover:text-[#d4af37] transition-colors">Home</Link></li>
                 <li className="text-[#d4af37]/40">â€º</li>
                 <li><Link href="/services/weddings" className="hover:text-[#d4af37] transition-colors">Services</Link></li>
@@ -161,10 +161,10 @@ export default function UdaipurWeddingPlannerPage() {
             </nav>
 
             <p className="font-body-md text-label-lg uppercase tracking-[0.3em] text-[#d4af37] mb-6">The Venice of the East</p>
-            <h1 className="font-headline-lg text-5xl md:text-7xl text-white mb-8 tracking-tighter leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
+            <h1 className="font-headline-lg text-5xl md:text-7xl text-[#0f172a] mb-8 tracking-tighter leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
               Udaipur Destination Wedding Planner
             </h1>
-            <p className="font-body-md text-on-surface-variant text-xl leading-relaxed max-w-3xl mb-12">
+            <p className="font-body-md text-[#475569] text-xl leading-relaxed max-w-3xl mb-12">
               Udaipur is India&apos;s most iconic destination for palace weddings â€” and also its most operationally complex. Permits, heritage restrictions, seasonal logistics, and VIP guest management across a lakeside city require a partner with deep local execution capability. That is what we provide, backed by our NDA-first discretion standard.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -179,8 +179,8 @@ export default function UdaipurWeddingPlannerPage() {
         </section>
 
         {/* Proof Strip */}
-        <section className="py-16 px-6 md:px-20 bg-[#111c38] border-b border-[#d4af37]/10">
-          <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-[#d4af37]/20">
+        <section className="py-16 px-6 md:px-20 bg-[#faf9f6] border-b border-[#d4af37]/30">
+          <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-[#d4af37]/30">
             {[
               { stat: '15+', label: 'Udaipur Weddings Executed' },
               { stat: '4', label: 'Venue Category Types' },
@@ -189,7 +189,7 @@ export default function UdaipurWeddingPlannerPage() {
             ].map(({ stat, label }) => (
               <div key={label} className="py-6 md:py-0 px-4">
                 <p className="font-headline-lg text-3xl md:text-4xl text-[#d4af37] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>{stat}</p>
-                <p className="font-body-md text-on-surface-variant text-xs uppercase tracking-widest">{label}</p>
+                <p className="font-body-md text-[#475569] text-xs uppercase tracking-widest">{label}</p>
               </div>
             ))}
           </div>
@@ -197,27 +197,27 @@ export default function UdaipurWeddingPlannerPage() {
 
         {/* Venue Categories */}
         <FadeIn>
-          <section className="py-24 px-6 md:px-20 bg-[#0d1526]">
+          <section className="py-24 px-6 md:px-20 bg-[#ffffff]">
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-20">
-                <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-on-surface-variant mb-4">Venue Expertise</p>
+                <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#475569] mb-4">Venue Expertise</p>
                 <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
                   Property Categories We Work With in Udaipur
                 </h2>
-                <p className="font-body-md text-on-surface-variant text-lg mt-4 max-w-2xl mx-auto">
+                <p className="font-body-md text-[#475569] text-lg mt-4 max-w-2xl mx-auto">
                   We do not name specific properties until after an NDA is signed. Below are the categories of venues we regularly execute across in and around Udaipur.
                 </p>
                 <div className="w-24 h-px bg-[#d4af37]/30 mx-auto mt-6" />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {VENUE_CATEGORIES.map(({ icon, title, desc, tag }) => (
-                  <div key={title} className="border border-[#d4af37]/10 p-10 bg-[#111c38] hover:border-[#d4af37]/40 transition-colors">
+                  <div key={title} className="border border-[#d4af37]/30 p-10 bg-[#faf9f6] hover:border-[#d4af37]/40 transition-colors">
                     <div className="flex items-start justify-between mb-6">
                       <span className="material-symbols-outlined text-4xl text-[#d4af37]">{icon}</span>
-                      <span className="font-body-md text-xs uppercase tracking-widest text-[#d4af37]/60 border border-[#d4af37]/20 px-3 py-1">{tag}</span>
+                      <span className="font-body-md text-xs uppercase tracking-widest text-[#d4af37]/60 border border-[#d4af37]/30 px-3 py-1">{tag}</span>
                     </div>
-                    <h3 className="font-headline-sm text-2xl text-white mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>{title}</h3>
-                    <p className="font-body-md text-on-surface-variant leading-relaxed">{desc}</p>
+                    <h3 className="font-headline-sm text-2xl text-[#0f172a] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>{title}</h3>
+                    <p className="font-body-md text-[#475569] leading-relaxed">{desc}</p>
                   </div>
                 ))}
               </div>
@@ -227,14 +227,14 @@ export default function UdaipurWeddingPlannerPage() {
 
         {/* Local Logistics Expertise */}
         <FadeIn>
-          <section className="py-24 px-6 md:px-20 bg-[#111c38] border-y border-[#d4af37]/10">
+          <section className="py-24 px-6 md:px-20 bg-[#faf9f6] border-y border-[#d4af37]/30">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
               <div>
-                <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-on-surface-variant mb-4">Ground-Level Capability</p>
+                <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#475569] mb-4">Ground-Level Capability</p>
                 <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] mb-8 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
                   Udaipur Requires Local Expertise. We Have It.
                 </h2>
-                <div className="space-y-6 font-body-md text-on-surface-variant leading-relaxed text-lg">
+                <div className="space-y-6 font-body-md text-[#475569] leading-relaxed text-lg">
                   <p>
                     The Udaipur Lakes region presents logistical challenges that generic Delhi or Mumbai-based planners consistently underestimate: narrow heritage lanes that restrict convoy movement, ASI permits for protected monuments, mandatory liaison with Rajasthan Tourism Development Corporation for certain locations, and a local vendor market that requires years of relationship cultivation.
                   </p>
@@ -250,11 +250,11 @@ export default function UdaipurWeddingPlannerPage() {
                   { icon: 'wb_sunny', title: 'Season & Weather Planning', desc: 'Monsoon contingency protocols, winter heating solutions for open-air venues, and micro-climate briefings for event-day logistics.' },
                   { icon: 'store', title: 'Curated Local Vendor Network', desc: 'Vetted Udaipur-based artisans, heritage caterers, folk performers, and floral studios â€” each under NDA, each selected for excellence.' },
                 ].map(({ icon, title, desc }) => (
-                  <div key={title} className="flex gap-5 p-6 border border-[#d4af37]/10 hover:border-[#d4af37]/30 transition-colors">
+                  <div key={title} className="flex gap-5 p-6 border border-[#d4af37]/30 hover:border-[#d4af37]/30 transition-colors">
                     <span className="material-symbols-outlined text-2xl text-[#d4af37] shrink-0 mt-0.5">{icon}</span>
                     <div>
-                      <h3 className="font-headline-sm text-lg text-white mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>{title}</h3>
-                      <p className="font-body-md text-on-surface-variant text-sm leading-relaxed">{desc}</p>
+                      <h3 className="font-headline-sm text-lg text-[#0f172a] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>{title}</h3>
+                      <p className="font-body-md text-[#475569] text-sm leading-relaxed">{desc}</p>
                     </div>
                   </div>
                 ))}
@@ -264,10 +264,10 @@ export default function UdaipurWeddingPlannerPage() {
         </FadeIn>
 
         {/* FAQ */}
-        <section className="py-24 px-6 md:px-20 bg-[#0d1526]">
+        <section className="py-24 px-6 md:px-20 bg-[#ffffff]">
           <div className="max-w-3xl mx-auto">
             <div className="mb-16">
-              <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-on-surface-variant mb-4">Common Questions</p>
+              <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#475569] mb-4">Common Questions</p>
               <h2 className="font-headline-lg text-4xl text-[#d4af37] tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
                 Udaipur Palace Weddings â€” FAQs
               </h2>
@@ -291,12 +291,12 @@ export default function UdaipurWeddingPlannerPage() {
                   a: "Udaipur's monsoon season (Julyâ€“September) brings beautiful scenery but requires comprehensive weather contingency planning. We deploy rapid-deployment structural tenting, complete venue-pivot protocols executable within a 4-hour window, and weather monitoring teams. No outdoor event operates without a shadow plan.",
                 },
               ].map(({ q, a }, i) => (
-                <details key={i} className="group border-b border-[#d4af37]/10 py-6">
+                <details key={i} className="group border-b border-[#d4af37]/30 py-6">
                   <summary className="flex justify-between items-start gap-4 cursor-pointer list-none">
-                    <h3 className="font-body-md text-on-surface text-lg font-medium leading-snug">{q}</h3>
+                    <h3 className="font-body-md text-[#0f172a] text-lg font-medium leading-snug">{q}</h3>
                     <span className="material-symbols-outlined text-[#d4af37] shrink-0 group-open:rotate-45 transition-transform duration-300">add</span>
                   </summary>
-                  <p className="font-body-md text-on-surface-variant leading-relaxed mt-4 pr-8">{a}</p>
+                  <p className="font-body-md text-[#475569] leading-relaxed mt-4 pr-8">{a}</p>
                 </details>
               ))}
             </div>
@@ -304,12 +304,12 @@ export default function UdaipurWeddingPlannerPage() {
         </section>
 
         {/* Internal Link + CTA */}
-        <section className="py-24 px-6 text-center bg-[#111c38] border-t border-[#d4af37]/20">
+        <section className="py-24 px-6 text-center bg-[#faf9f6] border-t border-[#d4af37]/30">
           <p className="font-body-md text-label-lg uppercase tracking-[0.3em] text-[#d4af37] mb-6">Begin in Confidence</p>
-          <h2 className="font-headline-lg text-4xl md:text-5xl text-white mb-8 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
+          <h2 className="font-headline-lg text-4xl md:text-5xl text-[#0f172a] mb-8 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
             Your Udaipur wedding. Flawlessly private.
           </h2>
-          <p className="font-body-md text-on-surface-variant text-lg max-w-xl mx-auto mb-10">
+          <p className="font-body-md text-[#475569] text-lg max-w-xl mx-auto mb-10">
             An NDA is signed before your first consultation. No names, no guest lists, no venue details leave our office without your written consent.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -324,20 +324,21 @@ export default function UdaipurWeddingPlannerPage() {
 
       </main>
 
-      <footer className="w-full py-16 bg-[#0d1526] border-t border-[#d4af37]/20">
+      <footer className="w-full py-16 bg-[#ffffff] border-t border-[#d4af37]/30">
         <div className="max-w-7xl mx-auto px-6 md:px-20 flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left">
             <div className="font-headline-md text-2xl text-[#d4af37] tracking-tighter mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Vision Beyond Events</div>
-            <div className="font-body-md text-on-surface-variant text-sm tracking-widest uppercase">Udaipur Destination Wedding Planner</div>
+            <div className="font-body-md text-[#475569] text-sm tracking-widest uppercase">Udaipur Destination Wedding Planner</div>
           </div>
           <div className="flex gap-8">
-            <Link className="font-body-md text-sm text-on-surface-variant hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/luxury-destination-wedding-planner-india">All India Destinations</Link>
-            <Link className="font-body-md text-sm text-on-surface-variant hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/discretion">Privacy Protocols</Link>
-            <Link className="font-body-md text-sm text-on-surface-variant hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/">Home</Link>
+            <Link className="font-body-md text-sm text-[#475569] hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/luxury-destination-wedding-planner-india">All India Destinations</Link>
+            <Link className="font-body-md text-sm text-[#475569] hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/discretion">Privacy Protocols</Link>
+            <Link className="font-body-md text-sm text-[#475569] hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/">Home</Link>
           </div>
         </div>
       </footer>
     </>
   );
 }
+
 

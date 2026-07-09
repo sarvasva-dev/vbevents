@@ -108,14 +108,14 @@ export default function LuxuryDestinationWeddingPlannerPage() {
 
       <Navbar />
 
-      <main className="min-h-screen bg-[#0d1526]">
+      <main className="min-h-screen bg-[#ffffff]">
 
         {/* Hero */}
-        <section className="relative pt-40 pb-24 px-6 md:px-20 border-b border-[#d4af37]/20 bg-gradient-to-b from-[#0d1526] to-[#111c38]">
+        <section className="relative pt-40 pb-24 px-6 md:px-20 border-b border-[#d4af37]/30 bg-gradient-to-b from-[#ffffff] to-[#111c38]">
           <div className="max-w-4xl mx-auto">
             {/* Breadcrumb â€” semantic + visible */}
             <nav aria-label="Breadcrumb" className="mb-10">
-              <ol className="flex items-center gap-2 font-body-md text-xs uppercase tracking-widest text-on-surface-variant">
+              <ol className="flex items-center gap-2 font-body-md text-xs uppercase tracking-widest text-[#475569]">
                 <li><Link href="/" className="hover:text-[#d4af37] transition-colors">Home</Link></li>
                 <li className="text-[#d4af37]/40">â€º</li>
                 <li><Link href="/services/weddings" className="hover:text-[#d4af37] transition-colors">Services</Link></li>
@@ -125,10 +125,10 @@ export default function LuxuryDestinationWeddingPlannerPage() {
             </nav>
 
             <p className="font-body-md text-label-lg uppercase tracking-[0.3em] text-[#d4af37] mb-6">India&apos;s Discreet Luxury House</p>
-            <h1 className="font-headline-lg text-5xl md:text-7xl text-white mb-8 tracking-tighter leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
+            <h1 className="font-headline-lg text-5xl md:text-7xl text-[#0f172a] mb-8 tracking-tighter leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
               Luxury Destination Wedding Planner, India
             </h1>
-            <p className="font-body-md text-on-surface-variant text-xl leading-relaxed max-w-3xl mb-12">
+            <p className="font-body-md text-[#475569] text-xl leading-relaxed max-w-3xl mb-12">
               Vision Beyond Events is India&apos;s discreet luxury destination wedding planner â€” architecting palace weddings, fort celebrations, and lakeside estate ceremonies for UHNWI families and global clients. Every engagement begins with an NDA. Every detail is executed with military precision.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -143,8 +143,8 @@ export default function LuxuryDestinationWeddingPlannerPage() {
         </section>
 
         {/* Proof Strip */}
-        <section className="py-16 px-6 md:px-20 bg-[#111c38] border-b border-[#d4af37]/10">
-          <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-[#d4af37]/20">
+        <section className="py-16 px-6 md:px-20 bg-[#faf9f6] border-b border-[#d4af37]/30">
+          <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-[#d4af37]/30">
             {[
               { stat: '22+', label: 'Legacy Weddings Executed' },
               { stat: '3', label: 'Continents of Execution' },
@@ -153,7 +153,7 @@ export default function LuxuryDestinationWeddingPlannerPage() {
             ].map(({ stat, label }) => (
               <div key={label} className="py-6 md:py-0 px-4">
                 <p className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>{stat}</p>
-                <p className="font-body-md text-on-surface-variant text-xs uppercase tracking-widest">{label}</p>
+                <p className="font-body-md text-[#475569] text-xs uppercase tracking-widest">{label}</p>
               </div>
             ))}
           </div>
@@ -161,10 +161,10 @@ export default function LuxuryDestinationWeddingPlannerPage() {
 
         {/* Process */}
         <FadeIn>
-          <section className="py-24 px-6 md:px-20 bg-[#0d1526]">
+          <section className="py-24 px-6 md:px-20 bg-[#ffffff]">
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-20">
-                <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-on-surface-variant mb-4">How We Work</p>
+                <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#475569] mb-4">How We Work</p>
                 <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
                   The VBE Planning Process
                 </h2>
@@ -178,10 +178,10 @@ export default function LuxuryDestinationWeddingPlannerPage() {
                   { step: '04', title: 'Execution Command', desc: 'On-ground event command center. Power redundancy. Medical standby. Weather contingency. Your family celebrates; our team manages everything.' },
                   { step: '05', title: 'Post-Event Protocol', desc: 'Systematic data purge of guest manifests and unapproved media from all vendor databases. Your celebration remains yours, permanently.' },
                 ].map(({ step, title, desc }) => (
-                  <div key={step} className="border border-[#d4af37]/10 p-8 bg-[#111c38] hover:bg-[#1a1a1a] transition-colors">
+                  <div key={step} className="border border-[#d4af37]/30 p-8 bg-[#faf9f6] hover:bg-[#1a1a1a] transition-colors">
                     <span className="font-headline-lg text-4xl text-[#d4af37]/20 block mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>{step}</span>
-                    <h3 className="font-headline-sm text-lg text-white mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>{title}</h3>
-                    <p className="font-body-md text-on-surface-variant text-sm leading-relaxed">{desc}</p>
+                    <h3 className="font-headline-sm text-lg text-[#0f172a] mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>{title}</h3>
+                    <p className="font-body-md text-[#475569] text-sm leading-relaxed">{desc}</p>
                   </div>
                 ))}
               </div>
@@ -191,14 +191,14 @@ export default function LuxuryDestinationWeddingPlannerPage() {
 
         {/* Venue Types */}
         <FadeIn>
-          <section className="py-24 px-6 md:px-20 bg-[#111c38] border-y border-[#d4af37]/10">
+          <section className="py-24 px-6 md:px-20 bg-[#faf9f6] border-y border-[#d4af37]/30">
             <div className="max-w-7xl mx-auto">
               <div className="mb-16">
-                <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-on-surface-variant mb-4">Venue Expertise</p>
+                <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#475569] mb-4">Venue Expertise</p>
                 <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
                   Properties We Work With
                 </h2>
-                <p className="font-body-md text-on-surface-variant text-lg mt-4 max-w-2xl">
+                <p className="font-body-md text-[#475569] text-lg mt-4 max-w-2xl">
                   We work across India&apos;s most exceptional heritage properties â€” all accessed through long-standing relationships and handled with the discretion their owners demand.
                 </p>
               </div>
@@ -209,15 +209,15 @@ export default function LuxuryDestinationWeddingPlannerPage() {
                   { icon: 'water', title: 'Lakeside Estates', desc: 'Private lakefront estates with boat arrival sequences, floating stage setups, and dawn-lit ceremonies.' },
                   { icon: 'villa', title: 'Private Havelis', desc: 'Intimate heritage havelis for 50â€“150 guest celebrations. Boutique, bespoke, and completely private.' },
                 ].map(({ icon, title, desc }) => (
-                  <div key={title} className="border border-[#d4af37]/10 p-8 hover:border-[#d4af37]/40 transition-colors">
+                  <div key={title} className="border border-[#d4af37]/30 p-8 hover:border-[#d4af37]/40 transition-colors">
                     <span className="material-symbols-outlined text-4xl text-[#d4af37] mb-4 block">{icon}</span>
-                    <h3 className="font-headline-sm text-xl text-white mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>{title}</h3>
-                    <p className="font-body-md text-on-surface-variant text-sm leading-relaxed">{desc}</p>
+                    <h3 className="font-headline-sm text-xl text-[#0f172a] mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>{title}</h3>
+                    <p className="font-body-md text-[#475569] text-sm leading-relaxed">{desc}</p>
                   </div>
                 ))}
               </div>
               <div className="mt-10 flex flex-wrap gap-4">
-                <Link href="/udaipur-destination-wedding-planner" className="inline-flex items-center gap-2 font-body-md text-label-lg uppercase tracking-widest text-[#d4af37] hover:text-white transition-colors text-sm">
+                <Link href="/udaipur-destination-wedding-planner" className="inline-flex items-center gap-2 font-body-md text-label-lg uppercase tracking-widest text-[#d4af37] hover:text-[#0f172a] transition-colors text-sm">
                   Udaipur Weddings <span className="material-symbols-outlined text-[16px]">arrow_right_alt</span>
                 </Link>
               </div>
@@ -226,10 +226,10 @@ export default function LuxuryDestinationWeddingPlannerPage() {
         </FadeIn>
 
         {/* FAQ â€” Visible content matching schema */}
-        <section className="py-24 px-6 md:px-20 bg-[#0d1526]">
+        <section className="py-24 px-6 md:px-20 bg-[#ffffff]">
           <div className="max-w-3xl mx-auto">
             <div className="mb-16">
-              <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-on-surface-variant mb-4">Common Questions</p>
+              <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#475569] mb-4">Common Questions</p>
               <h2 className="font-headline-lg text-4xl text-[#d4af37] tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
                 Destination Wedding Planning â€” FAQs
               </h2>
@@ -253,12 +253,12 @@ export default function LuxuryDestinationWeddingPlannerPage() {
                   a: 'Yes. We plan destination weddings internationally for Indian-origin and NRI clients. Our vendor and logistics network extends to select international destinations. Please request a confidential consultation to discuss your specific location requirements.',
                 },
               ].map(({ q, a }, i) => (
-                <details key={i} className="group border-b border-[#d4af37]/10 py-6">
+                <details key={i} className="group border-b border-[#d4af37]/30 py-6">
                   <summary className="flex justify-between items-start gap-4 cursor-pointer list-none">
-                    <h3 className="font-body-md text-on-surface text-lg font-medium leading-snug">{q}</h3>
+                    <h3 className="font-body-md text-[#0f172a] text-lg font-medium leading-snug">{q}</h3>
                     <span className="material-symbols-outlined text-[#d4af37] shrink-0 group-open:rotate-45 transition-transform duration-300">add</span>
                   </summary>
-                  <p className="font-body-md text-on-surface-variant leading-relaxed mt-4 pr-8">{a}</p>
+                  <p className="font-body-md text-[#475569] leading-relaxed mt-4 pr-8">{a}</p>
                 </details>
               ))}
             </div>
@@ -266,12 +266,12 @@ export default function LuxuryDestinationWeddingPlannerPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-24 px-6 text-center bg-[#111c38] border-t border-[#d4af37]/20">
+        <section className="py-24 px-6 text-center bg-[#faf9f6] border-t border-[#d4af37]/30">
           <p className="font-body-md text-label-lg uppercase tracking-[0.3em] text-[#d4af37] mb-6">Begin Here</p>
-          <h2 className="font-headline-lg text-4xl md:text-5xl text-white mb-8 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
+          <h2 className="font-headline-lg text-4xl md:text-5xl text-[#0f172a] mb-8 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
             Your celebration. Your rules. Our execution.
           </h2>
-          <p className="font-body-md text-on-surface-variant text-lg max-w-xl mx-auto mb-10">
+          <p className="font-body-md text-[#475569] text-lg max-w-xl mx-auto mb-10">
             Every inquiry is held in complete confidence. An NDA is signed before your first call.
           </p>
           <Link href="/contact" className="inline-block gold-gradient-bg text-[#111c38] font-body-md text-label-lg uppercase tracking-widest px-12 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]">
@@ -282,20 +282,21 @@ export default function LuxuryDestinationWeddingPlannerPage() {
       </main>
 
       {/* Footer */}
-      <footer className="w-full py-16 bg-[#0d1526] border-t border-[#d4af37]/20">
+      <footer className="w-full py-16 bg-[#ffffff] border-t border-[#d4af37]/30">
         <div className="max-w-7xl mx-auto px-6 md:px-20 flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left">
             <div className="font-headline-md text-2xl text-[#d4af37] tracking-tighter mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Vision Beyond Events</div>
-            <div className="font-body-md text-on-surface-variant text-sm tracking-widest uppercase">Luxury Destination Wedding Planner, India</div>
+            <div className="font-body-md text-[#475569] text-sm tracking-widest uppercase">Luxury Destination Wedding Planner, India</div>
           </div>
           <div className="flex gap-8">
-            <Link className="font-body-md text-sm text-on-surface-variant hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/discretion">Privacy Protocols</Link>
-            <Link className="font-body-md text-sm text-on-surface-variant hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/contact">Inquire</Link>
-            <Link className="font-body-md text-sm text-on-surface-variant hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/">Home</Link>
+            <Link className="font-body-md text-sm text-[#475569] hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/discretion">Privacy Protocols</Link>
+            <Link className="font-body-md text-sm text-[#475569] hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/contact">Inquire</Link>
+            <Link className="font-body-md text-sm text-[#475569] hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/">Home</Link>
           </div>
         </div>
       </footer>
     </>
   );
 }
+
 

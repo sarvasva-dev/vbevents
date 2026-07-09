@@ -167,7 +167,7 @@ export default function RootLayout({
         `}</style>
       </head>
       <body className="min-h-full flex flex-col">
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange={false}>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange={false}>
           <CustomCursor />
           {children}
         </ThemeProvider>

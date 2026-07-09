@@ -14,20 +14,20 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-[#0d1526]">
+    <main className="min-h-screen bg-[#ffffff]">
       <Navbar />
 
       <div className="pt-32">
         {/* Reusing existing components for rapid deployment */}
         <AboutSection />
         
-        <div className="bg-[#111c38] border-y border-[#d4af37]/10">
+        <div className="bg-[#faf9f6] border-y border-[#d4af37]/30">
           <AuthoritySection />
         </div>
       </div>
       
       <section className="py-24 px-6 text-center">
-        <h2 className="font-headline-lg text-4xl md:text-5xl text-white mb-8" style={{ fontFamily: 'Playfair Display, serif' }}>Ready to architect your vision?</h2>
+        <h2 className="font-headline-lg text-4xl md:text-5xl text-[#0f172a] mb-8" style={{ fontFamily: 'Playfair Display, serif' }}>Ready to architect your vision?</h2>
         <Link className="inline-block gold-gradient-bg text-[#111c38] font-body-md text-label-lg uppercase tracking-widest px-10 py-4 hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(212,175,55,0.3)]" href="/contact">
           Inquire Now
         </Link>
@@ -35,4 +35,5 @@ export default function AboutPage() {
     </main>
   );
 }
+
 

@@ -30,7 +30,7 @@ export default function Testimonials() {
       <div className="px-6 md:px-20 max-w-[1440px] mx-auto text-center mb-16">
         <FadeIn>
           <span className="material-symbols-outlined text-4xl text-primary mb-6" style={{ fontVariationSettings: "'FILL' 1" }}>format_quote</span>
-          <h2 className="font-headline-lg text-headline-lg text-on-surface mb-4 tracking-tighter">Words of Prestige</h2>
+          <h2 className="font-headline-lg text-headline-lg text-[#0f172a] mb-4 tracking-tighter">Words of Prestige</h2>
           <div className="w-24 h-px bg-primary/30 mx-auto"></div>
         </FadeIn>
       </div>
@@ -40,12 +40,12 @@ export default function Testimonials() {
           {testimonials.map((t, idx) => (
             <FadeIn key={idx} className="bg-background border border-primary/10 p-10 hover:border-primary/40 transition-colors duration-500 group relative">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary/0 to-transparent group-hover:via-primary/50 transition-all duration-500"></div>
-              <p className="font-body-md text-on-surface-variant leading-loose italic mb-8 relative z-10">
+              <p className="font-body-md text-[#475569] leading-loose italic mb-8 relative z-10">
                 &ldquo;{t.quote}&rdquo;
               </p>
               <div className="border-t border-primary/10 pt-6">
                 <div className="font-label-lg uppercase tracking-widest text-primary mb-1">{t.author}</div>
-                <div className="font-label-sm tracking-widest text-on-surface-variant/50">{t.event}</div>
+                <div className="font-label-sm tracking-widest text-[#475569]/50">{t.event}</div>
               </div>
             </FadeIn>
           ))}
@@ -54,4 +54,5 @@ export default function Testimonials() {
     </section>
   );
 }
+
 
