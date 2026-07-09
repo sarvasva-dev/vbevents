@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
@@ -13,14 +13,14 @@ export const metadata: Metadata = {
 
 export default function WeddingsPage() {
   return (
-    <main className="min-h-screen bg-[#ffffff]">
+    <main className="min-h-screen bg-transparent">
       <Navbar />
 
       {/* Hero */}
       <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden border-b border-[#d4af37]/30">
         <div className="absolute inset-0 z-0">
           <Image src="/images/ai_marriages.png" alt="Luxury Wedding Setup" fill sizes="100vw" className="object-cover grayscale-[10%] opacity-65" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#ffffff] via-[#ffffff]/50 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-white/70 via-[#ffffff]/40 to-transparent"></div>
         </div>
         
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-20">
@@ -38,16 +38,16 @@ export default function WeddingsPage() {
       </section>
 
       {/* Philosophy */}
-      <section className="py-24 px-6 md:px-20 bg-[#faf9f6]">
+      <section className="py-24 px-6 md:px-20 bg-transparent">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="font-headline-md text-4xl md:text-5xl text-[#d4af37] mb-8" style={{ fontFamily: 'Playfair Display, serif' }}>Our Approach</h2>
             <div className="space-y-6 font-body-md text-[#475569] leading-relaxed text-lg">
               <p>
-                Planning a multi-day destination wedding means managing hundreds of guests, cross-city logistics, beautiful decor, and multiple venues Ã¢â‚¬â€ all at once. It can feel overwhelming.
+                Planning a multi-day destination wedding means managing hundreds of guests, cross-city logistics, beautiful decor, and multiple venues &mdash; all at once. It can feel overwhelming.
               </p>
               <p>
-                That is exactly where we step in. Our team takes care of every single detail Ã¢â‚¬â€ from booking the venue and managing the guest list, to coordinating vendors and ensuring everything runs on time.
+                That is exactly where we step in. Our team takes care of every single detail &mdash; from booking the venue and managing the guest list, to coordinating vendors and ensuring everything runs on time.
               </p>
               <p>
                 You show up, enjoy every moment, and make memories. We handle everything else behind the scenes.
@@ -66,27 +66,27 @@ export default function WeddingsPage() {
       </section>
 
       {/* Process */}
-      <section className="py-24 px-6 md:px-20 bg-[#ffffff] border-t border-[#d4af37]/30">
+      <section className="py-24 px-6 md:px-20 bg-transparent border-t border-[#d4af37]/20">
         <div className="max-w-5xl mx-auto text-center mb-16">
           <h2 className="font-headline-md text-4xl md:text-5xl text-[#d4af37]" style={{ fontFamily: 'Playfair Display, serif' }}>How We Work</h2>
         </div>
         
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="p-8 border border-[#d4af37]/30 bg-[#faf9f6] hover:border-[#d4af37]/60 transition-colors">
+          <div className="p-8 border border-[#d4af37]/20 glass-card backdrop-blur-md rounded-2xl hover:border-[#d4af37]/60 transition-all duration-300">
             <span className="font-headline-lg text-4xl text-[#d4af37]/30 block mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>01</span>
             <h3 className="font-headline-sm text-2xl text-[#0f172a] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Venue Procurement</h3>
             <p className="font-body-md text-[#475569] text-sm leading-relaxed">
               Securing exclusive buyouts of royal palaces, private islands, and heritage properties, often accessing venues not publicly available for events.
             </p>
           </div>
-          <div className="p-8 border border-[#d4af37]/30 bg-[#faf9f6] hover:border-[#d4af37]/60 transition-colors">
+          <div className="p-8 border border-[#d4af37]/20 glass-card backdrop-blur-md rounded-2xl hover:border-[#d4af37]/60 transition-all duration-300">
             <span className="font-headline-lg text-4xl text-[#d4af37]/30 block mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>02</span>
             <h3 className="font-headline-sm text-2xl text-[#0f172a] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Guest Logistics</h3>
             <p className="font-body-md text-[#475569] text-sm leading-relaxed">
               White-glove concierge services managing private aviation, visa assistance, and hyper-personalized hospitality for every attendee.
             </p>
           </div>
-          <div className="p-8 border border-[#d4af37]/30 bg-[#faf9f6] hover:border-[#d4af37]/60 transition-colors">
+          <div className="p-8 border border-[#d4af37]/20 glass-card backdrop-blur-md rounded-2xl hover:border-[#d4af37]/60 transition-all duration-300">
             <span className="font-headline-lg text-4xl text-[#d4af37]/30 block mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>03</span>
             <h3 className="font-headline-sm text-2xl text-[#0f172a] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Execution</h3>
             <p className="font-body-md text-[#475569] text-sm leading-relaxed">
@@ -96,7 +96,7 @@ export default function WeddingsPage() {
         </div>
       </section>
 
-    	  <Footer />
+      <Footer />
     </main>
   );
 }

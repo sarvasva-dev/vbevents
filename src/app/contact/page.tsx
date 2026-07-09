@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { ContactSection } from '@/components/ContactSection';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-[#ffffff]">
+    <main className="min-h-screen bg-transparent">
       <Navbar />
       
       <div className="pt-32 pb-24 px-6 md:px-20 max-w-7xl mx-auto">
@@ -26,7 +26,7 @@ export default function ContactPage() {
           </p>
         </div>
         
-        <div className="bg-[#faf9f6] border border-[#d4af37]/30 p-8 md:p-12 shadow-2xl">
+        <div className="glass-card backdrop-blur-md border border-[#d4af37]/30 p-8 md:p-12 shadow-none rounded-3xl">
           <ContactSection />
         </div>
       </div>
@@ -34,6 +34,3 @@ export default function ContactPage() {
     </main>
   );
 }
-
-
-

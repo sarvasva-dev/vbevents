@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
@@ -15,14 +15,14 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-[#ffffff]">
+    <main className="min-h-screen bg-transparent">
       <Navbar />
 
       <div className="pt-32">
         {/* Reusing existing components for rapid deployment */}
         <AboutSection />
         
-        <div className="bg-[#faf9f6] border-y border-[#d4af37]/30">
+        <div className="bg-transparent border-y border-[#d4af37]/20">
           <AuthoritySection />
         </div>
       </div>

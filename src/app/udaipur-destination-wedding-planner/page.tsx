@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -146,10 +146,10 @@ export default function UdaipurWeddingPlannerPage() {
 
       <Navbar />
 
-      <main className="min-h-screen bg-[#ffffff]">
+      <main className="min-h-screen bg-transparent">
 
         {/* Hero */}
-        <section className="relative pt-40 pb-24 px-6 md:px-20 border-b border-[#d4af37]/30 bg-gradient-to-b from-[#ffffff] to-[#faf9f6]">
+        <section className="relative pt-40 pb-24 px-6 md:px-20 border-b border-[#d4af37]/20 bg-transparent">
           <div className="max-w-4xl mx-auto">
             <nav aria-label="Breadcrumb" className="mb-10">
               <ol className="flex items-center gap-2 font-body-md text-xs uppercase tracking-widest text-[#475569]">
@@ -180,7 +180,7 @@ export default function UdaipurWeddingPlannerPage() {
         </section>
 
         {/* Proof Strip */}
-        <section className="py-16 px-6 md:px-20 bg-[#faf9f6] border-b border-[#d4af37]/30">
+        <section className="py-16 px-6 md:px-20 glass-card border-x-0 border-y border-[#d4af37]/20 backdrop-blur-md rounded-none shadow-none">
           <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-[#d4af37]/30">
             {[
               { stat: '15+', label: 'Udaipur Weddings Executed' },
@@ -198,7 +198,7 @@ export default function UdaipurWeddingPlannerPage() {
 
         {/* Venue Categories */}
         <FadeIn>
-          <section className="py-24 px-6 md:px-20 bg-[#ffffff]">
+          <section className="py-24 px-6 md:px-20 bg-transparent">
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-20">
                 <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#475569] mb-4">Venue Expertise</p>
@@ -212,7 +212,7 @@ export default function UdaipurWeddingPlannerPage() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {VENUE_CATEGORIES.map(({ icon, title, desc, tag }) => (
-                  <div key={title} className="border border-[#d4af37]/30 p-10 bg-[#faf9f6] hover:border-[#d4af37]/40 transition-colors">
+                  <div key={title} className="border border-[#d4af37]/20 p-10 glass-card rounded-2xl hover:border-[#d4af37]/40 transition-colors">
                     <div className="flex items-start justify-between mb-6">
                       <span className="material-symbols-outlined text-4xl text-[#d4af37]">{icon}</span>
                       <span className="font-body-md text-xs uppercase tracking-widest text-[#d4af37]/60 border border-[#d4af37]/30 px-3 py-1">{tag}</span>
@@ -228,7 +228,7 @@ export default function UdaipurWeddingPlannerPage() {
 
         {/* Local Logistics Expertise */}
         <FadeIn>
-          <section className="py-24 px-6 md:px-20 bg-[#faf9f6] border-y border-[#d4af37]/30">
+          <section className="py-24 px-6 md:px-20 glass-card border-x-0 border-y border-[#d4af37]/20 backdrop-blur-md rounded-none shadow-none">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
               <div>
                 <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#475569] mb-4">Ground-Level Capability</p>
@@ -251,7 +251,7 @@ export default function UdaipurWeddingPlannerPage() {
                   { icon: 'wb_sunny', title: 'Season & Weather Planning', desc: 'Monsoon contingency protocols, winter heating solutions for open-air venues, and micro-climate briefings for event-day logistics.' },
                   { icon: 'store', title: 'Curated Local Vendor Network', desc: 'Vetted Udaipur-based artisans, heritage caterers, folk performers, and floral studios â€” each under NDA, each selected for excellence.' },
                 ].map(({ icon, title, desc }) => (
-                  <div key={title} className="flex gap-5 p-6 border border-[#d4af37]/30 hover:border-[#d4af37]/30 transition-colors">
+                  <div key={title} className="flex gap-5 p-6 border border-[#d4af37]/20 glass-card rounded-2xl hover:border-[#d4af37]/40 transition-colors">
                     <span className="material-symbols-outlined text-2xl text-[#d4af37] shrink-0 mt-0.5">{icon}</span>
                     <div>
                       <h3 className="font-headline-sm text-lg text-[#0f172a] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>{title}</h3>
@@ -265,7 +265,7 @@ export default function UdaipurWeddingPlannerPage() {
         </FadeIn>
 
         {/* FAQ */}
-        <section className="py-24 px-6 md:px-20 bg-[#ffffff]">
+        <section className="py-24 px-6 md:px-20 bg-transparent">
           <div className="max-w-3xl mx-auto">
             <div className="mb-16">
               <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#475569] mb-4">Common Questions</p>
@@ -305,7 +305,7 @@ export default function UdaipurWeddingPlannerPage() {
         </section>
 
         {/* Internal Link + CTA */}
-        <section className="py-24 px-6 text-center bg-[#faf9f6] border-t border-[#d4af37]/30">
+        <section className="py-24 px-6 text-center bg-transparent border-t border-[#d4af37]/20">
           <p className="font-body-md text-label-lg uppercase tracking-[0.3em] text-[#d4af37] mb-6">Begin in Confidence</p>
           <h2 className="font-headline-lg text-4xl md:text-5xl text-[#0f172a] mb-8 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
             Your Udaipur wedding. Flawlessly private.
@@ -323,22 +323,8 @@ export default function UdaipurWeddingPlannerPage() {
           </div>
         </section>
 
-      	  <Footer />
+      <Footer />
     </main>
-
-      <footer className="w-full py-16 bg-[#ffffff] border-t border-[#d4af37]/30">
-        <div className="max-w-7xl mx-auto px-6 md:px-20 flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="text-center md:text-left">
-            <div className="font-headline-md text-2xl text-[#d4af37] tracking-tighter mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Vision Beyond Events</div>
-            <div className="font-body-md text-[#475569] text-sm tracking-widest uppercase">Udaipur Destination Wedding Planner</div>
-          </div>
-          <div className="flex gap-8">
-            <Link className="font-body-md text-sm text-[#475569] hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/luxury-destination-wedding-planner-india">All India Destinations</Link>
-            <Link className="font-body-md text-sm text-[#475569] hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/discretion">Privacy Protocols</Link>
-            <Link className="font-body-md text-sm text-[#475569] hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/">Home</Link>
-          </div>
-        </div>
-      </footer>
     </>
   );
 }

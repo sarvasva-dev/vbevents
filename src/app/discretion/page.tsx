@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 
 export default function DiscretionPage() {
   return (
-    <main className="min-h-screen bg-[#faf9f6] pt-24 pb-20">
+    <main className="min-h-screen bg-transparent pt-24 pb-20">
       <Navbar />
       {/* Hero Section */}
-      <section className="relative px-6 md:px-20 py-24 border-b border-[#d4af37]/30 bg-gradient-to-b from-[#ffffff] to-[#faf9f6]">
+      <section className="relative px-6 md:px-20 py-24 border-b border-[#d4af37]/20 bg-transparent">
         <div className="max-w-4xl mx-auto text-center">
           <p className="font-body-md text-label-lg uppercase tracking-[0.3em] text-[#d4af37] mb-6">Confidentiality as a Standard</p>
           <h1 className="font-headline-lg text-6xl md:text-8xl text-[#0f172a] mb-8 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
@@ -28,7 +28,7 @@ export default function DiscretionPage() {
       </section>
 
       {/* NDA By Default Section */}
-      <section className="px-6 md:px-20 py-24 border-b border-[#d4af37]/30">
+      <section className="px-6 md:px-20 py-24 border-b border-[#d4af37]/20 bg-transparent">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="font-headline-md text-4xl md:text-5xl text-[#d4af37] mb-8" style={{ fontFamily: 'Playfair Display, serif' }}>The NDA-by-Default Framework</h2>
@@ -44,7 +44,7 @@ export default function DiscretionPage() {
               </p>
             </div>
           </div>
-          <div className="relative h-[600px] bg-[#ffffff] border border-[#d4af37]/30 p-12 flex flex-col justify-center items-center text-center">
+          <div className="relative h-[600px] glass-card border border-[#d4af37]/20 p-12 flex flex-col justify-center items-center text-center rounded-3xl">
             <span className="material-symbols-outlined text-[100px] text-[#d4af37] mb-8" style={{ fontVariationSettings: "'FILL' 1" }}>lock</span>
             <h3 className="font-headline-sm text-2xl text-[#0f172a] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Absolute Anonymization</h3>
             <p className="font-body-md text-[#475569] text-lg">
@@ -55,7 +55,7 @@ export default function DiscretionPage() {
       </section>
 
       {/* Contingency Planning */}
-      <section className="px-6 md:px-20 py-24 bg-[#ffffff]">
+      <section className="px-6 md:px-20 py-24 bg-transparent">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="font-headline-md text-4xl md:text-5xl text-[#d4af37] mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>Uncompromising Contingency Infrastructure</h2>
@@ -66,7 +66,7 @@ export default function DiscretionPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Redundancy 1 */}
-            <div className="border border-[#d4af37]/30 p-8 bg-[#faf9f6] hover:bg-[#1a1a1a] transition-colors">
+            <div className="border border-[#d4af37]/20 p-8 glass-card rounded-2xl hover:border-[#d4af37]/50 transition-all duration-300">
               <span className="material-symbols-outlined text-4xl text-[#d4af37] mb-6">electric_bolt</span>
               <h3 className="font-headline-sm text-xl text-[#0f172a] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Power Redundancy</h3>
               <p className="font-body-md text-[#475569] text-sm leading-relaxed">
@@ -75,7 +75,7 @@ export default function DiscretionPage() {
             </div>
             
             {/* Redundancy 2 */}
-            <div className="border border-[#d4af37]/30 p-8 bg-[#faf9f6] hover:bg-[#1a1a1a] transition-colors">
+            <div className="border border-[#d4af37]/20 p-8 glass-card rounded-2xl hover:border-[#d4af37]/50 transition-all duration-300">
               <span className="material-symbols-outlined text-4xl text-[#d4af37] mb-6">medical_services</span>
               <h3 className="font-headline-sm text-xl text-[#0f172a] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Medical Standby</h3>
               <p className="font-body-md text-[#475569] text-sm leading-relaxed">
@@ -84,7 +84,7 @@ export default function DiscretionPage() {
             </div>
 
             {/* Redundancy 3 */}
-            <div className="border border-[#d4af37]/30 p-8 bg-[#faf9f6] hover:bg-[#1a1a1a] transition-colors">
+            <div className="border border-[#d4af37]/20 p-8 glass-card rounded-2xl hover:border-[#d4af37]/50 transition-all duration-300">
               <span className="material-symbols-outlined text-4xl text-[#d4af37] mb-6">thunderstorm</span>
               <h3 className="font-headline-sm text-xl text-[#0f172a] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Weather Mitigation</h3>
               <p className="font-body-md text-[#475569] text-sm leading-relaxed">
@@ -93,7 +93,7 @@ export default function DiscretionPage() {
             </div>
 
             {/* Redundancy 4 */}
-            <div className="border border-[#d4af37]/30 p-8 bg-[#faf9f6] hover:bg-[#1a1a1a] transition-colors">
+            <div className="border border-[#d4af37]/20 p-8 glass-card rounded-2xl hover:border-[#d4af37]/50 transition-all duration-300">
               <span className="material-symbols-outlined text-4xl text-[#d4af37] mb-6">shield_person</span>
               <h3 className="font-headline-sm text-xl text-[#0f172a] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Security Coordination</h3>
               <p className="font-body-md text-[#475569] text-sm leading-relaxed">
@@ -105,18 +105,17 @@ export default function DiscretionPage() {
       </section>
 
       {/* The Shielding Timeline */}
-      <section className="px-6 md:px-20 py-24 border-t border-[#d4af37]/30">
+      <section className="px-6 md:px-20 py-24 bg-transparent border-t border-[#d4af37]/20">
         <div className="max-w-5xl mx-auto">
           <h2 className="font-headline-md text-4xl md:text-5xl text-[#d4af37] text-center mb-16" style={{ fontFamily: 'Playfair Display, serif' }}>The Shielding Timeline</h2>
           
-          <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-[#d4af37]/30 before:to-transparent">
-            
-            {/* Step 1 */}
+          <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-[#d4af37]/20 before:to-transparent">
+                    {/* Step 1 */}
             <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full border border-[#d4af37] bg-[#faf9f6] text-[#d4af37] shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-[0_0_15px_rgba(212,175,55,0.2)] z-10">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full border border-[#d4af37] bg-transparent text-[#d4af37] shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-[0_0_15px_rgba(212,175,55,0.2)] z-10">
                 <span className="font-body-md text-sm font-bold">01</span>
               </div>
-              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] p-6 border border-[#d4af37]/30 bg-[#ffffff]">
+              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] p-6 border border-[#d4af37]/20 glass-card rounded-xl backdrop-blur-md">
                 <h3 className="font-headline-sm text-xl text-[#0f172a] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Discovery & NDA</h3>
                 <p className="font-body-md text-[#475569] text-sm leading-relaxed">Execution of multi-party non-disclosure agreements before venue selection or concept design begins.</p>
               </div>
@@ -124,10 +123,10 @@ export default function DiscretionPage() {
 
             {/* Step 2 */}
             <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full border border-[#d4af37] bg-[#faf9f6] text-[#d4af37] shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-[0_0_15px_rgba(212,175,55,0.2)] z-10">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full border border-[#d4af37] bg-transparent text-[#d4af37] shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-[0_0_15px_rgba(212,175,55,0.2)] z-10">
                 <span className="font-body-md text-sm font-bold">02</span>
               </div>
-              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] p-6 border border-[#d4af37]/30 bg-[#ffffff]">
+              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] p-6 border border-[#d4af37]/20 glass-card rounded-xl backdrop-blur-md">
                 <h3 className="font-headline-sm text-xl text-[#0f172a] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Compartmentalized Procurement</h3>
                 <p className="font-body-md text-[#475569] text-sm leading-relaxed">Vendor contracting executed through insulated legal entities. The principal client&apos;s identity remains abstracted from tier-2 and tier-3 suppliers.</p>
               </div>
@@ -135,10 +134,10 @@ export default function DiscretionPage() {
 
             {/* Step 3 */}
             <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full border border-[#d4af37] bg-[#faf9f6] text-[#d4af37] shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-[0_0_15px_rgba(212,175,55,0.2)] z-10">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full border border-[#d4af37] bg-transparent text-[#d4af37] shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-[0_0_15px_rgba(212,175,55,0.2)] z-10">
                 <span className="font-body-md text-sm font-bold">03</span>
               </div>
-              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] p-6 border border-[#d4af37]/30 bg-[#ffffff]">
+              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] p-6 border border-[#d4af37]/20 glass-card rounded-xl backdrop-blur-md">
                 <h3 className="font-headline-sm text-xl text-[#0f172a] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Perimeter Security & Digital Blackout</h3>
                 <p className="font-body-md text-[#475569] text-sm leading-relaxed">Deployment of physical access control systems and optional enforcement of no-phone policies for guests and staff to prevent digital leaks.</p>
               </div>
@@ -146,21 +145,20 @@ export default function DiscretionPage() {
 
             {/* Step 4 */}
             <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full border border-[#d4af37] bg-[#faf9f6] text-[#d4af37] shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-[0_0_15px_rgba(212,175,55,0.2)] z-10">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full border border-[#d4af37] bg-transparent text-[#d4af37] shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-[0_0_15px_rgba(212,175,55,0.2)] z-10">
                 <span className="font-body-md text-sm font-bold">04</span>
               </div>
-              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] p-6 border border-[#d4af37]/30 bg-[#ffffff]">
+              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] p-6 border border-[#d4af37]/20 glass-card rounded-xl backdrop-blur-md">
                 <h3 className="font-headline-sm text-xl text-[#0f172a] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Post-Event Data Purge</h3>
                 <p className="font-body-md text-[#475569] text-sm leading-relaxed">Systematic deletion of logistical data, guest manifests, and unapproved media from all vendor and internal databases post-execution.</p>
               </div>
             </div>
-
           </div>
         </div>
       </section>
 
       {/* Final CTA */}
-      <section className="px-6 md:px-20 py-24 text-center">
+      <section className="px-6 md:px-20 py-24 text-center bg-transparent">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-headline-lg text-4xl md:text-5xl text-[#0f172a] mb-8" style={{ fontFamily: 'Playfair Display, serif' }}>Initiate a Secure Dialogue.</h2>
           <p className="font-body-md text-[#475569] text-lg mb-10">

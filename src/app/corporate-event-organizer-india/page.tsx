@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -125,10 +125,10 @@ export default function CorporateEventOrganizerPage() {
 
       <Navbar />
 
-      <main className="min-h-screen bg-[#ffffff]">
+      <main className="min-h-screen bg-transparent">
 
         {/* Hero */}
-        <section className="relative pt-40 pb-24 px-6 md:px-20 border-b border-[#d4af37]/30 bg-gradient-to-b from-[#ffffff] to-[#faf9f6]">
+        <section className="relative pt-40 pb-24 px-6 md:px-20 border-b border-[#d4af37]/20 bg-transparent">
           <div className="max-w-4xl mx-auto">
             <nav aria-label="Breadcrumb" className="mb-10">
               <ol className="flex items-center gap-2 font-body-md text-xs uppercase tracking-widest text-[#475569]">
@@ -159,7 +159,7 @@ export default function CorporateEventOrganizerPage() {
         </section>
 
         {/* Proof Strip */}
-        <section className="py-16 px-6 md:px-20 bg-[#faf9f6] border-b border-[#d4af37]/30">
+        <section className="py-16 px-6 md:px-20 glass-card border-x-0 border-y border-[#d4af37]/20 backdrop-blur-md rounded-none shadow-none">
           <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-[#d4af37]/30">
             {[
               { stat: '50+', label: 'Corporate Events Executed' },
@@ -177,7 +177,7 @@ export default function CorporateEventOrganizerPage() {
 
         {/* Service Pillars */}
         <FadeIn>
-          <section className="py-24 px-6 md:px-20 bg-[#ffffff]">
+          <section className="py-24 px-6 md:px-20 bg-transparent">
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-20">
                 <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#475569] mb-4">Capabilities</p>
@@ -188,7 +188,7 @@ export default function CorporateEventOrganizerPage() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {SERVICE_PILLARS.map(({ icon, title, desc }) => (
-                  <div key={title} className="border border-[#d4af37]/30 p-10 bg-[#faf9f6] hover:border-[#d4af37]/40 transition-colors group">
+                  <div key={title} className="border border-[#d4af37]/20 p-10 glass-card rounded-2xl hover:border-[#d4af37]/40 transition-colors group">
                     <span className="material-symbols-outlined text-4xl text-[#d4af37] mb-6 block">{icon}</span>
                     <h3 className="font-headline-sm text-2xl text-[#0f172a] mb-4 group-hover:text-[#d4af37] transition-colors" style={{ fontFamily: 'Playfair Display, serif' }}>{title}</h3>
                     <p className="font-body-md text-[#475569] leading-relaxed">{desc}</p>
@@ -201,7 +201,7 @@ export default function CorporateEventOrganizerPage() {
 
         {/* Anonymized Case Study Block */}
         <FadeIn>
-          <section className="py-24 px-6 md:px-20 bg-[#faf9f6] border-y border-[#d4af37]/30">
+          <section className="py-24 px-6 md:px-20 glass-card border-x-0 border-y border-[#d4af37]/20 backdrop-blur-md rounded-none shadow-none">
             <div className="max-w-7xl mx-auto">
               <div className="mb-16">
                 <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#475569] mb-4">Proof of Execution</p>
@@ -227,7 +227,7 @@ export default function CorporateEventOrganizerPage() {
                     details: ['400+ HNWI attendees', 'Multi-country guest logistics', 'Curated experiential dining program', 'Branded environment end-to-end'],
                   },
                 ].map(({ label, details }) => (
-                  <div key={label} className="border border-[#d4af37]/30 p-8 hover:border-[#d4af37]/30 transition-colors">
+                  <div key={label} className="border border-[#d4af37]/20 p-8 glass-card rounded-2xl hover:border-[#d4af37]/40 transition-colors">
                     <p className="font-body-md text-label-lg uppercase tracking-widest text-[#d4af37] mb-6 text-xs">Confidential Engagement</p>
                     <h3 className="font-headline-sm text-xl text-[#0f172a] mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>{label}</h3>
                     <ul className="space-y-3">
@@ -246,8 +246,8 @@ export default function CorporateEventOrganizerPage() {
         </FadeIn>
 
         {/* Discretion Link */}
-        <section className="py-16 px-6 md:px-20 bg-[#ffffff]">
-          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 border border-[#d4af37]/30 p-10">
+        <section className="py-16 px-6 md:px-20 bg-transparent">
+          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 border border-[#d4af37]/20 p-10 glass-card backdrop-blur-md rounded-2xl shadow-none">
             <div>
               <h3 className="font-headline-sm text-2xl text-[#0f172a] mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>Why enterprises choose discretion-first partners</h3>
               <p className="font-body-md text-[#475569] leading-relaxed">
@@ -261,7 +261,7 @@ export default function CorporateEventOrganizerPage() {
         </section>
 
         {/* FAQ */}
-        <section className="py-24 px-6 md:px-20 bg-[#faf9f6]">
+        <section className="py-24 px-6 md:px-20 bg-transparent">
           <div className="max-w-3xl mx-auto">
             <div className="mb-16">
               <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#475569] mb-4">Common Questions</p>
@@ -297,7 +297,7 @@ export default function CorporateEventOrganizerPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-24 px-6 text-center bg-[#ffffff] border-t border-[#d4af37]/30">
+        <section className="py-24 px-6 text-center bg-transparent border-t border-[#d4af37]/25">
           <p className="font-body-md text-label-lg uppercase tracking-[0.3em] text-[#d4af37] mb-6">Begin Here</p>
           <h2 className="font-headline-lg text-4xl md:text-5xl text-[#0f172a] mb-8 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
             Precision execution. Boardroom-standard discretion.

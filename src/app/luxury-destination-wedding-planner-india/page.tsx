@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -109,10 +109,10 @@ export default function LuxuryDestinationWeddingPlannerPage() {
 
       <Navbar />
 
-      <main className="min-h-screen bg-[#ffffff]">
+      <main className="min-h-screen bg-transparent">
 
         {/* Hero */}
-        <section className="relative pt-40 pb-24 px-6 md:px-20 border-b border-[#d4af37]/30 bg-gradient-to-b from-[#ffffff] to-[#faf9f6]">
+        <section className="relative pt-40 pb-24 px-6 md:px-20 border-b border-[#d4af37]/20 bg-transparent">
           <div className="max-w-4xl mx-auto">
             {/* Breadcrumb â€” semantic + visible */}
             <nav aria-label="Breadcrumb" className="mb-10">
@@ -144,7 +144,7 @@ export default function LuxuryDestinationWeddingPlannerPage() {
         </section>
 
         {/* Proof Strip */}
-        <section className="py-16 px-6 md:px-20 bg-[#faf9f6] border-b border-[#d4af37]/30">
+        <section className="py-16 px-6 md:px-20 glass-card border-x-0 border-y border-[#d4af37]/20 backdrop-blur-md rounded-none shadow-none">
           <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-[#d4af37]/30">
             {[
               { stat: '22+', label: 'Legacy Weddings Executed' },
@@ -162,7 +162,7 @@ export default function LuxuryDestinationWeddingPlannerPage() {
 
         {/* Process */}
         <FadeIn>
-          <section className="py-24 px-6 md:px-20 bg-[#ffffff]">
+          <section className="py-24 px-6 md:px-20 bg-transparent">
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-20">
                 <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#475569] mb-4">How We Work</p>
@@ -179,7 +179,7 @@ export default function LuxuryDestinationWeddingPlannerPage() {
                   { step: '04', title: 'Execution Command', desc: 'On-ground event command center. Power redundancy. Medical standby. Weather contingency. Your family celebrates; our team manages everything.' },
                   { step: '05', title: 'Post-Event Protocol', desc: 'Systematic data purge of guest manifests and unapproved media from all vendor databases. Your celebration remains yours, permanently.' },
                 ].map(({ step, title, desc }) => (
-                  <div key={step} className="border border-[#d4af37]/30 p-8 bg-[#faf9f6] hover:bg-[#1a1a1a] transition-colors">
+                  <div key={step} className="border border-[#d4af37]/20 p-8 glass-card rounded-2xl hover:border-[#d4af37]/40 transition-colors">
                     <span className="font-headline-lg text-4xl text-[#d4af37]/20 block mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>{step}</span>
                     <h3 className="font-headline-sm text-lg text-[#0f172a] mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>{title}</h3>
                     <p className="font-body-md text-[#475569] text-sm leading-relaxed">{desc}</p>
@@ -192,7 +192,7 @@ export default function LuxuryDestinationWeddingPlannerPage() {
 
         {/* Venue Types */}
         <FadeIn>
-          <section className="py-24 px-6 md:px-20 bg-[#faf9f6] border-y border-[#d4af37]/30">
+          <section className="py-24 px-6 md:px-20 glass-card border-x-0 border-y border-[#d4af37]/20 backdrop-blur-md rounded-none shadow-none">
             <div className="max-w-7xl mx-auto">
               <div className="mb-16">
                 <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#475569] mb-4">Venue Expertise</p>
@@ -210,7 +210,7 @@ export default function LuxuryDestinationWeddingPlannerPage() {
                   { icon: 'water', title: 'Lakeside Estates', desc: 'Private lakefront estates with boat arrival sequences, floating stage setups, and dawn-lit ceremonies.' },
                   { icon: 'villa', title: 'Private Havelis', desc: 'Intimate heritage havelis for 50â€“150 guest celebrations. Boutique, bespoke, and completely private.' },
                 ].map(({ icon, title, desc }) => (
-                  <div key={title} className="border border-[#d4af37]/30 p-8 hover:border-[#d4af37]/40 transition-colors">
+                  <div key={title} className="border border-[#d4af37]/20 p-8 glass-card rounded-2xl hover:border-[#d4af37]/40 transition-colors">
                     <span className="material-symbols-outlined text-4xl text-[#d4af37] mb-4 block">{icon}</span>
                     <h3 className="font-headline-sm text-xl text-[#0f172a] mb-3" style={{ fontFamily: 'Playfair Display, serif' }}>{title}</h3>
                     <p className="font-body-md text-[#475569] text-sm leading-relaxed">{desc}</p>
@@ -227,7 +227,7 @@ export default function LuxuryDestinationWeddingPlannerPage() {
         </FadeIn>
 
         {/* FAQ â€” Visible content matching schema */}
-        <section className="py-24 px-6 md:px-20 bg-[#ffffff]">
+        <section className="py-24 px-6 md:px-20 bg-transparent">
           <div className="max-w-3xl mx-auto">
             <div className="mb-16">
               <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#475569] mb-4">Common Questions</p>
@@ -267,7 +267,7 @@ export default function LuxuryDestinationWeddingPlannerPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-24 px-6 text-center bg-[#faf9f6] border-t border-[#d4af37]/30">
+        <section className="py-24 px-6 text-center bg-transparent border-t border-[#d4af37]/20">
           <p className="font-body-md text-label-lg uppercase tracking-[0.3em] text-[#d4af37] mb-6">Begin Here</p>
           <h2 className="font-headline-lg text-4xl md:text-5xl text-[#0f172a] mb-8 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
             Your celebration. Your rules. Our execution.
@@ -282,25 +282,6 @@ export default function LuxuryDestinationWeddingPlannerPage() {
 
       	  <Footer />
     </main>
-
-      {/* Footer */}
-      <footer className="w-full py-16 bg-[#ffffff] border-t border-[#d4af37]/30">
-        <div className="max-w-7xl mx-auto px-6 md:px-20 flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="text-center md:text-left">
-            <div className="font-headline-md text-2xl text-[#d4af37] tracking-tighter mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Vision Beyond Events</div>
-            <div className="font-body-md text-[#475569] text-sm tracking-widest uppercase">Luxury Destination Wedding Planner, India</div>
-          </div>
-          <div className="flex gap-8">
-            <Link className="font-body-md text-sm text-[#475569] hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/discretion">Privacy Protocols</Link>
-            <Link className="font-body-md text-sm text-[#475569] hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/contact">Inquire</Link>
-            <Link className="font-body-md text-sm text-[#475569] hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/">Home</Link>
-          </div>
-        </div>
-      </footer>
     </>
   );
 }
-
-
-
-

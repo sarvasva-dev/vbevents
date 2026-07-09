@@ -64,7 +64,7 @@ export default function GalleryPage() {
                 {files.map((file, i) => {
                   const isVideo = file.toLowerCase().endsWith('.mp4');
                   return (
-                    <div key={i} className="break-inside-avoid rounded-xl overflow-hidden shadow-lg bg-[#faf9f6] ghost-border group relative">
+                    <div key={i} className="break-inside-avoid rounded-xl overflow-hidden shadow-none glass-card hover:border-[#d4af37]/60 group relative">
                       {isVideo ? (
                         <VideoPlayer file={file} />
                       ) : (
