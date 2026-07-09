@@ -22,7 +22,7 @@ export default function Home() {
       <Navbar />
 
       {/* Main Hero Section */}
-      <main className="relative h-[100dvh] w-full min-h-[600px] flex items-center justify-center overflow-hidden bg-[#0a0a0a]">
+      <main className="relative h-[100dvh] w-full min-h-[600px] flex items-center justify-center overflow-hidden bg-[#f5f0e8] dark:bg-[#0a0a0a]">
         <AnimatedBackground />
         
         <div className="absolute inset-0 z-0 opacity-30">
@@ -48,7 +48,7 @@ export default function Home() {
       </main>
 
       {/* Press / Editorial Mentions Strip */}
-      <div className="w-full border-y border-[#d4af37]/10 bg-[#121212] py-8 overflow-hidden">
+      <div className="w-full border-y border-[#d4af37]/10 bg-white dark:bg-[#121212] py-8 overflow-hidden">
         <div className="flex justify-center items-center gap-12 md:gap-24 opacity-40 grayscale flex-wrap px-6">
           <span className="font-headline-md text-xl font-bold tracking-widest" style={{ fontFamily: 'Playfair Display, serif' }}>VOGUE</span>
           <span className="font-headline-md text-xl font-bold tracking-widest" style={{ fontFamily: 'Playfair Display, serif' }}>HARPER&apos;S BAZAAR</span>
@@ -61,7 +61,7 @@ export default function Home() {
       <section className="py-24 px-6 md:px-20 bg-[#0a0a0a]">
         <div className="max-w-4xl mx-auto text-center">
           <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#d4af37] mb-6">Who We Are</p>
-          <h2 className="font-headline-lg text-3xl md:text-5xl text-white mb-8 leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
+          <h2 className="font-headline-lg text-3xl md:text-5xl text-gray-900 dark:text-white mb-8 leading-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
             We turn your special moments into unforgettable memories.
           </h2>
           <p className="font-body-md text-on-surface-variant text-lg leading-relaxed">
@@ -71,7 +71,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 px-6 md:px-20 bg-[#121212] border-y border-[#d4af37]/10">
+      <section className="py-16 px-6 md:px-20 bg-white dark:bg-[#121212] border-y border-[#d4af37]/10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-[#d4af37]/20">
           <div className="py-4 md:py-0">
             <h3 className="font-headline-lg text-5xl md:text-6xl text-[#d4af37] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>500+</h3>
@@ -122,10 +122,10 @@ export default function Home() {
       </section>
 
       {/* Discretion Teaser */}
-      <section className="py-24 px-6 md:px-20 bg-[#121212] border-y border-[#d4af37]/10">
+      <section className="py-24 px-6 md:px-20 bg-white dark:bg-[#121212] border-y border-[#d4af37]/10">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
           <div className="md:w-1/2">
-            <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>Your Privacy, Our Priority.</h2>
+            <h2 className="font-headline-lg text-4xl md:text-5xl text-[#a07820] dark:text-[#d4af37] mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>Your Privacy, Our Priority.</h2>
             <p className="font-body-md text-on-surface-variant text-lg leading-relaxed mb-8">
               We understand that some celebrations require absolute discretion. For our special guests, VIPs, and corporate leaders, we provide strict privacy protocols. Your event details, guest lists, and memories are kept completely secure and confidential.
             </p>
@@ -142,7 +142,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-[120px] md:py-[160px] px-6 md:px-20 w-full max-w-[1440px] mx-auto bg-[#0a0a0a]" id="services">
+      <section className="py-[120px] md:py-[160px] px-6 md:px-20 w-full max-w-[1440px] mx-auto bg-[#f9f7f2] dark:bg-[#0a0a0a]" id="services">
         <FadeIn className="text-center mb-20">
           <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-on-surface-variant mb-4">What We Do</p>
           <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] mb-4 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>Our Services</h2>
@@ -207,7 +207,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section (New) */}
-      <section className="py-24 px-6 md:px-20 bg-[#121212] border-t border-[#d4af37]/10">
+      <section className="py-24 px-6 md:px-20 bg-white dark:bg-[#121212] border-t border-[#d4af37]/10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#d4af37] mb-4">Happy Clients</p>
@@ -227,11 +227,11 @@ export default function Home() {
               <p className="font-body-md text-on-surface-variant italic mb-6">
                 "Vision Beyond Events made our Udaipur destination wedding absolutely magical. From the decor to guest hospitality, everything was perfect. We didn't have to worry about a single thing!"
               </p>
-              <div className="font-headline-sm text-white">Rahul & Sneha</div>
+              <div className="font-headline-sm text-gray-900 dark:text-white">Rahul & Sneha</div>
               <div className="font-body-md text-sm text-[#d4af37]">Destination Wedding</div>
             </div>
             
-            <div className="bg-[#0a0a0a] p-8 rounded-lg border border-[#d4af37]/10">
+            <div className="bg-[#f9f7f2] dark:bg-[#0a0a0a] p-8 rounded-lg border border-[#d4af37]/15 dark:border-[#d4af37]/10">
               <div className="flex gap-1 text-[#d4af37] mb-6">
                 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
@@ -242,11 +242,11 @@ export default function Home() {
               <p className="font-body-md text-on-surface-variant italic mb-6">
                 "We hired them for our company's annual leadership summit. Their professionalism and attention to detail, especially regarding security and privacy, was highly impressive."
               </p>
-              <div className="font-headline-sm text-white">Amit Sharma</div>
+              <div className="font-headline-sm text-gray-900 dark:text-white">Amit Sharma</div>
               <div className="font-body-md text-sm text-[#d4af37]">Corporate Event</div>
             </div>
 
-            <div className="bg-[#0a0a0a] p-8 rounded-lg border border-[#d4af37]/10">
+            <div className="bg-[#f9f7f2] dark:bg-[#0a0a0a] p-8 rounded-lg border border-[#d4af37]/15 dark:border-[#d4af37]/10">
               <div className="flex gap-1 text-[#d4af37] mb-6">
                 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
@@ -257,7 +257,7 @@ export default function Home() {
               <p className="font-body-md text-on-surface-variant italic mb-6">
                 "Best event planners in town! They organized my son's first birthday party. The decor was breathtaking and the management was flawless. Highly recommended."
               </p>
-              <div className="font-headline-sm text-white">Priya Patel</div>
+              <div className="font-headline-sm text-gray-900 dark:text-white">Priya Patel</div>
               <div className="font-body-md text-sm text-[#d4af37]">Birthday Celebration</div>
             </div>
           </div>
@@ -265,7 +265,7 @@ export default function Home() {
       </section>
 
       {/* FAQ Section (New) */}
-      <section className="py-24 px-6 md:px-20 bg-[#0a0a0a] border-t border-[#d4af37]/10">
+      <section className="py-24 px-6 md:px-20 bg-[#f9f7f2] dark:bg-[#0a0a0a] border-t border-[#d4af37]/10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-headline-lg text-4xl md:text-5xl text-[#d4af37] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Frequently Asked Questions</h2>
@@ -273,8 +273,8 @@ export default function Home() {
           </div>
           
           <div className="flex flex-col gap-4">
-            <details className="group bg-[#121212] border border-[#d4af37]/20 rounded-lg open:border-[#d4af37]/50 transition-colors">
-              <summary className="flex justify-between items-center font-headline-sm text-xl text-white cursor-pointer p-6 list-none">
+            <details className="group bg-white dark:bg-[#121212] border border-[#d4af37]/20 rounded-lg open:border-[#d4af37]/50 transition-colors shadow-sm dark:shadow-none">
+              <summary className="flex justify-between items-center font-headline-sm text-xl text-gray-900 dark:text-white cursor-pointer p-6 list-none">
                 Do you plan events outside of your city?
                 <span className="material-symbols-outlined text-[#d4af37] group-open:rotate-180 transition-transform">expand_more</span>
               </summary>
@@ -283,8 +283,8 @@ export default function Home() {
               </div>
             </details>
             
-            <details className="group bg-[#121212] border border-[#d4af37]/20 rounded-lg open:border-[#d4af37]/50 transition-colors">
-              <summary className="flex justify-between items-center font-headline-sm text-xl text-white cursor-pointer p-6 list-none">
+            <details className="group bg-white dark:bg-[#121212] border border-[#d4af37]/20 rounded-lg open:border-[#d4af37]/50 transition-colors shadow-sm dark:shadow-none">
+              <summary className="flex justify-between items-center font-headline-sm text-xl text-gray-900 dark:text-white cursor-pointer p-6 list-none">
                 Do you handle everything from decor to catering?
                 <span className="material-symbols-outlined text-[#d4af37] group-open:rotate-180 transition-transform">expand_more</span>
               </summary>
@@ -323,7 +323,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="w-full py-16 bg-[#0a0a0a] border-t border-[#d4af37]/20">
+      <footer className="w-full py-16 bg-[#f0ede6] dark:bg-[#0a0a0a] border-t border-[#d4af37]/20">
         <div className="max-w-7xl mx-auto px-6 md:px-20 flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-center md:text-left">
             <div className="font-headline-md text-2xl text-[#d4af37] tracking-tighter mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Vision Beyond Events</div>
