@@ -149,56 +149,9 @@ body {
     border-color: #D4AF37;
     outline: none;
 }
-/* ===================================================
-   THEME TRANSITION
-=================================================== */
-* {
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
-
-/* ===================================================
-   LIGHT THEME OVERRIDES
-   (dark theme = default, defined in @theme above)
-=================================================== */
-.light {
-  --color-background: #faf9f6;
-  --color-surface: #ffffff;
-  --color-on-background: #1a1a1a;
-  --color-on-surface: #1a1a1a;
-  --color-on-surface-variant: #4a4a4a;
-  --color-primary: #a07820;
-  --color-surface-container: #f0ede8;
-  --color-surface-container-high: #e8e4de;
-}
-
-/* ===================================================
-   THEME-AWARE UTILITY CLASSES
-=================================================== */
-
-/* Page backgrounds */
-.theme-bg-primary {
-  background-color: #0a0a0a;
-}
-.light .theme-bg-primary {
-  background-color: #faf9f6;
-}
-
-.theme-bg-surface {
-  background-color: #121212;
-}
-.light .theme-bg-surface {
-  background-color: #ffffff;
-}
-
 /* High-End Enhancements */
 .glass-nav {
     background: rgba(19, 19, 19, 0.6);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-}
-
-.light .glass-nav {
-    background: rgba(250, 249, 246, 0.75);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 }
