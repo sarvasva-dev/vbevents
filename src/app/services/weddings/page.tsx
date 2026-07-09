@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
@@ -18,8 +18,8 @@ export default function WeddingsPage() {
       {/* Hero */}
       <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden border-b border-[#d4af37]/30">
         <div className="absolute inset-0 z-0">
-          <Image src="/images/ai_marriages.png" alt="Luxury Wedding Setup" fill sizes="100vw" className="object-cover grayscale-[40%] opacity-40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#ffffff] via-[#ffffff]/80/80 to-transparent"></div>
+          <Image src="/images/ai_marriages.png" alt="Luxury Wedding Setup" fill sizes="100vw" className="object-cover grayscale-[10%] opacity-65" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#ffffff] via-[#ffffff]/50 to-transparent"></div>
         </div>
         
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-20">
