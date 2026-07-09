@@ -12,10 +12,18 @@ const ORBS = Array.from({ length: 45 }).map((_, i) => {
   return { id: i, size, left, animationDuration, animationDelay, opacity, blur };
 });
 
+import { useState, useEffect } from 'react';
+
 export default function AnimatedBackground() {
+  const [mounted, setMounted] = useState(false);
+  
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <div className="absolute inset-0 overflow-hidden bg-[#070707] z-0 pointer-events-none">
-      {ORBS.map((orb) => (
+      {mounted && ORBS.map((orb) => (
         <div
           key={orb.id}
           className="absolute rounded-full bokeh-orb mix-blend-screen"
