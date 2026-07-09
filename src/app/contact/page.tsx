@@ -18,10 +18,10 @@ export default function ContactPage() {
         <div className="text-center mb-16">
           <p className="font-body-md text-label-lg uppercase tracking-[0.3em] text-[#d4af37] mb-6">Inquire</p>
           <h1 className="font-headline-lg text-5xl md:text-7xl text-white mb-8 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
-            Initiate a Dialogue
+            Get in Touch
           </h1>
           <p className="font-body-md text-on-surface-variant text-lg max-w-2xl mx-auto">
-            Please share the preliminary details of your vision. Our advisory team will review your inquiry and schedule a secure consultation.
+            Tell us about your event and we will get back to you within 24 hours to plan something beautiful together.
           </p>
         </div>
         

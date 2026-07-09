@@ -40,10 +40,10 @@ export default function GalleryPage() {
 
       <main className="pt-[140px] pb-20 px-6 md:px-20 w-full max-w-[1440px] mx-auto min-h-screen">
         <div className="text-center mb-16">
-          <h1 className="font-headline-lg text-headline-lg text-primary mb-4 tracking-tighter">Inspiration & Vision Boards</h1>
+          <h1 className="font-headline-lg text-headline-lg text-primary mb-4 tracking-tighter">Our Gallery</h1>
           <div className="w-24 h-px bg-primary/30 mx-auto mb-8"></div>
           <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
-            Explore curated design concepts and inspirations for your upcoming celebration.
+            A look at some of our most beautiful weddings, birthday parties, haldi ceremonies, and other events we have planned.
           </p>
         </div>
 

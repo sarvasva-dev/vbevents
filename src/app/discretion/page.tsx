@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Navbar from '@/components/Navbar';
 
 export const metadata: Metadata = {
   title: "NDA-by-Default Confidential Event Planning | Vision Beyond Events",
@@ -11,12 +12,13 @@ export const metadata: Metadata = {
 export default function DiscretionPage() {
   return (
     <main className="min-h-screen bg-[#121212] pt-24 pb-20">
+      <Navbar />
       {/* Hero Section */}
       <section className="relative px-6 md:px-20 py-24 border-b border-[#d4af37]/20 bg-gradient-to-b from-[#0a0a0a] to-[#121212]">
         <div className="max-w-4xl mx-auto text-center">
           <p className="font-body-md text-label-lg uppercase tracking-[0.3em] text-[#d4af37] mb-6">Confidentiality as a Standard</p>
           <h1 className="font-headline-lg text-6xl md:text-8xl text-on-primary mb-8 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
-            Operational Shielding.
+            Your Privacy, Our Priority.
           </h1>
           <p className="font-body-md text-on-surface-variant text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
             In the realm of ultra-high-net-worth individuals, family offices, and corporate leadership, privacy is not a luxury—it is an operational prerequisite. We do not design events; we architect secure, insulated experiences.

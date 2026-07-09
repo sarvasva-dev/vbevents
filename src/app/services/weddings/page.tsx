@@ -18,12 +18,12 @@ export default function WeddingsPage() {
       {/* Hero */}
       <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden border-b border-[#d4af37]/20">
         <div className="absolute inset-0 z-0">
-          <Image src="/images/ai_marriages.png" alt="Luxury Wedding Setup" fill className="object-cover grayscale-[40%] opacity-40" />
+          <Image src="/images/ai_marriages.png" alt="Luxury Wedding Setup" fill sizes="100vw" className="object-cover grayscale-[40%] opacity-40" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent"></div>
         </div>
         
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-20">
-          <p className="font-body-md text-label-lg uppercase tracking-[0.3em] text-[#d4af37] mb-6">Capabilities</p>
+          <p className="font-body-md text-label-lg uppercase tracking-[0.3em] text-[#d4af37] mb-6">Our Services</p>
           <h1 className="font-headline-lg text-6xl md:text-8xl text-white mb-8 tracking-tighter" style={{ fontFamily: 'Playfair Display, serif' }}>
             Legacy Marriages
           </h1>
@@ -40,25 +40,25 @@ export default function WeddingsPage() {
       <section className="py-24 px-6 md:px-20 bg-[#121212]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="font-headline-md text-4xl md:text-5xl text-[#d4af37] mb-8" style={{ fontFamily: 'Playfair Display, serif' }}>The Atelier Approach</h2>
+            <h2 className="font-headline-md text-4xl md:text-5xl text-[#d4af37] mb-8" style={{ fontFamily: 'Playfair Display, serif' }}>Our Approach</h2>
             <div className="space-y-6 font-body-md text-on-surface-variant leading-relaxed text-lg">
               <p>
-                A multi-day destination wedding requires coordinating hundreds of high-profile guests, cross-border logistics, bespoke culinary curation, and structural design across multiple heritage venues. 
+                Planning a multi-day destination wedding means managing hundreds of guests, cross-city logistics, beautiful decor, and multiple venues — all at once. It can feel overwhelming.
               </p>
               <p>
-                Our Atelier approach treats your celebration as a blank canvas. We source the finest artisanal talent globally—from Michelin-starred chefs to immersive theatrical directors—and bind them together with our proprietary operational shielding infrastructure.
+                That is exactly where we step in. Our team takes care of every single detail — from booking the venue and managing the guest list, to coordinating vendors and ensuring everything runs on time.
               </p>
               <p>
-                The result is a flawlessly executed celebration where the host family is completely insulated from the logistical friction of the event.
+                You show up, enjoy every moment, and make memories. We handle everything else behind the scenes.
               </p>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="aspect-[3/4] relative">
-              <Image src="/gallery/haldi_ChatGPT Image Jun 22, 2026, 07_38_25 PM.png" alt="Haldi" fill className="object-cover border border-[#d4af37]/20" />
+              <Image src="/gallery/haldi_ChatGPT Image Jun 22, 2026, 07_38_25 PM.png" alt="Haldi" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover border border-[#d4af37]/20" />
             </div>
             <div className="aspect-[3/4] relative translate-y-8">
-              <Image src="/images/ai_dandiya.png" alt="Sangeet" fill className="object-cover border border-[#d4af37]/20" />
+              <Image src="/images/ai_dandiya.png" alt="Sangeet" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover border border-[#d4af37]/20" />
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function WeddingsPage() {
       {/* Process */}
       <section className="py-24 px-6 md:px-20 bg-[#0a0a0a] border-t border-[#d4af37]/10">
         <div className="max-w-5xl mx-auto text-center mb-16">
-          <h2 className="font-headline-md text-4xl md:text-5xl text-[#d4af37]" style={{ fontFamily: 'Playfair Display, serif' }}>Architecting the Experience</h2>
+          <h2 className="font-headline-md text-4xl md:text-5xl text-[#d4af37]" style={{ fontFamily: 'Playfair Display, serif' }}>How We Work</h2>
         </div>
         
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
