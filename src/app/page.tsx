@@ -213,6 +213,59 @@ export default function Home() {
         </FadeIn>
       </section>
 
+      {/* Featured Case Studies / Logistical Masterpieces */}
+      <section className="py-24 px-6 md:px-20 bg-transparent border-t border-[#d4af37]/20">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-20">
+            <p className="font-body-md text-label-lg uppercase tracking-[0.2em] text-[#d4af37] mb-4">Featured Work</p>
+            <h2 className="font-headline-lg text-4xl md:text-5xl text-[#0f172a] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Logistical Masterpieces</h2>
+            <p className="font-body-md text-[#475569] text-lg max-w-2xl mx-auto">Behind every breathtaking luxury celebration lies a masterclass in precision, security, and execution.</p>
+            <div className="w-24 h-px bg-[#d4af37]/30 mx-auto mt-6"></div>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="glass-card p-10 rounded-2xl flex flex-col justify-between hover:border-[#d4af37]/60 transition-all duration-300">
+              <div>
+                <span className="font-label-sm text-[#d4af37] uppercase tracking-[0.2em] mb-4 block">Case Study 01</span>
+                <h3 className="font-headline-sm text-2xl text-[#0f172a] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>The Udaipur Palace Buyout</h3>
+                <p className="font-body-md text-[#475569] text-sm leading-relaxed mb-6">
+                  Coordination of a 3-day royal buyout for 350 international guests across Taj Lake Palace & Jagmandir Island. Managed private air charter ground logistics, 24/7 guest concierges, and custom floral fabrications shipped from Bangalore, all under strict NDA guidelines.
+                </p>
+              </div>
+              <div className="border-t border-[#d4af37]/20 pt-6 mt-4">
+                <span className="font-label-sm text-[#d4af37] uppercase tracking-widest text-xs">Udaipur, Rajasthan</span>
+              </div>
+            </div>
+
+            <div className="glass-card p-10 rounded-2xl flex flex-col justify-between hover:border-[#d4af37]/60 transition-all duration-300">
+              <div>
+                <span className="font-label-sm text-[#d4af37] uppercase tracking-[0.2em] mb-4 block">Case Study 02</span>
+                <h3 className="font-headline-sm text-2xl text-[#0f172a] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>The Monsoon Offsite</h3>
+                <p className="font-body-md text-[#475569] text-sm leading-relaxed mb-6">
+                  Strategic contingency execution for a Fortune 500 leadership retreat during peak monsoon in Western Ghats. Implemented complete power redundancy, weatherproofed outdoor installations, and coordinated secure transport for 120 C-suite executives with zero delays.
+                </p>
+              </div>
+              <div className="border-t border-[#d4af37]/20 pt-6 mt-4">
+                <span className="font-label-sm text-[#d4af37] uppercase tracking-widest text-xs">Western Ghats, India</span>
+              </div>
+            </div>
+
+            <div className="glass-card p-10 rounded-2xl flex flex-col justify-between hover:border-[#d4af37]/60 transition-all duration-300">
+              <div>
+                <span className="font-label-sm text-[#d4af37] uppercase tracking-[0.2em] mb-4 block">Case Study 03</span>
+                <h3 className="font-headline-sm text-2xl text-[#0f172a] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>Private Heritage Fort</h3>
+                <p className="font-body-md text-[#475569] text-sm leading-relaxed mb-6">
+                  A deeply private, culturally-rooted wedding celebration in a remote 15th-century fort. Crafted an intimate, non-ostentatious setup utilizing local clay artisans and block-printers, with full security shielding and absolute social media embargo.
+                </p>
+              </div>
+              <div className="border-t border-[#d4af37]/20 pt-6 mt-4">
+                <span className="font-label-sm text-[#d4af37] uppercase tracking-widest text-xs">Jodhpur Outskirts</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section className="py-24 px-6 md:px-20 bg-transparent border-t border-[#d4af37]/30">
         <div className="max-w-7xl mx-auto">

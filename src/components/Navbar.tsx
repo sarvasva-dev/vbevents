@@ -85,6 +85,9 @@ export default function Navbar() {
           <Link className="font-body-md text-label-lg uppercase tracking-widest text-slate-700 hover:text-[#a07820] transition-colors duration-300" href="/services/weddings">Services</Link>
           <Link className="font-body-md text-label-lg uppercase tracking-widest text-slate-700 hover:text-[#a07820] transition-colors duration-300" href="/gallery?v=1">Gallery</Link>
           <Link className="font-body-md text-label-lg uppercase tracking-widest text-slate-700 hover:text-[#a07820] transition-colors duration-300" href="/contact">Inquire</Link>
+          <span className="font-body-md text-label-lg uppercase tracking-widest text-slate-400 opacity-70 cursor-not-allowed select-none flex items-center gap-1 mr-2" title="Private Client Portal (Secure NDA Access)">
+            <span className="material-symbols-outlined text-sm">lock</span> Portal
+          </span>
           <Link className="gold-gradient-bg text-white font-body-md text-label-lg uppercase tracking-widest px-8 py-3 rounded-full hover:opacity-90 transition-opacity shadow-lg" href="/contact">Private Consultation</Link>
         </div>
         <button onClick={() => setIsDrawerOpen(true)} aria-label="Menu" className="lg:hidden text-[#a07820] hover:text-[#a07820]/80 transition-colors duration-300 active:scale-95 flex items-center justify-center p-2 rounded-full hover:bg-slate-50 w-10 h-10">
