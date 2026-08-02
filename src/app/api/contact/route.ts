@@ -48,13 +48,27 @@ export async function POST(req: Request) {
     const data = result.data;
     console.log(`[Contact API] Processing ${data.type} request for: ${data.email}`);
 
+    const smtpUser = process.env.SMTP_USER;
+    const smtpPass = process.env.SMTP_PASS;
+
+    if (!smtpUser || !smtpPass) {
+      console.error("[Contact API] ERROR: SMTP_USER or SMTP_PASS is not defined in environment variables.");
+      return NextResponse.json(
+        { 
+          success: false, 
+          message: 'Email service configuration is incomplete on server. Please ensure SMTP_USER and SMTP_PASS environment variables are configured in Vercel.' 
+        },
+        { status: 500 }
+      );
+    }
+
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST || 'smtp.gmail.com',
       port: Number(process.env.SMTP_PORT) || 587,
       secure: Number(process.env.SMTP_PORT) === 465, // true for 465, false for 587 or other ports
       auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
+        user: smtpUser,
+        pass: smtpPass,
       },
     });
 
