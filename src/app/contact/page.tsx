@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: "Request a Private Consultation â€” Luxury Event Organizer India | Vision Beyond Events",
+  title: "Request a Private Consultation — Luxury Event Organizer India | Vision Beyond Events",
   description: "Begin a confidential dialogue with India's most discreet luxury event organizer. We handle destination weddings, corporate events & private UHNWI celebrations. NDA signed before your first call.",
   keywords: ["contact luxury event organizer India", "hire event planner India", "private event consultation", "destination wedding planner inquiry"],
   alternates: { canonical: "https://www.vbevents.co.in/contact" },

@@ -22,7 +22,7 @@ export default function DiscretionPage() {
             Your Privacy, Our Priority.
           </h1>
           <p className="font-body-md text-[#475569] text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-            In the realm of ultra-high-net-worth individuals, family offices, and corporate leadership, privacy is not a luxuryâ€”it is an operational prerequisite. We do not design events; we architect secure, insulated experiences.
+            In the realm of ultra-high-net-worth individuals, family offices, and corporate leadership, privacy is not a luxury—it is an operational prerequisite. We do not design events; we architect secure, insulated experiences.
           </p>
         </div>
       </section>

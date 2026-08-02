@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: "Luxury Destination Wedding Planner India Ã¢â‚¬â€ Udaipur Palace Weddings | Vision Beyond Events",
+  title: "Luxury Destination Wedding Planner India — Udaipur Palace Weddings | Vision Beyond Events",
   description: "India's top luxury destination wedding planner. We architect multi-day royal palace weddings in Udaipur, Rajasthan, Jaipur & Goa for UHNWI families. Complete discretion, NDA-by-default, white-glove execution.",
   keywords: ["destination wedding planner Udaipur", "palace wedding planner India", "luxury destination wedding India", "royal wedding planner Rajasthan", "NRI wedding planner India", "bespoke destination wedding planner"],
   alternates: { canonical: "https://www.vbevents.co.in/services/weddings" },

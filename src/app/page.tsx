@@ -4,11 +4,10 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { FadeIn } from '@/components/FadeIn';
-import AnimatedBackground from '@/components/AnimatedBackground';
 import TextReveal from '@/components/TextReveal';
 
 export const metadata: Metadata = {
-  title: "Best Luxury Event Organizer India ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Destination Weddings & Corporate Events | Vision Beyond Events",
+  title: "Best Luxury Event Organizer India — Destination Weddings & Corporate Events | Vision Beyond Events",
   description: "Vision Beyond Events is the premier luxury event planner in India. We specialize in destination weddings in Udaipur, corporate events, and memorable private celebrations.",
   keywords: ["best event organizer India", "destination wedding planner Udaipur", "luxury wedding planner Mumbai", "corporate event organizer Delhi", "top wedding planner India", "premium event management"],
   alternates: {

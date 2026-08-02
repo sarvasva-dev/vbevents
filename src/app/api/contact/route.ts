@@ -49,12 +49,12 @@ export async function POST(req: Request) {
     console.log(`[Contact API] Processing ${data.type} request for: ${data.email}`);
 
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST || 'smtp.ethereal.email',
+      host: process.env.SMTP_HOST || 'smtp.gmail.com',
       port: Number(process.env.SMTP_PORT) || 587,
-      secure: Number(process.env.SMTP_PORT) === 465,
+      secure: Number(process.env.SMTP_PORT) === 465, // true for 465, false for 587 or other ports
       auth: {
-        user: process.env.SMTP_USER || 'ethereal.user@ethereal.email',
-        pass: process.env.SMTP_PASS || 'ethereal_password',
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
       },
     });
 
@@ -82,9 +82,13 @@ export async function POST(req: Request) {
       `;
     }
 
+    // Default 'from' should align with authenticated user to prevent 553/501 SMTP rejection
+    const fromAddress = process.env.SMTP_FROM || (process.env.SMTP_USER ? `"Vision Beyond Events" <${process.env.SMTP_USER}>` : '"Vision Beyond Events" <noreply@visionbeyondevents.com>');
+
     const mailOptions = {
-      from: '"Vision Beyond Events" <noreply@visionbeyondevents.com>',
-      to: process.env.CONTACT_RECEIVER_EMAIL || 'contact@visionbeyondevents.com',
+      from: fromAddress,
+      to: process.env.CONTACT_RECEIVER_EMAIL || process.env.SMTP_USER || 'contact@visionbeyondevents.com',
+      replyTo: data.email,
       subject: emailSubject,
       text: emailText,
       html: emailHtml,

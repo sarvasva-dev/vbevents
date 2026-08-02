@@ -277,11 +277,11 @@ export default function CorporateEventOrganizerPage() {
                 },
                 {
                   q: 'Do you offer NDAs for sensitive internal corporate events such as M&A announcements or leadership transitions?',
-                  a: 'Yes. NDA-protected execution is our standard operating model â€” not an add-on. For sensitive announcements, leadership transitions, or board-level retreats, we implement additional compartmentalization protocols: vendors operate on a need-to-know basis, and all event staff sign individual confidentiality agreements.',
+                  a: 'Yes. NDA-protected execution is our standard operating model — not an add-on. For sensitive announcements, leadership transitions, or board-level retreats, we implement additional compartmentalization protocols: vendors operate on a need-to-know basis, and all event staff sign individual confidentiality agreements.',
                 },
                 {
                   q: 'What is your minimum event scale for corporate engagements?',
-                  a: 'We work with corporate events from intimate 20-person leadership retreats to large-scale 1,000+ attendee conferences. Our sweet spot â€” and where our UHNWI-grade attention to detail has maximum impact â€” is typically in the 50â€“500 attendee range for high-value, reputation-sensitive events.',
+                  a: 'We work with corporate events from intimate 20-person leadership retreats to large-scale 1,000+ attendee conferences. Our sweet spot — and where our UHNWI-grade attention to detail has maximum impact — is typically in the 50–500 attendee range for high-value, reputation-sensitive events.',
                 },
               ].map(({ q, a }, i) => (
                 <details key={i} className="group border-b border-[#d4af37]/30 py-6">
@@ -310,22 +310,8 @@ export default function CorporateEventOrganizerPage() {
           </Link>
         </section>
 
-      	  <Footer />
-    </main>
-
-      <footer className="w-full py-16 bg-[#ffffff] border-t border-[#d4af37]/30">
-        <div className="max-w-7xl mx-auto px-6 md:px-20 flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="text-center md:text-left">
-            <div className="font-headline-md text-2xl text-[#d4af37] tracking-tighter mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>Vision Beyond Events</div>
-            <div className="font-body-md text-[#475569] text-sm tracking-widest uppercase">Corporate Event Organizer, India</div>
-          </div>
-          <div className="flex gap-8">
-            <Link className="font-body-md text-sm text-[#475569] hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/discretion">Privacy Protocols</Link>
-            <Link className="font-body-md text-sm text-[#475569] hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/contact">Inquire</Link>
-            <Link className="font-body-md text-sm text-[#475569] hover:text-[#d4af37] transition-colors uppercase tracking-widest" href="/">Home</Link>
-          </div>
-        </div>
-      </footer>
+        <Footer />
+      </main>
     </>
   );
 }

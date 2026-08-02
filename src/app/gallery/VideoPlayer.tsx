@@ -6,7 +6,7 @@ export default function VideoPlayer({ file }: { file: string }) {
     if (video.paused) {
       const playPromise = video.play();
       if (playPromise !== undefined) {
-        playPromise.catch(error => {
+        playPromise.catch(() => {
           // Ignore AbortError caused by rapid clicking or native control conflicts
         });
       }

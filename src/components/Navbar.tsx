@@ -28,7 +28,10 @@ export default function Navbar() {
 
   // Track initial scroll state on mount (e.g. page refresh)
   useEffect(() => {
-    setIsScrolled(window.scrollY > 50);
+    const timer = requestAnimationFrame(() => {
+      setIsScrolled(window.scrollY > 50);
+    });
+    return () => cancelAnimationFrame(timer);
   }, []);
 
   // Determine if header should have the glass background and dark text styling

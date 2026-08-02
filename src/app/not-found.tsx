@@ -12,7 +12,7 @@ export default function NotFound() {
       </div>
       
       <div className="relative z-10 flex flex-col items-center">
-        <img src="/images/logo_clean.svg" alt="Vision Beyond Events" className="h-12 w-auto mb-12 object-contain" />
+        <Image src="/images/logo_clean.svg" alt="Vision Beyond Events" width={200} height={48} className="h-12 w-auto mb-12 object-contain" />
         
         <h1 className="font-headline-lg text-[120px] leading-none text-primary mb-4 font-bold tracking-tighter">
           404

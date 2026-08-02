@@ -12,14 +12,15 @@ const ORBS = Array.from({ length: 45 }).map((_, i) => {
   return { id: i, size, left, animationDuration, animationDelay, opacity, blur };
 });
 
-import { useState, useEffect } from 'react';
+import { useSyncExternalStore } from 'react';
+
+const emptySubscribe = () => () => {};
+function useIsClient() {
+  return useSyncExternalStore(emptySubscribe, () => true, () => false);
+}
 
 export default function AnimatedBackground() {
-  const [mounted, setMounted] = useState(false);
-  
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  const mounted = useIsClient();
 
   return (
     <div className="absolute inset-0 overflow-hidden bg-[#ffffff] z-0 pointer-events-none">

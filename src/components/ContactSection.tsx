@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState, useRef, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
@@ -112,7 +112,7 @@ export function ContactSection() {
         }
         setSubmitStatus({ type: 'error', message: errorMessage });
       }
-    } catch (_e) {
+    } catch {
       setSubmitStatus({ type: 'error', message: 'Network error. Please check your connection and try again.' });
     }
     setLoading(false);
@@ -141,7 +141,7 @@ export function ContactSection() {
         }
         setNewsletterStatus({ type: 'error', message: errorMessage });
       }
-    } catch (_e) {
+    } catch {
       setNewsletterStatus({ type: 'error', message: 'Network error. Please try again later.' });
     }
     setLoading(false);
