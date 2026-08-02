@@ -79,37 +79,109 @@ export async function POST(req: Request) {
     if (data.type === 'newsletter') {
       emailSubject = `New Newsletter Signup: ${data.email}`;
       emailText = `New subscriber: ${data.email}`;
-      emailHtml = `<p><strong>New subscriber:</strong> ${data.email}</p>`;
+      emailHtml = `
+        <div style="font-family: Arial, sans-serif; padding: 20px; background-f8f9fa;">
+          <h2 style="color: #a07820;">New Newsletter Subscription</h2>
+          <p><strong>Subscriber Email:</strong> ${data.email}</p>
+        </div>
+      `;
     } else {
       emailSubject = `Consultation Request: ${data.eventType} for ${data.name}`;
       emailText = `Name: ${data.name}\nPhone: ${data.phone}\nEmail: ${data.email}\nEvent Type: ${data.eventType}\nDestination: ${data.destination || 'N/A'}\nGuests: ${data.guestCount || 'N/A'}\nDate: ${data.date || 'N/A'}\nDetails: ${data.message || 'N/A'}`;
       emailHtml = `
-        <h3>New Private Consultation Request</h3>
-        <p><strong>Name:</strong> ${data.name}</p>
-        <p><strong>Phone:</strong> ${data.phone}</p>
-        <p><strong>Email:</strong> ${data.email}</p>
-        <p><strong>Event Type:</strong> ${data.eventType}</p>
-        <p><strong>Destination:</strong> ${data.destination || 'N/A'}</p>
-        <p><strong>Guest Count:</strong> ${data.guestCount || 'N/A'}</p>
-        <p><strong>Preferred Date:</strong> ${data.date || 'N/A'}</p>
-        <p><strong>Additional Details:</strong><br/>${data.message || 'N/A'}</p>
+        <div style="font-family: Arial, sans-serif; max-width: 600px; padding: 20px; border: 1px solid #d4af37; background: #faf9f6;">
+          <h2 style="color: #a07820; border-bottom: 1px solid #d4af37; padding-bottom: 10px;">New Private Consultation Request</h2>
+          <p><strong>Name:</strong> ${data.name}</p>
+          <p><strong>Phone:</strong> ${data.phone}</p>
+          <p><strong>Email:</strong> ${data.email}</p>
+          <p><strong>Event Type:</strong> ${data.eventType}</p>
+          <p><strong>Destination:</strong> ${data.destination || 'N/A'}</p>
+          <p><strong>Guest Count:</strong> ${data.guestCount || 'N/A'}</p>
+          <p><strong>Preferred Date:</strong> ${data.date || 'N/A'}</p>
+          <p><strong>Additional Details:</strong><br/>${data.message || 'N/A'}</p>
+        </div>
       `;
     }
 
     // Default 'from' should align with authenticated user to prevent 553/501 SMTP rejection
     const fromAddress = process.env.SMTP_FROM || (process.env.SMTP_USER ? `"Vision Beyond Events" <${process.env.SMTP_USER}>` : '"Vision Beyond Events" <noreply@visionbeyondevents.com>');
 
-    const mailOptions = {
+    // Fixed Team Head Email + Default Receiver Email
+    const teamRecipients = [
+      'vd6665444@gmail.com',
+      process.env.CONTACT_RECEIVER_EMAIL || process.env.SMTP_USER || 'visionbeyondevents@gmail.com'
+    ];
+
+    // 1. Send full submission data to Team Head & Admin
+    const teamMailOptions = {
       from: fromAddress,
-      to: process.env.CONTACT_RECEIVER_EMAIL || process.env.SMTP_USER || 'contact@visionbeyondevents.com',
+      to: teamRecipients,
       replyTo: data.email,
       subject: emailSubject,
       text: emailText,
       html: emailHtml,
     };
 
-    const info = await transporter.sendMail(mailOptions);
-    console.log(`[Contact API] Success - Email dispatched. MessageId: ${info.messageId}`);
+    // 2. Send automatic confirmation email to the client/user who filled the form
+    let clientSubject = '';
+    let clientHtml = '';
+
+    if (data.type === 'newsletter') {
+      clientSubject = 'Welcome to Vision Beyond Events Newsletter';
+      clientHtml = `
+        <div style="font-family: 'Montserrat', Arial, sans-serif; color: #0f172a; max-width: 600px; margin: 0 auto; border: 1px solid #d4af37; padding: 30px; background: #faf9f6;">
+          <h2 style="color: #a07820; font-family: Georgia, serif; text-align: center; margin-bottom: 20px;">VISION BEYOND EVENTS</h2>
+          <hr style="border: 0; border-top: 1px solid #d4af37; margin: 20px 0;" />
+          <p>Thank you for subscribing to the <strong>Vision Beyond Events</strong> Newsletter.</p>
+          <p>You will now receive exclusive insights into luxury destination weddings, private celebrations, trend reports, and behind-the-scenes event architecture.</p>
+          <br />
+          <p style="margin-bottom: 4px;">Warm regards,</p>
+          <p style="font-weight: bold; color: #a07820; margin-top: 0;">Vision Beyond Events Team</p>
+          <p style="font-size: 12px; color: #64748b;">Phone: +91 80818 08902 | Website: www.vbevents.co.in</p>
+        </div>
+      `;
+    } else {
+      clientSubject = `Thank You for Reaching Out to Vision Beyond Events - ${data.eventType}`;
+      clientHtml = `
+        <div style="font-family: 'Montserrat', Arial, sans-serif; color: #0f172a; max-width: 600px; margin: 0 auto; border: 1px solid #d4af37; padding: 30px; background: #faf9f6;">
+          <h2 style="color: #a07820; font-family: Georgia, serif; text-align: center; margin-bottom: 20px;">VISION BEYOND EVENTS</h2>
+          <hr style="border: 0; border-top: 1px solid #d4af37; margin: 20px 0;" />
+          <p>Dear <strong>${data.name}</strong>,</p>
+          <p>Thank you for requesting a private consultation with Vision Beyond Events.</p>
+          <p>We have received your event inquiry details and our advisory team is currently reviewing your vision. A dedicated event architect will reach out to you shortly (within 24 hours).</p>
+          <div style="background: #ffffff; padding: 20px; border-left: 3px solid #a07820; margin: 20px 0; border-radius: 4px;">
+            <p style="margin: 0 0 8px 0;"><strong>Event Type:</strong> ${data.eventType}</p>
+            <p style="margin: 0 0 8px 0;"><strong>Destination:</strong> ${data.destination || 'N/A'}</p>
+            <p style="margin: 0 0 8px 0;"><strong>Estimated Guests:</strong> ${data.guestCount || 'N/A'}</p>
+            <p style="margin: 0;"><strong>Preferred Date:</strong> ${data.date || 'N/A'}</p>
+          </div>
+          <p>Rest assured, every interaction with Vision Beyond Events is protected under strict confidentiality protocols.</p>
+          <br />
+          <p style="margin-bottom: 4px;">Warm regards,</p>
+          <p style="font-weight: bold; color: #a07820; margin-top: 0;">The Vision Beyond Events Advisory Team</p>
+          <p style="font-size: 12px; color: #64748b;">Phone: +91 80818 08902 | Website: www.vbevents.co.in</p>
+        </div>
+      `;
+    }
+
+    const clientMailOptions = {
+      from: fromAddress,
+      to: data.email,
+      subject: clientSubject,
+      html: clientHtml,
+    };
+
+    // Send both emails in parallel
+    const [teamResult] = await Promise.allSettled([
+      transporter.sendMail(teamMailOptions),
+      transporter.sendMail(clientMailOptions),
+    ]);
+
+    if (teamResult.status === 'rejected') {
+      throw teamResult.reason;
+    }
+
+    console.log(`[Contact API] Success - Submission processed for ${data.email} & notification dispatched to team head (vd6665444@gmail.com).`);
 
     return NextResponse.json({ success: true, message: 'Message sent successfully!' });
   } catch (error: unknown) {
